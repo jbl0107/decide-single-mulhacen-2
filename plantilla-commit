@@ -1,0 +1,36 @@
+#Primera linea
+
+#	Se comenzará por una #
+
+#	A continuación, se indicará el identificador de la tarea
+#	(número de la Issue)
+
+#	Después se dejará un espacio en blanco
+
+#	Por último, se indicará el título de la tarea que
+#	aparezca en el tablero git
+#---------------------------------------------------------------------------------
+#Información extra(opcional)
+
+#	Se dará una breve descripción si se considera necesario
+
+#	Esta descripción deberá indicarse tras ':' con respecto
+#	a la última palabra de la primera línea
+
+#	Ej: #17 Tarea 7: Una breve descripción
+#---------------------------------------------------------------------------------
+#Mensajes para correción de errores
+
+#	Deberá comenzar por ER
+
+#	Posteriormente se dejará un espacio en blanco
+
+#	Después se dará un breve título como introducción al problema
+
+#	A continuación irá ':'
+
+#	Se dejará un espacio en blanco
+
+#	Finalmente, se dará una descripción del problema
+
+#	Ej: ER Error página de inicio: se ha arreglado el botón de la página
