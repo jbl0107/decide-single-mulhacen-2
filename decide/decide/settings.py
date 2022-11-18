@@ -70,7 +70,7 @@ MODULES = [
     'voting',
 ]
 
-BASEURL = 'http://localhost:8000'
+BASEURL = 'http://localhost:8080'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
