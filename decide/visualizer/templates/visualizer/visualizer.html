@@ -16,20 +16,37 @@
             <b-navbar-brand tag="h1">Decide</b-navbar-brand>
         </b-navbar>
 
+        <!--Desplegable de traducción-->
+        <form action= "{% url 'set_language' %}" method='POST'>
+            {% csrf_token %}
+            <div class="input-field col s12">
+                <select name="language" id="">
+                    {% get_available_languages as LANGUAGES %}
+                    {% get_language_info_list for LANGUAGES as languages %}
+                    {% for language in languages %}
+                        <option value="{{ language.code }}" {% if language.code == LANGUAGE_CODE %} selected {% endif %}>
+                                {{ language.name_local }} {{language.code}}
+                        </option>
+                    {% endfor %}
+                </select>
+            </div>
+            <input type="submit" value="Go">
+        </form>
+
         <div class="voting container">
             <h1>[[ voting.id ]] - [[ voting.name ]]</h1>
 
-            <h2 v-if="!voting.start_date">Votación no comenzada</h2>
-            <h2 v-else-if="!voting.end_date">Votación en curso</h2>
+            <h2 v-if="!voting.start_date">{% trans 'Voting not started' %}</h2>
+            <h2 v-else-if="!voting.end_date">{% trans 'Voting in progress' %}</h2>
             <div v-else>
-                <h2 class="heading">Resultados:</h2>
+                <h2 class="heading">{% trans 'Results:' %}</h2>
 
                 <table class="table table-bordered table-striped">
                     <thead>
                         <tr>
-                            <th>Opción</th>
-                            <th>Puntuación</th>
-                            <th>Votos</th>
+                            <th>{% trans 'Option' %}</th>
+                            <th>{% trans 'Puntuation' %}</th>
+                            <th>{% trans 'Votes' %}</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -40,6 +57,7 @@
                         </tr>
                     </tbody>
                 </table>
+                <!-- {% trans "Let's translate this " %} -->
             </div>
 
         </div>
