@@ -1,5 +1,7 @@
+
 import json
 from django.views.generic import TemplateView
+from django.shortcuts import render,HttpResponse
 from django.conf import settings
 from django.http import Http404
 
@@ -11,6 +13,7 @@ class BoothView(TemplateView):
     template_name = 'booth/booth.html'
 
     def get_context_data(self, **kwargs):
+
         context = super().get_context_data(**kwargs)
         vid = kwargs.get('voting_id', 0)
 
