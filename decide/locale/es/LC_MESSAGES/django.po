@@ -8,9 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-
-"POT-Creation-Date: 2022-11-18 13:07+0100\n"
-
+"POT-Creation-Date: 2022-11-19 17:22+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,65 +16,38 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: booth/templates/booth/booth.html:22
+#: booth/templates/booth/booth.html:21
 msgid "logout"
 msgstr "Cerrar Sesión"
 
-#: booth/templates/booth/booth.html:56
+#: booth/templates/booth/booth.html:41
+msgid "Go"
+msgstr "Vamos!"
+
+#: booth/templates/booth/booth.html:55
 msgid "Username"
 msgstr "Usuario"
 
-#: booth/templates/booth/booth.html:64
+#: booth/templates/booth/booth.html:63
 msgid "Password"
 msgstr "Contraseña"
 
-#: booth/templates/booth/booth.html:72
+#: booth/templates/booth/booth.html:71
 msgid "Login"
 msgstr "Inicia sesión"
 
-#: booth/templates/booth/booth.html:87
+#: booth/templates/booth/booth.html:86
 msgid "Vote"
 msgstr "Vota"
 
-#: booth/templates/booth/booth.html:183 booth/templates/booth/booth.html:193
-#: booth/templates/booth/booth.html:224
+#: booth/templates/booth/booth.html:182 booth/templates/booth/booth.html:192
+#: booth/templates/booth/booth.html:223
 msgid "Error: "
 msgstr "Error"
 
-#: booth/templates/booth/booth.html:221
-msgid "Conglatulations. Your vote has been sent"
-msgstr "Enhorabuena. Tu voto ha sido enviado"
-
-
-#: booth/templates/booth/booth.html:19
-msgid "logout"
-msgstr "Cerrar sesión"
-
-#: booth/templates/booth/booth.html:33
-msgid "Username"
-msgstr "Usuario"
-
-#: booth/templates/booth/booth.html:41
-msgid "Password"
-msgstr "Contraseña"
-
-#: booth/templates/booth/booth.html:49
-msgid "Login"
-msgstr "Inicia sesión"
-
-#: booth/templates/booth/booth.html:64
-msgid "Vote"
-msgstr "Vota"
-
-#: booth/templates/booth/booth.html:160 booth/templates/booth/booth.html:170
-#: booth/templates/booth/booth.html:201
-msgid "Error: "
-msgstr "Error: "
-
-#: booth/templates/booth/booth.html:198
+#: booth/templates/booth/booth.html:220
 msgid "Conglatulations. Your vote has been sent"
 msgstr "Enhorabuena. Tu voto ha sido enviado"
 
@@ -107,4 +78,3 @@ msgstr "Votos"
 #: visualizer/templates/visualizer/visualizer.html:60
 msgid "Let's translate this "
 msgstr "Vamos a traducir esto"
-
