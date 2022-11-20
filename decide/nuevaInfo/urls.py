@@ -1,6 +1,7 @@
 from django.urls import path
 from .views import infoDecide
 from .views import infoEgc
+from .views import infoTraducciones
 
 
 urlpatterns = [
@@ -10,3 +11,8 @@ urlpatterns = [
 urlpatterns = [
     path('masInfoEgc/', infoEgc)
 ]
+
+urlpatterns = [
+    path('masInfoTraducciones/', infoTraducciones)
+]
+
