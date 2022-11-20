@@ -27,6 +27,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('doc/', schema_view),
     path('gateway/', include('gateway.urls')),
+    path('nuevaInfo/', include('nuevaInfo.urls'))
 ]
 
 for module in settings.MODULES:

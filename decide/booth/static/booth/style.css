@@ -2,3 +2,12 @@
     margin-top: 20px;
     margin-left: 40px;
 }
+
+.centrar {
+    text-align: center;
+}
+
+.cursiva{ 
+    font-style: italic;
+
+}

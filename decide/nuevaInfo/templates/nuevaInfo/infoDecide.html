@@ -1,0 +1,106 @@
+{% extends "base.html" %}
+{% load i18n static %}
+
+{% block extrahead %}
+    <link type="text/css" rel="stylesheet"
+         href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet"
+         href="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.css" />
+    <link type="text/css" rel="stylesheet" href="{% static "booth/style.css" %}" />
+{% endblock %}
+
+
+{% block content %}
+
+     <div class="container">
+          <h1 class="centrar">Decide, una plataforma de voto educativa</h1>
+          <h5 class="centrar">Decide se trata de un proyecto educativo, pensado para el estudio de sistemas de votación. El proyecto se divide en 
+               subsistemas, los cuales estarán desacoplados entre ellos. A continuación se comentarán una serie de aspectos sobre decide.</h5>
+
+     <br>
+     <h4>El Gateway</h4>
+     <p>Para ofrecer un punto de entrada conocido para todos los subsistemas existe el llamado gateway que no es más que una ruta disponible que redirigirá 
+          todas las peticiones al subsistema correspondiente, de tal forma que cualquier cliente que use la API no tiene por qué saber en qué servidor está
+          desplegado cada subsistema. La ruta se compone de:</p>
+          <p class="cursiva">http://DOMINIO/gateway/SUBSISTEMA/RUTA/EN/EL/SUBSISTEMA</p>
+     
+     <br>
+     <h4>Configuración y ejecución del proyecto</h4>
+     
+     <p>Para configurar el proyecto, podremos crearnos un fichero local_settings.py basado en el local_settings.example.py. Una vez hecho esto, 
+          será necesario instalar las dependencias del proyecto, las cuales están en el fichero requirements.txt. Tras esto tendremos que crearnos 
+          nuestra base de datos con postgres. A continuación, tendremos que realizar la primera migración con el comando -></p>
+          <p class="cursiva">./manage.py migrate.</p>
+          Por último, ejecutaremos el siguiente comando para ejecutar el servidor -></p> 
+          <p class="cursiva">./manage.py runserver</p>
+
+     <br>
+     <h4>Docker</h4>
+     <p>Existe una configuración de docker de decide lista para ser ejecutada. Esta lanza 3 contenedores, uno para el servidor de base de datos, otro para 
+          el django y otro con un servidor web nginx para servir los ficheros estáticos y hacer de proxy al servidor django.</p>
+          <p class="cursiva">decide_db</p>
+          <p class = "cursiva">decide_web</p>
+          <p class="cursiva">decide_nginx</p>
+
+     <br>
+     <p>Además se crean dos volúmenes, uno para los ficheros estáticos y medias del proyecto y otro para la base de datos postgresql. De esta forma 
+          los contenedores se pueden destruir sin miedo a perder datos. Los volumenes en cuestión son -> </p>
+          <p class="cursiva">decide_db</p>
+          <p class="cursiva">decide_static</p>
+     <br>
+     <p>Comando para lanzar la consola django</p>
+     <p class="cursiva">docker exec -ti decide_web ./manage.py shell</p>
+     <br>
+     <p>Se puede editar el fichero docker-settings.py para modificar el settings del proyecto django antes de crear las imágenes del contenedor.</p>
+
+     <br>
+     <h4>Vagrant (+ ansible)</h4>
+     <p>Existe una configuración de vagrant que crea una máquina virtual con todo lo necesario instalado y listo para funcionar. La configuración está 
+          en vagrant/Vagrantfile y por defecto utiliza Virtualbox. Para crear la máquina virtual primero tenemos que encontrarnos en la carpeta vagrant,
+          y posteriormente ejecutamos el comando -></p>
+     <p class="cursiva">vagrant up</p>
+     <p>Una vez hecho esto, podemos acceder desde la url -> </p> 
+     <p class="cursiva">http://localhost:8080/admin</p>
+
+     <br>
+     <h4>Ansible</h4>
+     <p>Como la configuración con vagrant esta provisionada con ansible, podemos usar esta última de forma independiente para provisionar una instalación 
+          de Decide en uno o varios servidores remotos con un simple comando. Importante -> El provisionamiento de ansible está diseñado para funcionar con 
+          ubuntu/bionic64, para funcionar con otras distribuciones es posible que haga falta modificar el fichero packages.yml.</p>
+
+     <br>
+     <h4>Versionado</h4>
+     <p>El versionado de API está hecho utilizando Django Rest Framework, y la forma elegida para este versionado es mediante parámetros de búsqueda. Podemos
+           cambiarlo a parámetros en la URL o en el nombre del HOST</p>
+
+     <br>
+     <h4>Test de estrés con Locust</h4>
+     <p>Para ejecutar los test de estrés utilizando locust, necesitaremos tenerlo instalado. Una vez instalado, necesitaremos tener un fichero locustfile.py 
+          donde tengamos la configuración de lo que vamos a ejecutar. Aqui tenemos 2 -></p>
+     <br>
+     <p>- Visualizer: entra en el visualizador de una votación para ver cuantas peticiones puede aguantar. Para ejecutar el test de Visualizer, tenemos 
+          que tener en cuenta que entra en la votación 'x' (por ejemplo, la 1), por lo que necesitaremos tenerla creada para que funcione correctamente. 
+          Una vez hecho esto, dentro de la carpeta loadtest probamos el siguiente comando-> </p>
+
+          <p class="cursiva">locust Visualizer</p> 
+          <p>Esto abrirá un servidor que podremos ver en el navegador, el mismo comando nos dirá el puerto. Cuando se abra, nos preguntará cuantos usuarios 
+               queremos que hagan peticiones a la vez, y como queremos que vaya creciendo hasta llegar a ese número</p>
+
+          <br>
+          <p>- Voters: utilizaremos usuarios previamente creados, y haremos una secuencia de peticiones: login, getuser y store. Sería lo que realizaría un 
+               usuario cuando va a votar, por lo que con este ejemplo estaremos comprobando cuantas votaciones podemos hacer. Para ejecutar el test de Voter, 
+               necesitaremos realizar varios preparos. Necesitaremos la votación 'x' abierta, y necesitaremos crear una serie de usuarios en el censo de esta 
+               votación, para que cuando hagamos el test, estos usuario puedan autenticarse y votar correctamente. Para facilitar esta tarea, tenemos el  
+               script de python gen_census.py creado. Para que este script funcione, necesitaremos tener instalado request. Tras esto, ejecutamos el 
+               comando -> </p>
+          <p class="cursiva">python gen_census.py</p>
+          <p>Tras esto, ya podremos comenzar el test de estrés de votantes -> </p>
+          <p class="cursiva">locust Voters</p>
+
+          
+          
+
+     </div>
+
+
+{% endblock %}
