@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% load i18n static %}
+
+{% block extrahead %}
+    <link type="text/css" rel="stylesheet"
+         href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet"
+         href="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.css" />
+    <link type="text/css" rel="stylesheet" href="{% static "booth/style.css" %}"/>
+{% endblock %}
+
+
+{% block content %}
+
+     <div class="container">
+     
+          <h1 class="centrar">Evolución y gestión de la configuración</h1>
+          <h5 class="centrar">EGC se trata de una asignatura de la Universidad de Sevilla, que pertenece al cuarto año de carrera de Ingeniería informática del Software. A continuación se detallará de qué trata y sus diferentes apartados dentro de ella.</h5>
+
+     <br>
+     
+     <h4>Temas de teoría</h4>
+     <p> Se compone de diferentes temas de teoría que son: 
+     <ol>
+     <li>Tema 1: Integración continua</li>
+     <li>Tema 2: Pruebas de software</li>
+     <li>Tema 3: Presentacion de la asignatura</li>
+     <li>Tema 4: Gestión de equipos</li>
+     <li>Tema 5: Gestión del código fuente</li>
+     <li>Tema 6: Incidencias y depuración</li>
+     <li>Tema 7: FLOSS</li>
+     <li>Tema 8: Configurabilidad del software y líneas de producto software</li>
+     <li>Tema 9: DevOps en un pipeline completo</li>
+     <li>Tema 10: Innosoft y la gestión de proyectos</li>
+     </ol>
+     </p>
+     
+     <br>
+     
+     <h4>Prácticas de la asignatura:</h4>
+
+     <p>
+     <ol>
+     <li>Práctica 1: Instalación de Decide</li>
+     <li>Práctica 2: Pruebas de Software</li>
+     <li>Práctica 3: Gestión de Código Fuente e Integración Continua</li>
+     <li>Práctica 4: Despliegue de aplicaciones: Contenedores</li>
+     <li>Práctica 5: Despliegue de aplicaciones: Máquinas virtuales</li>
+     </ol>
+     </p>
+
+     <br>
+     
+     <h4>Lecturas a lo largo del curso:</h4>
+     <p>
+     <ol>
+     <li>Lectura 1: Integración continua</li>
+     <li>Lectura 2: Pruebas de software</li>
+     <li>Lectura 3: Gestión de equipos</li>
+     <li>Lectura 4: GitFlow</li>
+     <li>Lectura 5: Gestión de incidencias</li>
+     <li>Lectura 6: Gestión FLOSS</li>
+     </ol>
+     </p>
+
+     <br>
+
+     <h4>Jornadas: </h4>
+     <p>Existen unas jornadas que se dividen en comités para organización de charlas y eventos, donde los alumnos participan y le dan un peso en la nota final de la asignatura desde un 10% a un 30%.</p>
+     <p class="cursiva">http://localhost:8080/admin</p>
+  </div>
+
+
+{% endblock %}
