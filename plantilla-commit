@@ -7,12 +7,12 @@
 
 #	Después se dejará un espacio en blanco
 
-#	Por último, se indicará el título de la tarea que
-#	aparezca en el tablero git
+#	Por último, se indicará una breve descripción intuitiva acerca de 
+#   lo que se ha realizado en dicha tarea.
 #---------------------------------------------------------------------------------
 #Información extra(opcional)
 
-#	Se dará una breve descripción si se considera necesario
+#	Se dará una descripción extra si se considera necesario
 
 #	Esta descripción deberá indicarse tras ':' con respecto
 #	a la última palabra de la primera línea
