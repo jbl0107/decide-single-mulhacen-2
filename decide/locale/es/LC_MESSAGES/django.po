@@ -24,6 +24,7 @@ msgstr "Cerrar Sesión"
 
 #: booth/templates/booth/booth.html:41
 #: nuevaInfo/templates/nuevaInfo/infoDecide.html:32
+#: nuevaInfo/templates/nuevaInfo/infoEgc.html:32
 #: visualizer/templates/visualizer/visualizer.html:33
 msgid "Go"
 msgstr "Vamos!"
@@ -258,6 +259,21 @@ msgstr ""
 #: nuevaInfo/templates/nuevaInfo/infoDecide.html:97
 msgid "After this, we can start the voter stress test"
 msgstr "Tras esto, ya podremos comenzar el test de estrés de votantes"
+
+#: nuevaInfo/templates/nuevaInfo/infoEgc.html:37
+msgid "Evolution and Change Management"
+msgstr "Evolución y gestión de la configuración"
+
+#: nuevaInfo/templates/nuevaInfo/infoEgc.html:38
+msgid ""
+"EGC is a subject from the University of Seville, which belongs to the fourth "
+"year of the Computer Software Engineering degree. What it is about and its "
+"different sections within it will be detailed below."
+msgstr ""
+"EGC se trata de una asignatura de la Universidad de Sevilla, que pertenece "
+"al cuarto año de carrera de Ingeniería informática del Software. A "
+"continuación se detallará de qué trata y sus diferentes apartados dentro de "
+"ella."
 
 #: visualizer/templates/visualizer/visualizer.html:39
 msgid "Voting not started"

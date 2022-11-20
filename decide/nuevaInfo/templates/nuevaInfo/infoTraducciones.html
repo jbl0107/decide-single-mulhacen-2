@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% load i18n static %}
+{% load i18n %}
+
+{% block extrahead %}
+    <link type="text/css" rel="stylesheet"
+         href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet"
+         href="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.css" />
+    <link type="text/css" rel="stylesheet" href="{% static "booth/style.css" %}" />
+{% endblock %}
+
+
+{% block content %}
+
+     <div class="container">
+          <h1 class="centrar">Subsistema de traducciones</h1>
+       
+     <br>
+     <h4>¿Porqué hemos elegido el subsistema de traducciones?</h4>
+     <p>Traducir una aplicación en Django a cualquier idioma y permitir que este sea detectado dependiendo de las peticiones de tus usuarios es una característica muy importante hoy en día,
+     además, es muy útil aprender a hacer esto ya que la mayoría de las páginas que nos encontramos en internet te dan la opción de traducirlas. En esta sección exploraremos un poco cómo hacerlo.
+     
+     Para realizar esta tarea de traducciones hemos necesitado tener un proyecto en Django, el cual hemos utilizado el proyecto de <em>decide</em> del repositorio que se nos proporciona en la
+     asignatura de Evolución y Gestión de la Configuración. Además, necesitamos tener instalado <code>gettext</code> que es un módulo que lee el lengujae que utiliza el sistema y a partir de este
+     carga el correspondiente archivo de traducción (*.mo) cambiando las cadenas de texto al idioma del sistema.</p>
+
+     <br>
+     <h4>Pasos a realizar:</h4>
+
+     <ol>
+     	<li> Asegurarnos de que tenemos activadas las traducciones en nuestra configuración. Para hacer esto, debemos hacer los siguientes cambios en el <code>settings.py</code>:</li>
+     	
+     		<div> class = "codehilite">
+     			<code>
+     			<span class = "n"> LANGUAGE_CODE </span>
+     			</code>	
+	     		<!-- LANGUAGE_CODE = 'en'
+			TIME_ZONE = 'UTC'
+			
+			USE_I18N = True
+			USE_L10N = True
+			USE_TZ = True
+			LOCALE_PATHS = [
+	    			os.path.join(BASE_DIR, 'locale')
+			] -->
+            
+
+		    </div>
+	</ol>
+
+
+    </div>
+
+
+{% endblock %}
