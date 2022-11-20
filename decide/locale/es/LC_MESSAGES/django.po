@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-20 19:36+0100\n"
+"POT-Creation-Date: 2022-11-20 21:15+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,6 +24,7 @@ msgstr "Cerrar Sesión"
 
 #: booth/templates/booth/booth.html:41
 #: nuevaInfo/templates/nuevaInfo/infoDecide.html:32
+#: nuevaInfo/templates/nuevaInfo/infoEgc.html:32
 #: visualizer/templates/visualizer/visualizer.html:33
 msgid "Go"
 msgstr "Vamos!"
@@ -133,6 +134,10 @@ msgstr ""
 "contenedores se pueden destruir sin miedo a perder datos. Los volumenes en "
 "cuestión son"
 
+#: nuevaInfo/templates/nuevaInfo/infoDecide.html:65
+msgid "Command to launch the django console"
+msgstr ""
+
 #: nuevaInfo/templates/nuevaInfo/infoDecide.html:68
 msgid ""
 "You can edit the docker-settings.py file to modify the settings of the "
@@ -236,9 +241,9 @@ msgid ""
 "can do. To run the Voter test, we will need make various preparations. We'll "
 "need open 'x' voting, and we will need to create a series of users in the "
 "census of this vote, for that when we do the test, these users can "
-"authenticate and vote correctly. To make this task easier, we have the python "
-"script gen_census.py created. For this script to work, we need to have "
-"installed request. After this, we execute the command"
+"authenticate and vote correctly. To make this task easier, we have the "
+"python script gen_census.py created. For this script to work, we need to "
+"have installed request. After this, we execute the command"
 msgstr ""
 "utilizaremos usuarios previamente creados, y haremos una secuencia de "
 "peticiones: login, getuser y store. Sería lo que realizaría un usuario "
@@ -254,6 +259,21 @@ msgstr ""
 #: nuevaInfo/templates/nuevaInfo/infoDecide.html:97
 msgid "After this, we can start the voter stress test"
 msgstr "Tras esto, ya podremos comenzar el test de estrés de votantes"
+
+#: nuevaInfo/templates/nuevaInfo/infoEgc.html:37
+msgid "Evolution and Change Management"
+msgstr "Evolución y gestión de la configuración"
+
+#: nuevaInfo/templates/nuevaInfo/infoEgc.html:38
+msgid ""
+"EGC is a subject from the University of Seville, which belongs to the fourth "
+"year of the Computer Software Engineering degree. What it is about and its "
+"different sections within it will be detailed below."
+msgstr ""
+"EGC se trata de una asignatura de la Universidad de Sevilla, que pertenece "
+"al cuarto año de carrera de Ingeniería informática del Software. A "
+"continuación se detallará de qué trata y sus diferentes apartados dentro de "
+"ella."
 
 #: visualizer/templates/visualizer/visualizer.html:39
 msgid "Voting not started"
