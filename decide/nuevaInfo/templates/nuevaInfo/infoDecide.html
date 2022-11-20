@@ -1,0 +1,106 @@
+{% extends "base.html" %}
+{% load i18n static %}
+{% load i18n %}
+
+{% block extrahead %}
+    <link type="text/css" rel="stylesheet"
+         href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet"
+         href="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.css" />
+    <link type="text/css" rel="stylesheet" href="{% static "booth/style.css" %}" />
+{% endblock %}
+
+
+{% block content %}
+
+
+     <form action="{% url 'set_language' %}" method='POST'>
+          {% csrf_token %}
+          <div class="input-field col s12">
+          <select name="language" id="">
+               {% get_available_languages as LANGUAGES %}
+               {% get_language_info_list for LANGUAGES as languages %}
+               {% for language in languages %}
+                    <option value="{{language.code}}" {% if language.code == LANGUAGE_CODE %} selected {% endif %}>
+                         {{language.name_local}} {{language.code}}
+                    </option>
+               {% endfor %}
+
+          </select>
+
+          </div>
+          <input type="submit" value="{% trans "Go" %}">
+     </form>
+
+
+     <div class="container">
+          <h1 class="centrar">{% trans "Decide, an educational voting platform" %}</h1>
+          <h5 class="centrar">{% trans "Decide is an educational project, designed for the study of voting systems. The project is divided into subsystems, which will be decoupled from each other. Next, a series of aspects about decide will be discussed" %}</h5>
+
+     <br>
+     <h4>{% trans "The Gateway" %}</h4>
+     <p>{% trans "To provide a known entry point for all subsystems exists the so-called gateway that is nothing more than an available route that will redirect all requests to the corresponding subsystem, such that any client using the API doesn't have to know what server it is on deployed each subsystem. The path consists of:" %}</p>
+          <p class="cursiva">http://DOMINIO/gateway/SUBSISTEMA/RUTA/EN/EL/SUBSISTEMA</p>
+     
+     <br>
+     <h4>{% trans "Project configuration and execution" %}</h4>
+     
+     <p>{% trans "To configure the project, we can create a file local_settings.py based on the local_settings.example.py. Once this is done, you will need install the project dependencies, which are in the file requirements.txt. After this we will have to create our database with postgres. Next, we'll need to perform the first migration with the command"%} -></p>
+          <p class="cursiva">./manage.py migrate.</p>
+          <p>{% trans "Finally, we will execute the following command to run the server" %} -></p> 
+          <p class="cursiva">./manage.py runserver</p>
+
+     <br>
+     <h4>Docker</h4>
+     <p>{% trans "There is a decide docker configuration ready to be run. This is launch 3 containers, one for the database server, one for the django and another with an nginx web server to serve the static files and proxy django server." %}</p>
+          <p class="cursiva">decide_db</p>
+          <p class = "cursiva">decide_web</p>
+          <p class="cursiva">decide_nginx</p>
+
+     <br>
+     <p>{% trans "In addition, two volumes are created, one for the static and media files of the project and another for the postgresql database. In this way the containers can be destroyed without fear of losing data. Volumes in question are" %} -> </p>
+          <p class="cursiva">decide_db</p>
+          <p class="cursiva">decide_static</p>
+     <br>
+     <p>{% trans "Command to launch the django console" %}</p>
+     <p class="cursiva">docker exec -ti decide_web ./manage.py shell</p>
+     <br>
+     <p>{% trans "You can edit the docker-settings.py file to modify the settings of the django project before creating the container images." %}</p>
+
+     <br>
+     <h4>Vagrant (+ ansible)</h4>
+     <p>{% trans "There is a vagrant configuration that creates a virtual machine with everything required installed and ready to go. Configuration is in vagrant/Vagrantfile and by default it uses Virtualbox. To create the virtual machine first we have to find ourselves in the vagrant folder, and then we execute the command" %} -></p>
+     <p class="cursiva">vagrant up</p>
+     <p>{% trans "Once this is done, we can access from the url" %} -> </p> 
+     <p class="cursiva">http://localhost:8080/admin</p>
+
+     <br>
+     <h4>Ansible</h4>
+     <p>{% trans "As the configuration with vagrant is provisioned with ansible, we can use the latter independently to provision an installation of Decide on one or several remote servers with a simple command. Important -> Ansible provisioning is designed to work with ubuntu/bionic64, to work with other distributions it may be necessary modify the packages.yml file." %}</p>
+
+     <br>
+     <h4>{% trans "Versioned" %}</h4>
+     <p>{% trans "API versioning is done using the Django Rest Framework, and the form chosen for this versioning is through search parameters. We can change it to parameters in the URL or in the name of the HOST." %}</p>
+
+     <br>
+     <h4>{% trans "Stress test with Locust" %}</h4>
+     <p>{% trans "To run stress tests using locust, we'll need to have it installed. Once installed, we'll need to have a locustfile.py file where we have the configuration of what we are going to execute. Here we have" %} 2 -></p>
+     <br>
+     <p>- Visualizer: {% trans "enter the viewer of a vote to see how many requests you can hold. To run the Visualizer test, we have to take into account that enters the vote 'x' (for example, the 1), so we will need have it set up so that it works properly. Once that's done, inside from the loadtest folder we try the following command" %}-> </p>
+
+          <p class="cursiva">locust Visualizer</p> 
+          <p>{% trans "This will open a server that we can see in the browser, the same command it will tell us the port. When it opens, it will ask us how many users we want that they make requests at the same time, and how we want it to grow until get to that number." %}</p>
+
+          <br>
+          <p>- Voters: {% trans "we will use previously created users, and we will do a sequence of requests: login, getuser and store. It would be what a user would do when you are going to vote, so with this example we will be checking how many voting we can do. To run the Voter test, we will need make various preparations. We'll need open 'x' voting, and we will need to create a series of users in the census of this vote, for that when we do the test, these users can authenticate and vote correctly. To make this task easier, we have the python script gen_census.py created. For this script to work, we need to have installed request. After this, we execute the command" %} -> </p>
+          <p class="cursiva">python gen_census.py</p>
+          <p>{% trans "After this, we can start the voter stress test" %} -> </p>
+          <p class="cursiva">locust Voters</p>
+
+          
+          
+
+     </div>
+
+
+{% endblock %}
