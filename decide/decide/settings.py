@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'rest_framework_swagger',
     'gateway',
+    'nuevaInfo'
 ]
 
 REST_FRAMEWORK = {
@@ -68,6 +69,7 @@ MODULES = [
     'store',
     'visualizer',
     'voting',
+    
 ]
 
 BASEURL = 'http://localhost:8000'
