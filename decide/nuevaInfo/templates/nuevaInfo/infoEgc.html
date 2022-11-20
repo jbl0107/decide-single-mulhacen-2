@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load i18n static %}
+{% load i18n %}
 
 {% block extrahead %}
     <link type="text/css" rel="stylesheet"
@@ -10,28 +11,47 @@
 {% endblock %}
 
 
+
 {% block content %}
 
-     <div class="container">
-     
-          <h1 class="centrar">Evolución y gestión de la configuración</h1>
-          <h5 class="centrar">EGC se trata de una asignatura de la Universidad de Sevilla, que pertenece al cuarto año de carrera de Ingeniería informática del Software. A continuación se detallará de qué trata y sus diferentes apartados dentro de ella.</h5>
+    <form action="{% url 'set_language' %}" method='POST'>
+        {% csrf_token %}
+        <div class="input-field col s12">
+        <select name="language" id="">
+            {% get_available_languages as LANGUAGES %}
+            {% get_language_info_list for LANGUAGES as languages %}
+            {% for language in languages %}
+                <option value="{{language.code}}" {% if language.code == LANGUAGE_CODE %} selected {% endif %}>
+                    {{language.name_local}} {{language.code}}
+                </option>
+            {% endfor %}
 
-     <br>
+        </select>
+
+        </div>
+        <input type="submit" value="{% trans "Go" %}">
+    </form>
+
+    <div class="container">
      
-     <h4>Temas de teoría</h4>
-     <p> Se compone de diferentes temas de teoría que son: 
-     <ol>
-     <li>Tema 1: Integración continua</li>
-     <li>Tema 2: Pruebas de software</li>
-     <li>Tema 3: Presentacion de la asignatura</li>
-     <li>Tema 4: Gestión de equipos</li>
-     <li>Tema 5: Gestión del código fuente</li>
-     <li>Tema 6: Incidencias y depuración</li>
-     <li>Tema 7: FLOSS</li>
-     <li>Tema 8: Configurabilidad del software y líneas de producto software</li>
-     <li>Tema 9: DevOps en un pipeline completo</li>
-     <li>Tema 10: Innosoft y la gestión de proyectos</li>
+        <h1 class="centrar">{% trans "Evolution and Change Management" %}</h1>
+        <h5 class="centrar">{% trans "EGC is a subject from the University of Seville, which belongs to the fourth year of the Computer Software Engineering degree. What it is about and its different sections within it will be detailed below." %}</h5>
+
+    <br>
+     
+    <h4>Temas de teoría</h4>
+    <p> Se compone de diferentes temas de teoría que son: 
+    <ol>
+    <li>Integración continua</li>
+    <li>Pruebas de software</li>
+    <li>Presentacion de la asignatura</li>
+    <li>Gestión de equipos</li>
+    <li>Gestión del código fuente</li>
+    <li>Incidencias y depuración</li>
+    <li>FLOSS</li>
+    <li>Configurabilidad del software y líneas de producto software</li>
+     <li>DevOps en un pipeline completo</li>
+     <li>Innosoft y la gestión de proyectos</li>
      </ol>
      </p>
      
@@ -41,11 +61,11 @@
 
      <p>
      <ol>
-     <li>Práctica 1: Instalación de Decide</li>
-     <li>Práctica 2: Pruebas de Software</li>
-     <li>Práctica 3: Gestión de Código Fuente e Integración Continua</li>
-     <li>Práctica 4: Despliegue de aplicaciones: Contenedores</li>
-     <li>Práctica 5: Despliegue de aplicaciones: Máquinas virtuales</li>
+     <li>Instalación de Decide</li>
+     <li>Pruebas de Software</li>
+     <li>Gestión de Código Fuente e Integración Continua</li>
+     <li>Despliegue de aplicaciones: Contenedores</li>
+     <li>Despliegue de aplicaciones: Máquinas virtuales</li>
      </ol>
      </p>
 
@@ -54,12 +74,12 @@
      <h4>Lecturas a lo largo del curso:</h4>
      <p>
      <ol>
-     <li>Lectura 1: Integración continua</li>
-     <li>Lectura 2: Pruebas de software</li>
-     <li>Lectura 3: Gestión de equipos</li>
-     <li>Lectura 4: GitFlow</li>
-     <li>Lectura 5: Gestión de incidencias</li>
-     <li>Lectura 6: Gestión FLOSS</li>
+     <li>Integración continua</li>
+     <li>Pruebas de software</li>
+     <li>Gestión de equipos</li>
+     <li>GitFlow</li>
+     <li>Gestión de incidencias</li>
+     <li>Gestión FLOSS</li>
      </ol>
      </p>
 
