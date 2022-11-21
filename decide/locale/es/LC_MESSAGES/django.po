@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-21 19:09+0100\n"
+"POT-Creation-Date: 2022-11-21 23:15+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,6 +27,7 @@ msgstr "Cerrar Sesión"
 #: nuevaInfo/templates/nuevaInfo/infoETSII.html:32
 #: nuevaInfo/templates/nuevaInfo/infoEgc.html:32
 #: nuevaInfo/templates/nuevaInfo/infoJornadas.html:31
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:32
 #: visualizer/templates/visualizer/visualizer.html:33
 msgid "Go"
 msgstr "Vamos!"
@@ -274,11 +275,12 @@ msgid ""
 "Engineers. By then, this school had already finished its move to the new "
 "facilities on the Isla de la Cartuja and had vacated the White Building."
 msgstr ""
-"El 3 de julio de 2001, el Consejo de Gobierno de la Junta de Andalucía aprobó "
-"la creación de la Escuela Técnica Superior de Ingeniería Informática, con sede "
-"en el edificio de la antigua Escuela Técnica Superior de Ingenieros "
-"Industriales. Para aquel entonces, esta escuela ya había terminado su mudanza a las nuevas "
-"instalaciones en la Isla de la Cartuja y había dejado libre el Edificio Blanco."
+"El 3 de julio de 2001, el Consejo de Gobierno de la Junta de Andalucía "
+"aprobó la creación de la Escuela Técnica Superior de Ingeniería Informática, "
+"con sede en el edificio de la antigua Escuela Técnica Superior de Ingenieros "
+"Industriales. Para aquel entonces, esta escuela ya había terminado su "
+"mudanza a las nuevas instalaciones en la Isla de la Cartuja y había dejado "
+"libre el Edificio Blanco."
 
 #: nuevaInfo/templates/nuevaInfo/infoETSII.html:45
 msgid "The Engineering"
@@ -292,11 +294,11 @@ msgid ""
 "Engineering in Management Information Technology and Technical Engineering "
 "in Systems Information Technology. "
 msgstr ""
-"El curso académico 1996/97 supuso un punto de inflexión en la historia de los estudios "
-"de informática en la Universidad de Sevilla. El Consejo de Universidades aprobó "
-"la creación de tres nuevas titulaciones: Ingeniería en Informática, Ingeniería "
-"Técnica en Informática de Gestión e Ingeniería Técnica "
-"en Informática de Sistemas."
+"El curso académico 1996/97 supuso un punto de inflexión en la historia de "
+"los estudios de informática en la Universidad de Sevilla. El Consejo de "
+"Universidades aprobó la creación de tres nuevas titulaciones: Ingeniería en "
+"Informática, Ingeniería Técnica en Informática de Gestión e Ingeniería "
+"Técnica en Informática de Sistemas."
 
 #: nuevaInfo/templates/nuevaInfo/infoETSII.html:47
 msgid ""
@@ -307,12 +309,13 @@ msgid ""
 "and tools with which to solve problems of interest to our society in a "
 "practical way and with reasonable costs. "
 msgstr ""
-"El cambio de la denominación suponía el reconocimiento público de que la informática, pese "
-"a haber nacido diplomatura y echado los dientes como licenciatura, desde el principio "
-"había tenido un marcado carácter de ingeniería, yendo más allá de la pura ciencia, aplicando "
-"los conocimientos que ésta genera al desarrollo de técnicas, métodos "
-"y herramientas con las que resolver de forma práctica y con unos costes razonables los "
-"problemas de interés a nuestra sociedad."
+"El cambio de la denominación suponía el reconocimiento público de que la "
+"informática, pese a haber nacido diplomatura y echado los dientes como "
+"licenciatura, desde el principio había tenido un marcado carácter de "
+"ingeniería, yendo más allá de la pura ciencia, aplicando los conocimientos "
+"que ésta genera al desarrollo de técnicas, métodos y herramientas con las "
+"que resolver de forma práctica y con unos costes razonables los problemas de "
+"interés a nuestra sociedad."
 
 #: nuevaInfo/templates/nuevaInfo/infoETSII.html:48
 msgid ""
@@ -322,11 +325,12 @@ msgid ""
 "School of Industrial Engineers, which from then on began to be popularly "
 "known as the White Building. "
 msgstr ""
-"El cambio de denominación también llevó consigo un importante incremento en la demanda por "
-"parte de los alumnos que terminaban el bachillerato. Por este motivo, una parte "
-"importante de las asignaturas volvieron a impartirse en el edificio de la Escuela Técnica "
-"Superior de Ingenieros Industriales, que a partir de entonces empezó a ser conocido "
-"popularmente como el Edificio Blanco."
+"El cambio de denominación también llevó consigo un importante incremento en "
+"la demanda por parte de los alumnos que terminaban el bachillerato. Por este "
+"motivo, una parte importante de las asignaturas volvieron a impartirse en el "
+"edificio de la Escuela Técnica Superior de Ingenieros Industriales, que a "
+"partir de entonces empezó a ser conocido popularmente como el Edificio "
+"Blanco."
 
 #: nuevaInfo/templates/nuevaInfo/infoETSII.html:51
 msgid "List of Departments"
@@ -390,9 +394,9 @@ msgid ""
 "the Reina Mercedes Campus of the University of Seville and is easily "
 "accessible by public transport services."
 msgstr ""
-"La Escuela Técnica Superior de Ingeniería Informática (ETSII) está situada en "
-"el Campus de Reina Mercedes de la Universidad de Sevilla y cuenta con un fácil "
-"acceso mediante los servicios públicos de transporte."
+"La Escuela Técnica Superior de Ingeniería Informática (ETSII) está situada "
+"en el Campus de Reina Mercedes de la Universidad de Sevilla y cuenta con un "
+"fácil acceso mediante los servicios públicos de transporte."
 
 #: nuevaInfo/templates/nuevaInfo/infoETSII.html:70
 msgid "Address"
@@ -400,7 +404,8 @@ msgstr "Dirección"
 
 #: nuevaInfo/templates/nuevaInfo/infoETSII.html:71
 msgid "Higher Technical School of Computer Engineering University of Seville "
-msgstr "Escuela Técnica Superior de Ingeniería Informática Universidad de Sevilla"
+msgstr ""
+"Escuela Técnica Superior de Ingeniería Informática Universidad de Sevilla"
 
 #: nuevaInfo/templates/nuevaInfo/infoETSII.html:72
 msgid "Avenida Reina Mercedes 41012 Sevilla "
@@ -575,6 +580,224 @@ msgstr "También dejamos el cartel de promoción de las jornadas. "
 #: nuevaInfo/templates/nuevaInfo/infoJornadas.html:64
 msgid "In addition, you can follow Innosoft Days on social networks:"
 msgstr "Además, puedes seguir a Innosoft Days en redes sociales:"
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:37
+msgid "Translation subsystem"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:40
+msgid "Why have we chosen the translation subsystem?"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:49
+msgid "Steps to perform:"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:52
+msgid ""
+"Make sure we have translations enabled in our settings. To do this, we need "
+"to make the following changes to the"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:80
+msgid "For this case we have defined that our project is by default in"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:80
+msgid "English"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:86
+msgid ""
+"Once what is indicated in the previous step has been done, we should add the "
+"following line"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:86
+msgid "to the"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:86
+msgid "of our project, it is important Place this middleware between"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:86
+msgid "and"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:88
+msgid "In this case, what we have done is tell Django to use the"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:88
+msgid "which will take care of choosing the appropriate language for each user"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:88
+msgid "based on information extracted from the request"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:92
+msgid "The next step is to"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:92
+msgid "mark the texts that we want to translate"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:92
+msgid ""
+"within our project, for this there are different ways depending on the text "
+"that we are going to translate."
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:94
+msgid "Traduce in templates"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:95
+msgid "To explain how to translate templates, suppose we have an index.html in"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:96
+msgid "We need to adapt this file so that it can be translated:"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:98
+msgid "We would have to add the sentence"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:98
+msgid "in each text that we want to translate"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:99
+msgid ""
+"In addition, in each html that we want to introduce a translation we must "
+"include the i18n templatetags with"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:106
+msgid "Later you would have to create a folder called"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:106
+msgid "in the path"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:110
+msgid ""
+"Having everything configured, now yes, we proceed to create the translation "
+"files. For this we use the following command from the project path:"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:114
+msgid ""
+"This will create the translation files for the Spanish language, which is "
+"the one we have used for our project"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:117
+msgid ""
+"With the commands executed in the previous step, a .po file will be "
+"generated in the"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:117
+msgid "folder"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:118
+msgid "Translate .po files"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:119
+msgid "These files are the ones we will use"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:119
+msgid "to specify to Django how to translate each word in a certain language"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:119
+msgid "so simply for each of the strings that appear in"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:119
+msgid "we can specify its translation with strings"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:122
+msgid ""
+"Next we proceed to compile the messages created with the previously executed "
+"command"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:123
+msgid "Compile translation files"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:125
+msgid ""
+"Once we have our complete translation files, we will proceed to compile them "
+"with the following command:"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:127
+msgid "When we compile our files,"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:127
+msgid "we are ready to use our project in the specified language"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:128
+msgid ""
+"Every time one of our users consults our project it will appear in their "
+"language. For testing purposes, we can change the language of the project to "
+"Spanish and observe the results"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:133
+msgid "How did we select the language?"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:134
+msgid ""
+"For this we have implemented a drop-down html code, which allows us to "
+"select the language to which we want to translate and, later, once selected, "
+"we must click on a button that says "
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:139
+msgid "Things to keep in mind:"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:141
+msgid "Every time we add an html in our project we must modify the file"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:141
+msgid "where we have to add a line like this"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:141
+msgid "and also import said view in our file"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:141
+msgid "in this way"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:142
+msgid "You also have to modify the"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:142
+msgid ""
+"file and add a function for each new html file that you add, this function "
+"will contain a line like this:"
+msgstr ""
 
 #: visualizer/templates/visualizer/visualizer.html:39
 msgid "Voting not started"
