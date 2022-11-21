@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% load i18n static %}
+
+
+{% block extrahead %}
+    <link type="text/css" rel="stylesheet"
+         href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet"
+         href="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.css" />
+    <link type="text/css" rel="stylesheet" href="{% static "booth/style.css" %}"/>
+{% endblock %}
+
+
+
+{% block content %}
+
+
+    <div class="container">
+     
+        <h1 class="centrar">{% trans "The ETS of Computer Engineering" %}</h1>
+        <h5 class="centrar">{% trans "On July 3, 2001, the Governing Council of the Junta de Andalucía approved the creation of the Higher Technical School of Computer Engineering, based in the building of the former Higher Technical School of Industrial Engineers. By then, this school had already finished its move to the new facilities on the Isla de la Cartuja and had vacated the White Building.." %}</h5>
+    
+    <br>
+
+      <h2>{% trans "The Engineering" %}</h2>  
+      <h6>{% trans "The 1996/97 academic year was a turning point in the history of computer studies at the University of Seville. The Council of Universities approved the creation of three new degrees: Computer Engineering, Technical Engineering in Management Information Technology and Technical Engineering in Systems Information Technology. "  %}</h6>
+      <h6>{% trans "The name change implied public acknowledgment that computer science, despite having been born a diploma and set its teeth as a degree, from the beginning had had a marked engineering character, going beyond pure science, applying the knowledge that it it generates the development of techniques, methods and tools with which to solve problems of interest to our society in a practical way and with reasonable costs.. "  %}</h6>
+      <h6>{% trans "The name change also brought with it a significant increase in demand from students finishing high school. For this reason, an important part of the subjects were once again taught in the building of the Higher Technical School of Industrial Engineers, which from then on began to be popularly known as the White Building.. "  %}</h6>
+    <br>
+     
+    <h4>{% trans "List of Departments." %}</h4>
+    <p> {% trans "List of Departments that teach at the ETSII:" %}</p>
+    <ol> 
+        <li>{% trans "Business Administration and Marketing" %}</li>
+        <li>{% trans "Human Anatomy and Embryology" %}</li>
+        <li>{% trans "Architecture and Technology. of computers" %}</li>
+        <li>{% trans " Cell biology" %}</li>
+        <li>{% trans " Applied Mathematics I" %}</li>
+        <li>{% trans "Electronic Technology" %}</li>
+        <li>{% trans "Computer Languages ​​and Systems" %}</li>
+        <li>{% trans "Systems Engineering and Automation" %}</li>
+        <li>{% trans "Industrial Organization and Business Management." %}</li>
+        <li>{% trans "Mechanics of Continuous Media, Theory of Structures" %}</li>
+        <h8>{% trans "and many more departments." %}</h8>
+    </ol>
+     
+     <br>
+        <h2>{% trans "Situation" %}</h2>
+        <h6>{% trans "The Higher Technical School of Computer Engineering (ETSII) is located on the Reina Mercedes Campus of the University of Seville and is easily accessible by public transport services."%}</h6>
+        <h3>{% trans "Address" %}</h3>
+        <h6>{% trans "Higher Technical School of Computer Engineering University of Seville " %}</h6>
+        <h6>{% trans "Avenida Reina Mercedes 41012 Sevilla "%}</h6>
+        
+
+     <br>
+     
+
+     <h4>{% trans "About ETSII:" %} </h4>
+     <p class="cursiva"> {% trans "For more information about ETSII:" %} 
+        <a href='https://www.informatica.us.es/' > {% trans "ETSII" %}</a> </p>
+  </div>
+
+
+{% endblock %}
