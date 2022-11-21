@@ -8,7 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
+
 "POT-Creation-Date: 2022-11-21 12:24+0100\n"
+
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -275,6 +277,55 @@ msgstr ""
 "al cuarto año de carrera de Ingeniería informática del Software. A "
 "continuación se detallará de qué trata y sus diferentes apartados dentro de "
 "ella."
+
+#: nuevaInfo/templates/nuevaInfo/infoEgc.html:42
+msgid "Theory topics"
+msgstr "Temas de teoría"
+
+#: nuevaInfo/templates/nuevaInfo/infoEgc.html:43
+msgid "It consists of different theory topics that are:"
+msgstr "Se compone de diferentes temas de teoría que son:"
+
+#: nuevaInfo/templates/nuevaInfo/infoEgc.html:45
+msgid "Continuous integration"
+msgstr "Integración continua"
+
+#: nuevaInfo/templates/nuevaInfo/infoEgc.html:46
+msgid "Software testing"
+msgstr "Pruebas de software"
+
+#: nuevaInfo/templates/nuevaInfo/infoEgc.html:47
+msgid "Presentation of the subject"
+msgstr "Presentacion de la asignatura"
+
+#: nuevaInfo/templates/nuevaInfo/infoEgc.html:48
+msgid "Team management"
+msgstr "Gestión de equipos"
+
+#: nuevaInfo/templates/nuevaInfo/infoEgc.html:49
+msgid "Source code management"
+msgstr "Gestión del código fuente"
+
+#: nuevaInfo/templates/nuevaInfo/infoEgc.html:50
+msgid "Incidents and debugging"
+msgstr "Incidencias y depuración"
+
+#: nuevaInfo/templates/nuevaInfo/infoEgc.html:52
+msgid "Software configurability and software product lines"
+msgstr "Configurabilidad del software y líneas de producto software"
+
+#: nuevaInfo/templates/nuevaInfo/infoEgc.html:53
+msgid "DevOps in a complete pipeline"
+msgstr "DevOps en un pipeline completo"
+
+#: nuevaInfo/templates/nuevaInfo/infoEgc.html:54
+msgid "Innosoft and project management"
+msgstr "Innosoft y la gestión de proyectos"
+
+#: nuevaInfo/templates/nuevaInfo/infoEgc.html:59
+msgid "Subject practices:"
+msgstr "Prácticas de la asignatura:"
+
 
 #: nuevaInfo/templates/nuevaInfo/infoJornadas.html:35
 msgid "Innosoft Days"
