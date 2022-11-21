@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-21 12:49+0100\n"
+"POT-Creation-Date: 2022-11-21 13:36+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -322,6 +322,57 @@ msgstr "Innosoft y la gestión de proyectos"
 #: nuevaInfo/templates/nuevaInfo/infoEgc.html:59
 msgid "Subject practices:"
 msgstr "Prácticas de la asignatura:"
+
+#: nuevaInfo/templates/nuevaInfo/infoEgc.html:63
+msgid "Installation of Decide"
+msgstr "Instalación de Decide"
+
+#: nuevaInfo/templates/nuevaInfo/infoEgc.html:64
+msgid "Software Testing"
+msgstr "Pruebas de Software"
+
+#: nuevaInfo/templates/nuevaInfo/infoEgc.html:65
+msgid "Source Code Management and Continuous Integration"
+msgstr "Gestión de Código Fuente e Integración Continua"
+
+#: nuevaInfo/templates/nuevaInfo/infoEgc.html:66
+msgid "Application Deployment: Containers"
+msgstr "Despliegue de aplicaciones: Contenedores"
+
+#: nuevaInfo/templates/nuevaInfo/infoEgc.html:67
+msgid "Application Deployment: Virtual Machines"
+msgstr "Despliegue de aplicaciones: Máquinas virtuales"
+
+#: nuevaInfo/templates/nuevaInfo/infoEgc.html:71
+msgid "For more information on Decide:"
+msgstr "Para más información sobre Decide:"
+
+#: nuevaInfo/templates/nuevaInfo/infoEgc.html:73
+msgid "Journeys:"
+msgstr "Jornadas:"
+
+#: nuevaInfo/templates/nuevaInfo/infoEgc.html:74
+#, fuzzy, python-format
+#| msgid ""
+#| "There are some conferences that are divided into committees for the "
+#| "organization of talks and events, where students participate and give a "
+#| "weight in the final grade of the subject from 10% to 30%."
+msgid ""
+"There are some conferences that are divided into committees for the "
+"organization of talks and events, where students participate and give a "
+"weight in the final grade of the subject from 10%% to 30%%."
+msgstr ""
+"Existen unas jornadas que se dividen en comités para organización de charlas "
+"y eventos, donde los alumnos participan y le dan un peso en la nota final de "
+"la asignatura desde un 10% a un 30%."
+
+#: nuevaInfo/templates/nuevaInfo/infoEgc.html:75
+msgid "For more information about these journeys:"
+msgstr "Para más información sobre estas jornadas:"
+
+#: nuevaInfo/templates/nuevaInfo/infoEgc.html:76
+msgid "Journeys"
+msgstr "Jornadas"
 
 #: nuevaInfo/templates/nuevaInfo/infoJornadas.html:19
 msgid "Innosoft Days"
