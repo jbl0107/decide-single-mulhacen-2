@@ -1,0 +1,372 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-21 17:29+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: booth/templates/booth/booth.html:21
+msgid "logout"
+msgstr ""
+
+#: booth/templates/booth/booth.html:41
+#: nuevaInfo/templates/nuevaInfo/infoDecide.html:32
+#: nuevaInfo/templates/nuevaInfo/infoEgc.html:32
+#: nuevaInfo/templates/nuevaInfo/infoJornadas.html:31
+#: visualizer/templates/visualizer/visualizer.html:33
+msgid "Go"
+msgstr ""
+
+#: booth/templates/booth/booth.html:55
+msgid "Username"
+msgstr ""
+
+#: booth/templates/booth/booth.html:63
+msgid "Password"
+msgstr ""
+
+#: booth/templates/booth/booth.html:71
+msgid "Login"
+msgstr ""
+
+#: booth/templates/booth/booth.html:86
+msgid "Vote"
+msgstr ""
+
+#: booth/templates/booth/booth.html:182 booth/templates/booth/booth.html:192
+#: booth/templates/booth/booth.html:223
+msgid "Error: "
+msgstr ""
+
+#: booth/templates/booth/booth.html:220
+msgid "Conglatulations. Your vote has been sent"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoDecide.html:37
+msgid "Decide, an educational voting platform"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoDecide.html:38
+msgid ""
+"Decide is an educational project, designed for the study of voting systems. "
+"The project is divided into subsystems, which will be decoupled from each "
+"other. Next, a series of aspects about decide will be discussed"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoDecide.html:41
+msgid "The Gateway"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoDecide.html:42
+msgid ""
+"To provide a known entry point for all subsystems exists the so-called "
+"gateway that is nothing more than an available route that will redirect all "
+"requests to the corresponding subsystem, such that any client using the API "
+"doesn't have to know what server it is on deployed each subsystem. The path "
+"consists of:"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoDecide.html:46
+msgid "Project configuration and execution"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoDecide.html:48
+msgid ""
+"To configure the project, we can create a file local_settings.py based on "
+"the local_settings.example.py. Once this is done, you will need install the "
+"project dependencies, which are in the file requirements.txt. After this we "
+"will have to create our database with postgres. Next, we'll need to perform "
+"the first migration with the command"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoDecide.html:50
+msgid "Finally, we will execute the following command to run the server"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoDecide.html:55
+msgid ""
+"There is a decide docker configuration ready to be run. This is launch 3 "
+"containers, one for the database server, one for the django and another with "
+"an nginx web server to serve the static files and proxy django server."
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoDecide.html:61
+msgid ""
+"In addition, two volumes are created, one for the static and media files of "
+"the project and another for the postgresql database. In this way the "
+"containers can be destroyed without fear of losing data. Volumes in question "
+"are"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoDecide.html:65
+msgid "Command to launch the django console"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoDecide.html:68
+msgid ""
+"You can edit the docker-settings.py file to modify the settings of the "
+"django project before creating the container images."
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoDecide.html:72
+msgid ""
+"There is a vagrant configuration that creates a virtual machine with "
+"everything required installed and ready to go. Configuration is in vagrant/"
+"Vagrantfile and by default it uses Virtualbox. To create the virtual machine "
+"first we have to find ourselves in the vagrant folder, and then we execute "
+"the command"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoDecide.html:74
+msgid "Once this is done, we can access from the url"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoDecide.html:79
+msgid ""
+"As the configuration with vagrant is provisioned with ansible, we can use "
+"the latter independently to provision an installation of Decide on one or "
+"several remote servers with a simple command. Important -> Ansible "
+"provisioning is designed to work with ubuntu/bionic64, to work with other "
+"distributions it may be necessary modify the packages.yml file."
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoDecide.html:82
+msgid "Versioned"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoDecide.html:83
+msgid ""
+"API versioning is done using the Django Rest Framework, and the form chosen "
+"for this versioning is through search parameters. We can change it to "
+"parameters in the URL or in the name of the HOST."
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoDecide.html:86
+msgid "Stress test with Locust"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoDecide.html:87
+msgid ""
+"To run stress tests using locust, we'll need to have it installed. Once "
+"installed, we'll need to have a locustfile.py file where we have the "
+"configuration of what we are going to execute. Here we have"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoDecide.html:89
+msgid ""
+"enter the viewer of a vote to see how many requests you can hold. To run the "
+"Visualizer test, we have to take into account that enters the vote 'x' (for "
+"example, the 1), so we will need have it set up so that it works properly. "
+"Once that's done, inside from the loadtest folder we try the following "
+"command"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoDecide.html:92
+msgid ""
+"This will open a server that we can see in the browser, the same command it "
+"will tell us the port. When it opens, it will ask us how many users we want "
+"that they make requests at the same time, and how we want it to grow until "
+"get to that number."
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoDecide.html:95
+msgid ""
+"we will use previously created users, and we will do a sequence of requests: "
+"login, getuser and store. It would be what a user would do when you are "
+"going to vote, so with this example we will be checking how many voting we "
+"can do. To run the Voter test, we will need make various preparations. We'll "
+"need open 'x' voting, and we will need to create a series of users in the "
+"census of this vote, for that when we do the test, these users can "
+"authenticate and vote correctly. To make this task easier, we have the "
+"python script gen_census.py created. For this script to work, we need to "
+"have installed request. After this, we execute the command"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoDecide.html:97
+msgid "After this, we can start the voter stress test"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoEgc.html:37
+msgid "Evolution and Change Management"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoEgc.html:38
+msgid ""
+"EGC is a subject from the University of Seville, which belongs to the fourth "
+"year of the Computer Software Engineering degree. What it is about and its "
+"different sections within it will be detailed below."
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoEgc.html:42
+msgid "Theory topics"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoEgc.html:43
+msgid "It consists of different theory topics that are:"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoEgc.html:45
+msgid "Continuous integration"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoEgc.html:46
+msgid "Software testing"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoEgc.html:47
+msgid "Presentation of the subject"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoEgc.html:48
+msgid "Team management"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoEgc.html:49
+msgid "Source code management"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoEgc.html:50
+msgid "Incidents and debugging"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoEgc.html:52
+msgid "Software configurability and software product lines"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoEgc.html:53
+msgid "DevOps in a complete pipeline"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoEgc.html:54
+msgid "Innosoft and project management"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoEgc.html:59
+msgid "Subject practices:"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoEgc.html:63
+msgid "Installation of Decide"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoEgc.html:64
+msgid "Software Testing"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoEgc.html:65
+msgid "Source Code Management and Continuous Integration"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoEgc.html:66
+msgid "Application Deployment: Containers"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoEgc.html:67
+msgid "Application Deployment: Virtual Machines"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoEgc.html:71
+msgid "For more information on Decide:"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoEgc.html:73
+msgid "Journeys:"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoEgc.html:74
+msgid ""
+"There are some conferences that are divided into committees for the "
+"organization of talks and events, where students participate."
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoEgc.html:75
+msgid "For more information about these journeys:"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoEgc.html:76
+msgid "Journeys"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoJornadas.html:35
+msgid "Innosoft Days"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoJornadas.html:37
+msgid "The InnoSoft Days are here: tenth edition!"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoJornadas.html:40
+msgid ""
+"The tenth anniversary of these conferences are celebrated on November 8, 10 "
+"and 11, 2022 at the Higher Technical School of Computer Engineering (ETSII)."
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoJornadas.html:43
+msgid ""
+"This year's workshops will have Free Software as their theme. During these "
+"days there will be a series of presentations and activities in which you can "
+"participate. Do not miss it!"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoJornadas.html:46
+msgid "Schedule:"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoJornadas.html:49
+msgid ""
+"We already have the schedule of the days available! Cheer up and attend "
+"everyone, they are very interesting"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoJornadas.html:55
+msgid "Poster:"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoJornadas.html:58
+msgid "We also leave the promotional poster of the conference."
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoJornadas.html:64
+msgid "In addition, you can follow Innosoft Days on social networks:"
+msgstr ""
+
+#: visualizer/templates/visualizer/visualizer.html:39
+msgid "Voting not started"
+msgstr ""
+
+#: visualizer/templates/visualizer/visualizer.html:40
+msgid "Voting in progress"
+msgstr ""
+
+#: visualizer/templates/visualizer/visualizer.html:42
+msgid "Results:"
+msgstr ""
+
+#: visualizer/templates/visualizer/visualizer.html:47
+msgid "Option"
+msgstr ""
+
+#: visualizer/templates/visualizer/visualizer.html:48
+msgid "Puntuation"
+msgstr ""
+
+#: visualizer/templates/visualizer/visualizer.html:49
+msgid "Votes"
+msgstr ""
+
+#: visualizer/templates/visualizer/visualizer.html:60
+msgid "Let's translate this "
+msgstr ""
