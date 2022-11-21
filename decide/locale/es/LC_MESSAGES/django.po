@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-21 17:57+0100\n"
+"POT-Creation-Date: 2022-11-21 19:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,6 +24,7 @@ msgstr "Cerrar Sesión"
 
 #: booth/templates/booth/booth.html:41
 #: nuevaInfo/templates/nuevaInfo/infoDecide.html:32
+#: nuevaInfo/templates/nuevaInfo/infoETSII.html:32
 #: nuevaInfo/templates/nuevaInfo/infoEgc.html:32
 #: nuevaInfo/templates/nuevaInfo/infoJornadas.html:31
 #: visualizer/templates/visualizer/visualizer.html:33
@@ -260,6 +261,162 @@ msgstr ""
 #: nuevaInfo/templates/nuevaInfo/infoDecide.html:97
 msgid "After this, we can start the voter stress test"
 msgstr "Tras esto, ya podremos comenzar el test de estrés de votantes"
+
+#: nuevaInfo/templates/nuevaInfo/infoETSII.html:40
+msgid "The ETS of Computer Engineering"
+msgstr "La E.T.S. de Ingeniería Informática "
+
+#: nuevaInfo/templates/nuevaInfo/infoETSII.html:41
+msgid ""
+"On July 3, 2001, the Governing Council of the Junta de Andalucía approved "
+"the creation of the Higher Technical School of Computer Engineering, based "
+"in the building of the former Higher Technical School of Industrial "
+"Engineers. By then, this school had already finished its move to the new "
+"facilities on the Isla de la Cartuja and had vacated the White Building."
+msgstr ""
+"El 3 de julio de 2001, el Consejo de Gobierno de la Junta de Andalucía aprobó "
+"la creación de la Escuela Técnica Superior de Ingeniería Informática, con sede "
+"en el edificio de la antigua Escuela Técnica Superior de Ingenieros "
+"Industriales. Para aquel entonces, esta escuela ya había terminado su mudanza a las nuevas "
+"instalaciones en la Isla de la Cartuja y había dejado libre el Edificio Blanco."
+
+#: nuevaInfo/templates/nuevaInfo/infoETSII.html:45
+msgid "The Engineering"
+msgstr "La Ingeniería"
+
+#: nuevaInfo/templates/nuevaInfo/infoETSII.html:46
+msgid ""
+"The 1996/97 academic year was a turning point in the history of computer "
+"studies at the University of Seville. The Council of Universities approved "
+"the creation of three new degrees: Computer Engineering, Technical "
+"Engineering in Management Information Technology and Technical Engineering "
+"in Systems Information Technology. "
+msgstr ""
+"El curso académico 1996/97 supuso un punto de inflexión en la historia de los estudios "
+"de informática en la Universidad de Sevilla. El Consejo de Universidades aprobó "
+"la creación de tres nuevas titulaciones: Ingeniería en Informática, Ingeniería "
+"Técnica en Informática de Gestión e Ingeniería Técnica "
+"en Informática de Sistemas."
+
+#: nuevaInfo/templates/nuevaInfo/infoETSII.html:47
+msgid ""
+"The name change implied public acknowledgment that computer science, despite "
+"having been born a diploma and set its teeth as a degree, from the beginning "
+"had had a marked engineering character, going beyond pure science, applying "
+"the knowledge that it it generates the development of techniques, methods "
+"and tools with which to solve problems of interest to our society in a "
+"practical way and with reasonable costs. "
+msgstr ""
+"El cambio de la denominación suponía el reconocimiento público de que la informática, pese "
+"a haber nacido diplomatura y echado los dientes como licenciatura, desde el principio "
+"había tenido un marcado carácter de ingeniería, yendo más allá de la pura ciencia, aplicando "
+"los conocimientos que ésta genera al desarrollo de técnicas, métodos "
+"y herramientas con las que resolver de forma práctica y con unos costes razonables los "
+"problemas de interés a nuestra sociedad."
+
+#: nuevaInfo/templates/nuevaInfo/infoETSII.html:48
+msgid ""
+"The name change also brought with it a significant increase in demand from "
+"students finishing high school. For this reason, an important part of the "
+"subjects were once again taught in the building of the Higher Technical "
+"School of Industrial Engineers, which from then on began to be popularly "
+"known as the White Building. "
+msgstr ""
+"El cambio de denominación también llevó consigo un importante incremento en la demanda por "
+"parte de los alumnos que terminaban el bachillerato. Por este motivo, una parte "
+"importante de las asignaturas volvieron a impartirse en el edificio de la Escuela Técnica "
+"Superior de Ingenieros Industriales, que a partir de entonces empezó a ser conocido "
+"popularmente como el Edificio Blanco."
+
+#: nuevaInfo/templates/nuevaInfo/infoETSII.html:51
+msgid "List of Departments"
+msgstr "Listado de Departamentos "
+
+#: nuevaInfo/templates/nuevaInfo/infoETSII.html:52
+msgid "List of Departments that teach at the ETSII:"
+msgstr "Relación de Departamentos que imparten docencia en la ETSII."
+
+#: nuevaInfo/templates/nuevaInfo/infoETSII.html:54
+msgid "Business Administration and Marketing"
+msgstr "Administración de Empresas y Marketing"
+
+#: nuevaInfo/templates/nuevaInfo/infoETSII.html:55
+msgid "Human Anatomy and Embryology"
+msgstr "Anatomía y Embriología Humana "
+
+#: nuevaInfo/templates/nuevaInfo/infoETSII.html:56
+msgid "Architecture and Technology. of computers"
+msgstr " Arquitectura y Tecnolog. de Computadores"
+
+#: nuevaInfo/templates/nuevaInfo/infoETSII.html:57
+msgid " Cell biology"
+msgstr "Biología Celular"
+
+#: nuevaInfo/templates/nuevaInfo/infoETSII.html:58
+msgid " Applied Mathematics I"
+msgstr "Matemática Aplicada I"
+
+#: nuevaInfo/templates/nuevaInfo/infoETSII.html:59
+msgid "Electronic Technology"
+msgstr "Tecnología Electrónica"
+
+#: nuevaInfo/templates/nuevaInfo/infoETSII.html:60
+msgid "Computer Languages ​​and Systems"
+msgstr "Lenguajes y Sistemas Informáticos"
+
+#: nuevaInfo/templates/nuevaInfo/infoETSII.html:61
+msgid "Systems Engineering and Automation"
+msgstr "Ingeniería de Sistemas y Automática"
+
+#: nuevaInfo/templates/nuevaInfo/infoETSII.html:62
+msgid "Industrial Organization and Business Management."
+msgstr "Organización Industrial y Gestión Empr."
+
+#: nuevaInfo/templates/nuevaInfo/infoETSII.html:63
+msgid "Mechanics of Continuous Media, Theory of Structures"
+msgstr "Mecánica de Medios Contínuos, Teoría de Estructuras"
+
+#: nuevaInfo/templates/nuevaInfo/infoETSII.html:64
+msgid "and many more departments..."
+msgstr " y muchos departamentos más..."
+
+#: nuevaInfo/templates/nuevaInfo/infoETSII.html:68
+msgid "Situation"
+msgstr "Situación"
+
+#: nuevaInfo/templates/nuevaInfo/infoETSII.html:69
+msgid ""
+"The Higher Technical School of Computer Engineering (ETSII) is located on "
+"the Reina Mercedes Campus of the University of Seville and is easily "
+"accessible by public transport services."
+msgstr ""
+"La Escuela Técnica Superior de Ingeniería Informática (ETSII) está situada en "
+"el Campus de Reina Mercedes de la Universidad de Sevilla y cuenta con un fácil "
+"acceso mediante los servicios públicos de transporte."
+
+#: nuevaInfo/templates/nuevaInfo/infoETSII.html:70
+msgid "Address"
+msgstr "Dirección"
+
+#: nuevaInfo/templates/nuevaInfo/infoETSII.html:71
+msgid "Higher Technical School of Computer Engineering University of Seville "
+msgstr "Escuela Técnica Superior de Ingeniería Informática Universidad de Sevilla"
+
+#: nuevaInfo/templates/nuevaInfo/infoETSII.html:72
+msgid "Avenida Reina Mercedes 41012 Sevilla "
+msgstr "Avenida Reina Mercedes 41012 Sevilla"
+
+#: nuevaInfo/templates/nuevaInfo/infoETSII.html:78
+msgid "About ETSII:"
+msgstr "Sobre ETSII:"
+
+#: nuevaInfo/templates/nuevaInfo/infoETSII.html:79
+msgid "For more information about ETSII:"
+msgstr "Para más información sobre ETSII:"
+
+#: nuevaInfo/templates/nuevaInfo/infoETSII.html:80
+msgid "ETSII"
+msgstr "ETSII"
 
 #: nuevaInfo/templates/nuevaInfo/infoEgc.html:37
 msgid "Evolution and Change Management"
