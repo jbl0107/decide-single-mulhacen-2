@@ -2,17 +2,14 @@ from django.urls import path
 from .views import infoDecide
 from .views import infoEgc
 from .views import infoTraducciones
+from .views import infoJornadas
 
 
 urlpatterns = [
-    path('masInfo/', infoDecide)
+    path('masInfo/', infoDecide),
+    path('masInfoEgc/', infoEgc),
+    path('masInfoTraducciones/', infoTraducciones),
+    path('masInfoJornadas/', infoJornadas)
 ]
 
-urlpatterns = [
-    path('masInfoEgc/', infoEgc)
-]
-
-urlpatterns = [
-    path('masInfoTraducciones/', infoTraducciones)
-]
 

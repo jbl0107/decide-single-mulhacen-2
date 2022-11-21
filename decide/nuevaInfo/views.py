@@ -8,3 +8,6 @@ def infoEgc(request):
 
 def infoTraducciones(request):
     return render(request, 'nuevaInfo/infoTraducciones.html')
+
+def infoJornadas(request):
+    return render(request, 'nuevaInfo/infoJornadas.html')
