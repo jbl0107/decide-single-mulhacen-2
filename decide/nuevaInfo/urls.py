@@ -6,18 +6,10 @@ from .views import infoJornadas
 
 
 urlpatterns = [
-    path('masInfo/', infoDecide)
-]
-
-urlpatterns = [
-    path('masInfoEgc/', infoEgc)
-]
-
-urlpatterns = [
-    path('masInfoTraducciones/', infoTraducciones)
-]
-
-urlpatterns = [
+    path('masInfo/', infoDecide),
+    path('masInfoEgc/', infoEgc),
+    path('masInfoTraducciones/', infoTraducciones),
     path('masInfoJornadas/', infoJornadas)
 ]
+
 
