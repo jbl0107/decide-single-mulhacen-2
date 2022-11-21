@@ -8,9 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-
-"POT-Creation-Date: 2022-11-21 12:24+0100\n"
-
+"POT-Creation-Date: 2022-11-21 13:46+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -326,7 +324,6 @@ msgstr "Innosoft y la gestión de proyectos"
 msgid "Subject practices:"
 msgstr "Prácticas de la asignatura:"
 
-
 #: nuevaInfo/templates/nuevaInfo/infoJornadas.html:35
 msgid "Innosoft Days"
 msgstr "InnoSoft Days"
@@ -373,6 +370,10 @@ msgstr "Cartel:"
 #: nuevaInfo/templates/nuevaInfo/infoJornadas.html:58
 msgid "We also leave the promotional poster of the conference."
 msgstr "También dejamos el cartel de promoción de las jornadas. "
+
+#: nuevaInfo/templates/nuevaInfo/infoJornadas.html:64
+msgid "In addition, you can follow Innosoft Days on social networks:"
+msgstr "Además, puedes seguir a Innosoft Days en redes sociales:"
 
 #: visualizer/templates/visualizer/visualizer.html:39
 msgid "Voting not started"
