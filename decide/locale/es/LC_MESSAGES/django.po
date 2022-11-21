@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-20 21:15+0100\n"
+"POT-Creation-Date: 2022-11-21 12:17+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,6 +25,7 @@ msgstr "Cerrar Sesión"
 #: booth/templates/booth/booth.html:41
 #: nuevaInfo/templates/nuevaInfo/infoDecide.html:32
 #: nuevaInfo/templates/nuevaInfo/infoEgc.html:32
+#: nuevaInfo/templates/nuevaInfo/infoJornadas.html:31
 #: visualizer/templates/visualizer/visualizer.html:33
 msgid "Go"
 msgstr "Vamos!"
@@ -274,6 +275,45 @@ msgstr ""
 "al cuarto año de carrera de Ingeniería informática del Software. A "
 "continuación se detallará de qué trata y sus diferentes apartados dentro de "
 "ella."
+
+#: nuevaInfo/templates/nuevaInfo/infoJornadas.html:35
+msgid "Innosoft Days"
+msgstr "InnoSoft Days"
+
+#: nuevaInfo/templates/nuevaInfo/infoJornadas.html:37
+msgid "The InnoSoft Days are here: tenth edition!"
+msgstr "¡Ya están aquí las jornadas InnoSoft Days: edición X!"
+
+#: nuevaInfo/templates/nuevaInfo/infoJornadas.html:40
+msgid ""
+"The tenth anniversary of these conferences are celebrated on November 8, 10 "
+"and 11, 2022 at the Higher Technical School of Computer Engineering (ETSII)."
+msgstr "El décimo aniversario de estas jornadas se celebran los días 8, 10 y 11 de noviembre de 2022 en la Escuela Técnica Superior de Ingeniería Informática (ETSII)."
+
+#: nuevaInfo/templates/nuevaInfo/infoJornadas.html:43
+msgid ""
+"This year's workshops will have Free Software as their theme. During these "
+"days there will be a series of presentations and activities in which you can "
+"participate. Do not miss it!"
+msgstr "Las jornadas de este año tendrán como temática el Software Libre. Durante estos días se desarrollarán una serie de ponencias y actividades en las que podéis participar. ¡No os lo perdáis!"
+
+#: nuevaInfo/templates/nuevaInfo/infoJornadas.html:46
+msgid "Schedule:"
+msgstr "Horario:"
+
+#: nuevaInfo/templates/nuevaInfo/infoJornadas.html:49
+msgid ""
+"We already have the schedule of the days available! Cheer up and attend "
+"everyone, they are very interesting"
+msgstr "¡Ya tenemos disponible el horario de las jornadas! Animáos y asistid a todas, son muy interesantes"
+
+#: nuevaInfo/templates/nuevaInfo/infoJornadas.html:55
+msgid "Poster:"
+msgstr "Cartel:"
+
+#: nuevaInfo/templates/nuevaInfo/infoJornadas.html:58
+msgid "We also leave the promotional poster of the conference."
+msgstr "También dejamos el cartel de promoción de las jornadas. "
 
 #: visualizer/templates/visualizer/visualizer.html:39
 msgid "Voting not started"
