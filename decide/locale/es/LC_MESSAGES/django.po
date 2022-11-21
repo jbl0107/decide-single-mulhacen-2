@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-21 23:15+0100\n"
+"POT-Creation-Date: 2022-11-22 00:23+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -583,173 +583,255 @@ msgstr "Además, puedes seguir a Innosoft Days en redes sociales:"
 
 #: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:37
 msgid "Translation subsystem"
-msgstr ""
+msgstr "Subsistema de traducciones"
 
 #: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:40
 msgid "Why have we chosen the translation subsystem?"
+msgstr "¿Porqué hemos elegido el subsistema de traducciones?"
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:41
+msgid ""
+"Translating a Django application into any language and allowing it to be "
+"detected depending on the requests of your users is a very important feature "
+"nowadays."
 msgstr ""
+"Traducir una aplicación en Django a cualquier idioma y permitir que este sea "
+"detectado dependiendo de las peticiones de tus usuarios es una "
+"característica muy importante hoy en día."
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:42
+msgid ""
+"In addition, it is very useful to learn to do this since most of the pages "
+"that we find on the Internet give you the option of translating them. In "
+"this section we will explore a bit how to do it."
+msgstr ""
+"Además, es muy útil aprender a hacer esto ya que la mayoría de las páginas "
+"es muy útil aprender a hacer esto ya que la mayoría de las páginas que nos "
+"encontramos en internet te dan la opción de traducirlas. En esta sección "
+"exploraremos un poco cómo hacerlo."
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:44
+msgid ""
+"To carry out this translation task we needed to have a Django project, which "
+"we have used the"
+msgstr ""
+"Para realizar esta tarea de traducciones hemos necesitado tener un proyecto "
+"en Django, el cual hemos utilizado el"
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:44
+msgid "project from the repository provided in the"
+msgstr ""
+"proyecto de <em>decide</em> del repositorio que se nos proporciona en la"
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:45
+msgid ""
+"subject of Evolution and Configuration Management. In addition, we need to "
+"have"
+msgstr ""
+"asignatura de Evolución y Gestión de la Configuración. Además, "
+"necesitamostener"
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:45
+msgid ""
+"installed, which is a module that reads the language used by the system and "
+"from this"
+msgstr ""
+"instalado <code>gettext</code> que es un módulo que lee el lengujae que "
+"utiliza el sistema y a partir de este"
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:46
+msgid ""
+"loads the corresponding translation file (*.mo) changing the text strings to "
+"the system language."
+msgstr ""
+"carga el correspondiente archivo de traducción (*.mo) cambiando las cadenas "
+"de texto al idioma del sistema."
 
 #: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:49
 msgid "Steps to perform:"
-msgstr ""
+msgstr "Pasos a realizar:"
 
 #: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:52
 msgid ""
 "Make sure we have translations enabled in our settings. To do this, we need "
 "to make the following changes to the"
 msgstr ""
+"Asegurarnos de que tenemos activadas las traducciones en nuestra "
+"configuración. Para hacer esto, debemos hacer los siguientes cambios en el"
 
 #: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:80
 msgid "For this case we have defined that our project is by default in"
 msgstr ""
+"Para este caso hemos definido que nuestro proyecto se encuentra por defecto "
+"en"
 
 #: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:80
 msgid "English"
-msgstr ""
+msgstr "Inglés"
 
 #: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:86
 msgid ""
 "Once what is indicated in the previous step has been done, we should add the "
 "following line"
 msgstr ""
+"Una vez hecho lo indicado en el paso anterior, habría que añadir la "
+"siguiente línea"
 
 #: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:86
 msgid "to the"
-msgstr ""
+msgstr "en el"
 
 #: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:86
 msgid "of our project, it is important Place this middleware between"
-msgstr ""
+msgstr "de nuestro proyecto, es importante ubicar este middleware entre"
 
 #: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:86
 msgid "and"
-msgstr ""
+msgstr "y"
 
 #: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:88
 msgid "In this case, what we have done is tell Django to use the"
-msgstr ""
+msgstr "En este caso lo que hemos hecho es indicar a Django que utilice el"
 
 #: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:88
 msgid "which will take care of choosing the appropriate language for each user"
-msgstr ""
+msgstr "el cual se encargará de escoger el lenguaje adecuado para cada usuario"
 
 #: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:88
 msgid "based on information extracted from the request"
-msgstr ""
+msgstr "basado en información extraída del request"
 
 #: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:92
 msgid "The next step is to"
-msgstr ""
+msgstr "El siguiente paso es"
 
 #: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:92
 msgid "mark the texts that we want to translate"
-msgstr ""
+msgstr "marcar el texto que queremos traducir"
 
 #: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:92
 msgid ""
 "within our project, for this there are different ways depending on the text "
 "that we are going to translate."
 msgstr ""
+"dentro de nuestro proyecto, para eso hay diferentes formas dependiendo del "
+"texto  que vamos a traducir."
 
 #: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:94
 msgid "Traduce in templates"
-msgstr ""
+msgstr "Traducir en templates"
 
 #: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:95
 msgid "To explain how to translate templates, suppose we have an index.html in"
 msgstr ""
+"Para explicar cómo traducir templates, supongamos que tenemos un index.html "
+"en"
 
 #: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:96
 msgid "We need to adapt this file so that it can be translated:"
-msgstr ""
+msgstr "Es necesario que adaptemos este archivo para que se pueda traducir:"
 
 #: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:98
 msgid "We would have to add the sentence"
-msgstr ""
+msgstr "Habría que añadir la sentencia"
 
 #: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:98
 msgid "in each text that we want to translate"
-msgstr ""
+msgstr "en cada texto que queramos traducir"
 
 #: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:99
 msgid ""
 "In addition, in each html that we want to introduce a translation we must "
 "include the i18n templatetags with"
 msgstr ""
+"Además, en cada html que queramos introducir una traducción debemosincluir "
+"los templatetags de i18n con"
 
 #: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:106
 msgid "Later you would have to create a folder called"
-msgstr ""
+msgstr "Posteriormente habría que crear una carpeta llamada"
 
 #: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:106
 msgid "in the path"
-msgstr ""
+msgstr "en la ruta"
 
 #: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:110
 msgid ""
 "Having everything configured, now yes, we proceed to create the translation "
 "files. For this we use the following command from the project path:"
 msgstr ""
+"Teniendo todo configurado, ahora sí, procedemos a crear los archivos de "
+"traducción Para esto utilizamos el siguiente comando desde la ruta del "
+"proyecto:"
 
 #: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:114
 msgid ""
 "This will create the translation files for the Spanish language, which is "
 "the one we have used for our project"
 msgstr ""
+"Esto creará los archivos de traducción para el lenguaje español que es el "
+"que hemos utilizado para nuestro proyecto"
 
 #: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:117
 msgid ""
 "With the commands executed in the previous step, a .po file will be "
 "generated in the"
 msgstr ""
+"Con los comandos ejecutados en el paso anterior, se nos generará un archivo ."
+"po en la"
 
 #: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:117
 msgid "folder"
-msgstr ""
+msgstr "carpeta"
 
 #: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:118
 msgid "Translate .po files"
-msgstr ""
+msgstr "Traducir archivos .po"
 
 #: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:119
 msgid "These files are the ones we will use"
-msgstr ""
+msgstr "Estos archivos son los que utilizaremos"
 
 #: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:119
 msgid "to specify to Django how to translate each word in a certain language"
 msgstr ""
+"para especificarle a Django cómo traducir cada palabra en determinado idioma"
 
 #: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:119
 msgid "so simply for each of the strings that appear in"
-msgstr ""
+msgstr "entonces simplemente para cada uno de los strings que aparezcan en"
 
 #: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:119
 msgid "we can specify its translation with strings"
-msgstr ""
+msgstr "podemos especificar su traducción con los strings"
 
 #: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:122
 msgid ""
 "Next we proceed to compile the messages created with the previously executed "
 "command"
 msgstr ""
+"A continuación procedemos a compilar los mensajes creados con el comando "
+"ejecutado anteriormente"
 
 #: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:123
 msgid "Compile translation files"
-msgstr ""
+msgstr "Compilar archivos de traducción"
 
 #: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:125
 msgid ""
 "Once we have our complete translation files, we will proceed to compile them "
 "with the following command:"
 msgstr ""
+"Una vez que tengamos nuestros archivos de traducción completos, procederemos "
+"a compilarlos con el siguiente comando:"
 
 #: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:127
 msgid "When we compile our files,"
-msgstr ""
+msgstr "Cuando compilemos nuestros archivos,"
 
 #: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:127
 msgid "we are ready to use our project in the specified language"
-msgstr ""
+msgstr "ya podemos utilizar nuestro proyecto en el idioma especificado"
 
 #: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:128
 msgid ""
@@ -757,47 +839,59 @@ msgid ""
 "language. For testing purposes, we can change the language of the project to "
 "Spanish and observe the results"
 msgstr ""
+"Cada vez que uno de nuestros usuarios consulte nuestro proyecto aparecerá en "
+"su idioma. Para efectos de prueba, podemos cambiar el lenguaje del proyecto "
+"por spañol y observar los resultados"
 
 #: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:133
 msgid "How did we select the language?"
-msgstr ""
+msgstr "¿Cómo hemos hecho la selección del idioma?"
 
 #: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:134
 msgid ""
 "For this we have implemented a drop-down html code, which allows us to "
 "select the language to which we want to translate and, later, once selected, "
-"we must click on a button that says "
+"we must click on a button that says Go which translates the entire html page "
+"to the selected language"
 msgstr ""
+"Para ello hemos implementado un código html de un desplegable, que permite "
+"seleccionar el idioma al que queremos traducir y, posteriormente una vez "
+"seleccionado, hay que darle a un botón que pone Go que traduce toda la "
+"página html al idioma seleccionado"
 
 #: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:139
 msgid "Things to keep in mind:"
-msgstr ""
+msgstr "Cosas a tener en cuenta:"
 
 #: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:141
 msgid "Every time we add an html in our project we must modify the file"
 msgstr ""
+"Cada vez que añadimos un html en nuestro proyecto debemos modificar el "
+"fichero"
 
 #: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:141
 msgid "where we have to add a line like this"
-msgstr ""
+msgstr "donde tenemos que añadir una línea como esta"
 
 #: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:141
 msgid "and also import said view in our file"
-msgstr ""
+msgstr "y ademas importar dicha vista en nuestro fichero"
 
 #: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:141
 msgid "in this way"
-msgstr ""
+msgstr "de esta manera"
 
 #: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:142
 msgid "You also have to modify the"
-msgstr ""
+msgstr "También hay que modificar el fichero"
 
 #: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:142
 msgid ""
 "file and add a function for each new html file that you add, this function "
 "will contain a line like this:"
 msgstr ""
+"y añadir una función por cada fichero html que añadamos nuevo, dicha función "
+"tendrá dentro una línea como esta:"
 
 #: visualizer/templates/visualizer/visualizer.html:39
 msgid "Voting not started"
