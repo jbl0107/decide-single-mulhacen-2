@@ -11,3 +11,6 @@ def infoTraducciones(request):
 
 def infoJornadas(request):
     return render(request, 'nuevaInfo/infoJornadas.html')
+
+def infoETSII(request):
+    return render(request, 'nuevaInfo/infoETSII.html')
