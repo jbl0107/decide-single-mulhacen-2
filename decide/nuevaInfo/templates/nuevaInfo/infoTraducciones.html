@@ -14,22 +14,22 @@
 {% block content %}
 
      <div class="container">
-          <h1 class="centrar">Subsistema de traducciones</h1>
+          <h1 class="centrar">Translation subsystem</h1>
        
           <br>
-          <h4>¿Porqué hemos elegido el subsistema de traducciones?</h4>
-          <p>Traducir una aplicación en Django a cualquier idioma y permitir que este sea detectado dependiendo de las peticiones de tus usuarios es una característica muy importante hoy en día,
-          además, es muy útil aprender a hacer esto ya que la mayoría de las páginas que nos encontramos en internet te dan la opción de traducirlas. En esta sección exploraremos un poco cómo hacerlo.
+          <h4>Why have we chosen the translation subsystem?</h4>
+          <p>Translating a Django application into any language and allowing it to be detected depending on the requests of your users is a very important feature nowadays,
+               In addition, it is very useful to learn to do this since most of the pages that we find on the Internet give you the option of translating them. In this section we will explore a bit how to do it.
           
-          Para realizar esta tarea de traducciones hemos necesitado tener un proyecto en Django, el cual hemos utilizado el proyecto de <em>decide</em> del repositorio que se nos proporciona en la
-          asignatura de Evolución y Gestión de la Configuración. Además, necesitamos tener instalado <code>gettext</code> que es un módulo que lee el lengujae que utiliza el sistema y a partir de este
-          carga el correspondiente archivo de traducción (*.mo) cambiando las cadenas de texto al idioma del sistema.</p>
+               To carry out this translation task we needed to have a Django project, which we have used the <em>decide</em> project from the repository provided in the
+               subject of Evolution and Configuration Management. In addition, we need to have <code>gettext</code> installed, which is a module that reads the language used by the system and from this
+               loads the corresponding translation file (*.mo) changing the text strings to the system language.</p>
 
           <br>
-          <h4>Pasos a realizar:</h4>
+          <h4>Steps to perform:</h4>
 
           <ol>
-               <li> Asegurarnos de que tenemos activadas las traducciones en nuestra configuración. Para hacer esto, debemos hacer los siguientes cambios en el <code>settings.py</code>:
+               <li> Make sure we have translations enabled in our settings. To do this, we need to make the following changes to the <code>settings.py</code>:
                
                     <div class = "codehilite">
                          
@@ -57,65 +57,70 @@
                               </code>
                               
                          </pre>  
-                         <p>Para este caso hemos definido que nuestro proyecto se encuentra por defecto en <b>inglés</b>.</p>  
+                         <p>For this case we have defined that our project is by default in <b>English</b>.</p>  
                </div>
 
                
                </li>
                
-               <li> Una vez hecho lo indicado en el paso anterior, habría que añadir en el <code>settings.py</code> de nuestro proyecto la siguiente línea <code>'django.middleware.locale.LocaleMiddleware'</code>, es importante ubicar este middleware entre <code>SessionMiddleware</code> y <code>CommonMiddleware</code>.
-                    <p>En este caso lo que hemos hecho es indicar a Django que utilice el <code>LocaleMiddleware</code> el cual se encargará de escoger el lenguaje adecuado para cada usuario <b>basado en información extraída del request</b>.</p>
+               <li> Once what is indicated in the previous step has been done, we should add the following line <code>'django.middleware.locale.LocaleMiddleware'</code> to the <code>settings.py</code> of our project, it is important Place this middleware between <code>SessionMiddleware</code> and <code>CommonMiddleware</code>.
+                    <p>
+                         In this case, what we have done is tell Django to use the <code>LocaleMiddleware</code> which will take care of choosing the appropriate language for each user <b>based on information extracted from the request</b>.</p>
                </li>
 
-               <li> El siguiente paso es <b>marcar los textos que queremos traducir</b> dentro de nuestro proyecto, para esto existen diferentes formas dependiendo del texto que vayamos a traducir. <br>
+               <li> 
+                    The next step is to <b>mark the texts that we want to translate</b> within our project, for this there are different ways depending on the text that we are going to translate. <br>
                     <br>
-                    <h5> Traducir en templates</h5>
-                    <p>Para explicar cómo traducir templates, supongamos que tenemos un index.html en <code>templates/some_app/index.html</code></p>
-                    <p>Es necesario que adaptemos este archivo para que se pueda traducir:</p>
+                    <h5> Traduce in templates</h5>
+                    <p>To explain how to translate templates, suppose we have an index.html in <code>templates/some_app/index.html</code></p>
+                    <p>We need to adapt this file so that it can be translated:</p>
                     <ul>
-                         <li>Habria que añadir la sentencia <code>{'%trans texto_que_se_quiere_traducir %'}</code> en cada texto que queramos traducir.</li> 
-                         <p>Además, en cada html que queramos introducir una traducción debemos incluir los templatetags de i18n con <code>{'% load i18n %'}</code>.</p>
+                         <li>We would have to add the sentence <code>{'%trans texto_que_se_quiere_traducir %'}</code> in each text that we want to translate.</li>
+                         <p>In addition, in each html that we want to introduce a translation we must include the i18n templatetags with <code>{'% load i18n %'}</code>.</p>
 
                     
                     </ul>
 
                </li>
 
-               <li> Posteriormente habría que crear una carpeta llamada <code>locale</code> en la ruta <code>some_project/locale</code>.
+               <li> Later you would have to create a folder called <code>locale</code> in the path <code>some_project/locale</code>.
                     
 
                     <p>
-                         Teniendo todo configurado, ahora sí, procedemos a crear los archivos de traducción. Para esto utilizamos el siguiente comando desde la ruta del proyecto:
+                         Having everything configured, now yes, we proceed to create the translation files. For this we use the following command from the project path:
                          <code>django-admin makemessages -l es</code>
                          
                     </p>
-                    <p><b>Esto creará los archivos de traducción para el lenguaje español que es el que hemos utilizado para nuestro proyecto.</b></p>
+                    <p><b>This will create the translation files for the Spanish language, which is the one we have used for our project.</b></p>
                </li>
 
-               <li> Con los comandos ejecutados en el paso anterior, se nos generará un archivo .po en la carpeta <code>locale</code>. 
-                    <h5> Traducir archivos .po</h5>
-                    <p> Estos archivos son los que utilizaremos <b>para especificarle a Django cómo traducir cada palabra en determinado idioma</b>, entonces simplemente para cada uno de los strings que aparezcan en <code>msgid</code> podemos especificar su traducción con los strings <code>msgstr</code></p>
+               <li> With the commands executed in the previous step, a .po file will be generated in the <code>locale</code> folder.
+                    <h5> Translate .po files</h5>
+                    <p> These files are the ones we will use <b>to specify to Django how to translate each word in a certain language</b>, so simply for each of the strings that appear in <code>msgid</code> we can specify its translation with strings <code>msgstr</code></p>
                </li>
 
-               <li> A continuación procedemos a compilar los mensajes creados con el comando ejecutado anteriormente. 
+               <li> Next we proceed to compile the messages created with the previously executed command.
                     <h5> Compilar archivos de traducción</h5>
-                    <p> Una vez que tengamos nuestros archivos de traducción completos, procederemos a compilarlos con el siguiente comando:
-                         <code>django-admin compilemessages</code>
-                         Cuando compilemos nuestros archivos, <b>ya podemos utilizar nuestro proyecto en el idioma especificado</b>.
-                         Cada vez que uno de nuestros usuarios consulte nuestro proyecto aparecerá en su idioma. Para efectos de prueba, podemos cambiar el lenguaje del proyecto por español y observar los resultados.
+                    <p> Compile translation files</h5>
+                         <p> Once we have our complete translation files, we will proceed to compile them with the following command:
+                              <code>django-admin compilemessages</code>
+                              When we compile our files, <b>we are ready to use our project in the specified language</b>.
+                              Every time one of our users consults our project it will appear in their language. For testing purposes, we can change the language of the project to Spanish and observe the results.
                     </p>
                
                </li>
 
-               <li><h5>¿Cómo hemos hecho la selección del idioma?</h5>
-                    <p> Para ello hemos implementado un código html de un desplegable, que permite seleccionar el idioma al que queremos traducir y, posteriormente una vez seleccionado, hay que darle a un botón que pone "Go" que traduce toda la página html al idioma seleccionado.</p>
+               <li><h5>How did we select the language?</h5>
+                    <p> For this we have implemented a drop-down html code, which allows us to select the language to which we want to translate and, later, once selected, we must click on a button that says "Go" which translates the entire html page to the selected language </p>
                </li>
 
           </ol>
 
           <h4>Cosas a tener en cuenta:</h4>
-          <ul>Cada vez que añadimos un html en nuestro proyecto debemos modificar el fichero <code>urls.py</code> donde tenemos que añadir una línea como esta <code>path('ruta/', nombre_método_vista)</code>, y ademas importar dicha vista en nuestro fichero <code>urls.py</code> de esta manera <code>from .views import nombre_método_vista</code></ul>
-          <ul>También hay que modificar el fichero <code>views.py</code> y añadir una función por cada fichero html que añadamos nuevo, dicha función tendrá dentro una línea como está: <code>return render(request, 'rutaNueva/fichero.html')</code></ul>
+          <ul>
+               <li>Every time we add an html in our project we must modify the file <code>urls.py</code> where we have to add a line like this <code>path('path/', view_method_name)</code> , and also import said view in our file <code>urls.py</code> in this way <code>from .views import view_method_name</code></li>
+               <li>You also have to modify the <code>views.py</code> file and add a function for each new html file that you add, this function will contain a line like this: <code>return render(request, 'rutaNueva /file.html')</code></li>
+          </ul>
 
 
      </div>
