@@ -20,7 +20,7 @@ msgstr ""
 
 #: booth/templates/booth/booth.html:21
 msgid "logout"
-msgstr ""
+msgstr "ausloggen"
 
 #: booth/templates/booth/booth.html:41
 #: nuevaInfo/templates/nuevaInfo/infoDecide.html:32
@@ -30,32 +30,32 @@ msgstr ""
 #: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:32
 #: visualizer/templates/visualizer/visualizer.html:33
 msgid "Go"
-msgstr ""
+msgstr "Gehen"
 
 #: booth/templates/booth/booth.html:55
 msgid "Username"
-msgstr ""
+msgstr "Nutzername"
 
 #: booth/templates/booth/booth.html:63
 msgid "Password"
-msgstr ""
+msgstr "Passwort"
 
 #: booth/templates/booth/booth.html:71
 msgid "Login"
-msgstr ""
+msgstr "Anmeldung"
 
 #: booth/templates/booth/booth.html:86
 msgid "Vote"
-msgstr ""
+msgstr "Abstimmung"
 
 #: booth/templates/booth/booth.html:182 booth/templates/booth/booth.html:192
 #: booth/templates/booth/booth.html:223
 msgid "Error: "
-msgstr ""
+msgstr "Fehler: "
 
 #: booth/templates/booth/booth.html:220
 msgid "Conglatulations. Your vote has been sent"
-msgstr ""
+msgstr "Herzlichen Glückwunsch. Ihre Stimme wurde gesendet"
 
 #: nuevaInfo/templates/nuevaInfo/infoDecide.html:37
 msgid "Decide, an educational voting platform"
