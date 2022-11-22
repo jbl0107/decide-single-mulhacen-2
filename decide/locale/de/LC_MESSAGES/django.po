@@ -751,28 +751,28 @@ msgstr ""
 
 #: visualizer/templates/visualizer/visualizer.html:39
 msgid "Voting not started"
-msgstr ""
+msgstr "Abstimmung nicht gestartet"
 
 #: visualizer/templates/visualizer/visualizer.html:40
 msgid "Voting in progress"
-msgstr ""
+msgstr "Abstimmung läuft"
 
 #: visualizer/templates/visualizer/visualizer.html:42
 msgid "Results:"
-msgstr ""
+msgstr "Ergebnisse:"
 
 #: visualizer/templates/visualizer/visualizer.html:47
 msgid "Option"
-msgstr ""
+msgstr "Optionen"
 
 #: visualizer/templates/visualizer/visualizer.html:48
 msgid "Puntuation"
-msgstr ""
+msgstr "Interpunktion"
 
 #: visualizer/templates/visualizer/visualizer.html:49
 msgid "Votes"
-msgstr ""
+msgstr "Stimmen"
 
 #: visualizer/templates/visualizer/visualizer.html:60
 msgid "Let's translate this "
-msgstr ""
+msgstr "Lassen Sie uns das übersetzen "
