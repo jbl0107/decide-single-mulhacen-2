@@ -390,49 +390,51 @@ msgstr ""
 
 #: nuevaInfo/templates/nuevaInfo/infoEgc.html:59
 msgid "Subject practices:"
-msgstr ""
+msgstr "Betreff Praktiken:"
 
 #: nuevaInfo/templates/nuevaInfo/infoEgc.html:63
 msgid "Installation of Decide"
-msgstr ""
+msgstr "Installation von Decide"
 
 #: nuevaInfo/templates/nuevaInfo/infoEgc.html:64
 msgid "Software Testing"
-msgstr ""
+msgstr "Softwaretest"
 
 #: nuevaInfo/templates/nuevaInfo/infoEgc.html:65
 msgid "Source Code Management and Continuous Integration"
-msgstr ""
+msgstr "Quellcodeverwaltung und kontinuierliche Integration"
 
 #: nuevaInfo/templates/nuevaInfo/infoEgc.html:66
 msgid "Application Deployment: Containers"
-msgstr ""
+msgstr "Anwendungsbereitstellung: Container"
 
 #: nuevaInfo/templates/nuevaInfo/infoEgc.html:67
 msgid "Application Deployment: Virtual Machines"
-msgstr ""
+msgstr "Anwendungsbereitstellung: Virtuelle Maschinen"
 
 #: nuevaInfo/templates/nuevaInfo/infoEgc.html:71
 msgid "For more information on Decide:"
-msgstr ""
+msgstr "Weitere Informationen zu Decide"
 
 #: nuevaInfo/templates/nuevaInfo/infoEgc.html:73
 msgid "Journeys:"
-msgstr ""
+msgstr "Arbeitstagen:"
 
 #: nuevaInfo/templates/nuevaInfo/infoEgc.html:74
 msgid ""
 "There are some conferences that are divided into committees for the "
 "organization of talks and events, where students participate."
 msgstr ""
+"Es gibt einige Konferenzen, die in Ausschüsse für die Organisation von Gesprächen unterteilt sind"
+"und Veranstaltungen, an denen Studierende teilnehmen."
 
 #: nuevaInfo/templates/nuevaInfo/infoEgc.html:75
 msgid "For more information about these journeys:"
-msgstr ""
+msgstr "Weitere Informationen zu diesen Sitzungen:"
 
 #: nuevaInfo/templates/nuevaInfo/infoEgc.html:76
 msgid "Journeys"
-msgstr ""
+msgstr "Arbeitstagen"
 
 #: nuevaInfo/templates/nuevaInfo/infoJornadas.html:35
 msgid "Innosoft Days"
