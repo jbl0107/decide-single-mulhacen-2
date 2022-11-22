@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-21 17:57+0100\n"
+"POT-Creation-Date: 2022-11-22 09:07+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,8 +24,10 @@ msgstr ""
 
 #: booth/templates/booth/booth.html:41
 #: nuevaInfo/templates/nuevaInfo/infoDecide.html:32
+#: nuevaInfo/templates/nuevaInfo/infoETSII.html:32
 #: nuevaInfo/templates/nuevaInfo/infoEgc.html:32
 #: nuevaInfo/templates/nuevaInfo/infoJornadas.html:31
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:32
 #: visualizer/templates/visualizer/visualizer.html:33
 msgid "Go"
 msgstr ""
@@ -199,6 +201,138 @@ msgstr ""
 msgid "After this, we can start the voter stress test"
 msgstr ""
 
+#: nuevaInfo/templates/nuevaInfo/infoETSII.html:40
+msgid "The ETS of Computer Engineering"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoETSII.html:41
+msgid ""
+"On July 3, 2001, the Governing Council of the Junta de Andalucía approved "
+"the creation of the Higher Technical School of Computer Engineering, based "
+"in the building of the former Higher Technical School of Industrial "
+"Engineers. By then, this school had already finished its move to the new "
+"facilities on the Isla de la Cartuja and had vacated the White Building."
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoETSII.html:45
+msgid "The Engineering"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoETSII.html:46
+msgid ""
+"The 1996/97 academic year was a turning point in the history of computer "
+"studies at the University of Seville. The Council of Universities approved "
+"the creation of three new degrees: Computer Engineering, Technical "
+"Engineering in Management Information Technology and Technical Engineering "
+"in Systems Information Technology. "
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoETSII.html:47
+msgid ""
+"The name change implied public acknowledgment that computer science, despite "
+"having been born a diploma and set its teeth as a degree, from the beginning "
+"had had a marked engineering character, going beyond pure science, applying "
+"the knowledge that it it generates the development of techniques, methods "
+"and tools with which to solve problems of interest to our society in a "
+"practical way and with reasonable costs. "
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoETSII.html:48
+msgid ""
+"The name change also brought with it a significant increase in demand from "
+"students finishing high school. For this reason, an important part of the "
+"subjects were once again taught in the building of the Higher Technical "
+"School of Industrial Engineers, which from then on began to be popularly "
+"known as the White Building. "
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoETSII.html:51
+msgid "List of Departments"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoETSII.html:52
+msgid "List of Departments that teach at the ETSII:"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoETSII.html:54
+msgid "Business Administration and Marketing"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoETSII.html:55
+msgid "Human Anatomy and Embryology"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoETSII.html:56
+msgid "Architecture and Technology. of computers"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoETSII.html:57
+msgid " Cell biology"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoETSII.html:58
+msgid " Applied Mathematics I"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoETSII.html:59
+msgid "Electronic Technology"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoETSII.html:60
+msgid "Computer Languages ​​and Systems"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoETSII.html:61
+msgid "Systems Engineering and Automation"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoETSII.html:62
+msgid "Industrial Organization and Business Management."
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoETSII.html:63
+msgid "Mechanics of Continuous Media, Theory of Structures"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoETSII.html:64
+msgid "and many more departments..."
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoETSII.html:68
+msgid "Situation"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoETSII.html:69
+msgid ""
+"The Higher Technical School of Computer Engineering (ETSII) is located on "
+"the Reina Mercedes Campus of the University of Seville and is easily "
+"accessible by public transport services."
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoETSII.html:70
+msgid "Address"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoETSII.html:71
+msgid "Higher Technical School of Computer Engineering University of Seville "
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoETSII.html:72
+msgid "Avenida Reina Mercedes 41012 Sevilla "
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoETSII.html:78
+msgid "About ETSII:"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoETSII.html:79
+msgid "For more information about ETSII:"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoETSII.html:80
+msgid "ETSII"
+msgstr ""
+
 #: nuevaInfo/templates/nuevaInfo/infoEgc.html:37
 msgid "Evolution and Change Management"
 msgstr ""
@@ -302,17 +436,19 @@ msgstr ""
 
 #: nuevaInfo/templates/nuevaInfo/infoJornadas.html:35
 msgid "Innosoft Days"
-msgstr ""
+msgstr "Innosoft Days"
 
 #: nuevaInfo/templates/nuevaInfo/infoJornadas.html:37
 msgid "The InnoSoft Days are here: tenth edition!"
-msgstr ""
+msgstr "Die InnoSoft Days sind da: zehnte Ausgabe!"
 
 #: nuevaInfo/templates/nuevaInfo/infoJornadas.html:40
 msgid ""
 "The tenth anniversary of these conferences are celebrated on November 8, 10 "
 "and 11, 2022 at the Higher Technical School of Computer Engineering (ETSII)."
 msgstr ""
+"Der zehnte Jahrestag dieser Konferenzen wird am 8. und 10. November"
+"gefeiert und 11. 2022 an der Higher Technical School of Computer Engineering (ETSII)."
 
 #: nuevaInfo/templates/nuevaInfo/infoJornadas.html:43
 msgid ""
@@ -320,27 +456,292 @@ msgid ""
 "days there will be a series of presentations and activities in which you can "
 "participate. Do not miss it!"
 msgstr ""
+"Die diesjährigen Workshops haben das Thema Freie Software. Während dieser"
+"Tage wird es eine Reihe von Präsentationen und Aktivitäten geben, an denen Sie "
+"teilnehmen können. Nicht verpassen!"
 
 #: nuevaInfo/templates/nuevaInfo/infoJornadas.html:46
 msgid "Schedule:"
-msgstr ""
+msgstr "Zeitlicher Ablauf:"
 
 #: nuevaInfo/templates/nuevaInfo/infoJornadas.html:49
 msgid ""
 "We already have the schedule of the days available! Cheer up and attend "
 "everyone, they are very interesting"
 msgstr ""
+"Wir haben bereits den Zeitplan der Tage verfügbar! Kopf hoch und besucht alle, sie sind sehr interessant"
 
 #: nuevaInfo/templates/nuevaInfo/infoJornadas.html:55
 msgid "Poster:"
-msgstr ""
+msgstr "Poster:"
 
 #: nuevaInfo/templates/nuevaInfo/infoJornadas.html:58
 msgid "We also leave the promotional poster of the conference."
-msgstr ""
+msgstr "Wir hinterlassen auch das Werbeplakat der Konferenz."
 
 #: nuevaInfo/templates/nuevaInfo/infoJornadas.html:64
 msgid "In addition, you can follow Innosoft Days on social networks:"
+msgstr "Außerdem können Sie die Innosoft Days in sozialen Netzwerken verfolgen:"
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:37
+msgid "Translation subsystem"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:40
+msgid "Why have we chosen the translation subsystem?"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:41
+msgid ""
+"Translating a Django application into any language and allowing it to be "
+"detected depending on the requests of your users is a very important feature "
+"nowadays."
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:42
+msgid ""
+"In addition, it is very useful to learn to do this since most of the pages "
+"that we find on the Internet give you the option of translating them. In "
+"this section we will explore a bit how to do it."
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:44
+msgid ""
+"To carry out this translation task we needed to have a Django project, which "
+"we have used the"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:44
+msgid "project from the repository provided in the"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:45
+msgid ""
+"subject of Evolution and Configuration Management. In addition, we need to "
+"have"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:45
+msgid ""
+"installed, which is a module that reads the language used by the system and "
+"from this"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:46
+msgid ""
+"loads the corresponding translation file (*.mo) changing the text strings to "
+"the system language."
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:49
+msgid "Steps to perform:"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:52
+msgid ""
+"Make sure we have translations enabled in our settings. To do this, we need "
+"to make the following changes to the"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:80
+msgid "For this case we have defined that our project is by default in"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:80
+msgid "English"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:86
+msgid ""
+"Once what is indicated in the previous step has been done, we should add the "
+"following line"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:86
+msgid "to the"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:86
+msgid "of our project, it is important Place this middleware between"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:86
+msgid "and"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:88
+msgid "In this case, what we have done is tell Django to use the"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:88
+msgid "which will take care of choosing the appropriate language for each user"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:88
+msgid "based on information extracted from the request"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:92
+msgid "The next step is to"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:92
+msgid "mark the texts that we want to translate"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:92
+msgid ""
+"within our project, for this there are different ways depending on the text "
+"that we are going to translate."
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:94
+msgid "Traduce in templates"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:95
+msgid "To explain how to translate templates, suppose we have an index.html in"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:96
+msgid "We need to adapt this file so that it can be translated:"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:98
+msgid "We would have to add the sentence"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:98
+msgid "in each text that we want to translate"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:99
+msgid ""
+"In addition, in each html that we want to introduce a translation we must "
+"include the i18n templatetags with"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:106
+msgid "Later you would have to create a folder called"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:106
+msgid "in the path"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:110
+msgid ""
+"Having everything configured, now yes, we proceed to create the translation "
+"files. For this we use the following command from the project path:"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:114
+msgid ""
+"This will create the translation files for the Spanish language, which is "
+"the one we have used for our project"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:117
+msgid ""
+"With the commands executed in the previous step, a .po file will be "
+"generated in the"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:117
+msgid "folder"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:118
+msgid "Translate .po files"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:119
+msgid "These files are the ones we will use"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:119
+msgid "to specify to Django how to translate each word in a certain language"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:119
+msgid "so simply for each of the strings that appear in"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:119
+msgid "we can specify its translation with strings"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:122
+msgid ""
+"Next we proceed to compile the messages created with the previously executed "
+"command"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:123
+msgid "Compile translation files"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:125
+msgid ""
+"Once we have our complete translation files, we will proceed to compile them "
+"with the following command:"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:127
+msgid "When we compile our files,"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:127
+msgid "we are ready to use our project in the specified language"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:128
+msgid ""
+"Every time one of our users consults our project it will appear in their "
+"language. For testing purposes, we can change the language of the project to "
+"Spanish and observe the results"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:133
+msgid "How did we select the language?"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:134
+msgid ""
+"For this we have implemented a drop-down html code, which allows us to "
+"select the language to which we want to translate and, later, once selected, "
+"we must click on a button that says Go which translates the entire html page "
+"to the selected language"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:139
+msgid "Things to keep in mind:"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:141
+msgid "Every time we add an html in our project we must modify the file"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:141
+msgid "where we have to add a line like this"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:141
+msgid "and also import said view in our file"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:141
+msgid "in this way"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:142
+msgid "You also have to modify the"
+msgstr ""
+
+#: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:142
+msgid ""
+"file and add a function for each new html file that you add, this function "
+"will contain a line like this:"
 msgstr ""
 
 #: visualizer/templates/visualizer/visualizer.html:39
