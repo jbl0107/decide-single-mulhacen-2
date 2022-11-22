@@ -490,11 +490,11 @@ msgstr "Außerdem können Sie die Innosoft Days in sozialen Netzwerken verfolgen
 
 #: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:37
 msgid "Translation subsystem"
-msgstr ""
+msgstr "Übersetzungssubsystem"
 
 #: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:40
 msgid "Why have we chosen the translation subsystem?"
-msgstr ""
+msgstr "Warum haben wir uns für das Übersetzungssubsystem entschieden?"
 
 #: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:41
 msgid ""
@@ -502,6 +502,9 @@ msgid ""
 "detected depending on the requests of your users is a very important feature "
 "nowadays."
 msgstr ""
+"Eine Django-Anwendung in eine beliebige Sprache übersetzen und zulassen "
+"Erkennung in Abhängigkeit von den Anfragen Ihrer Benutzer ist eine sehr wichtige Funktion "
+"heutzutage."
 
 #: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:42
 msgid ""
@@ -509,34 +512,45 @@ msgid ""
 "that we find on the Internet give you the option of translating them. In "
 "this section we will explore a bit how to do it."
 msgstr ""
+"Darüber hinaus ist es sehr nützlich, dies zu lernen, da die meisten Seiten dies tun "
+"die wir im Internet finden, geben Ihnen die Möglichkeit, sie zu übersetzen. Im "
+"In diesem Abschnitt werden wir ein wenig untersuchen, wie es geht."
 
 #: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:44
 msgid ""
 "To carry out this translation task we needed to have a Django project, which "
 "we have used the"
 msgstr ""
+"Um diese Übersetzungsaufgabe auszuführen, brauchten wir ein Django-Projekt, das "
+"wir haben die benutzt"
 
 #: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:44
 msgid "project from the repository provided in the"
-msgstr ""
+msgstr "Projekt aus dem Repository, das in der bereitgestellt wird"
 
 #: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:45
 msgid ""
 "subject of Evolution and Configuration Management. In addition, we need to "
 "have"
 msgstr ""
+"Thema Evolutions- und Konfigurationsmanagement. Außerdem müssen wir "
+"haben"
 
 #: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:45
 msgid ""
 "installed, which is a module that reads the language used by the system and "
 "from this"
 msgstr ""
+"installiert, das ist ein Modul, das die vom System verwendete Sprache liest und "
+"davon"
 
 #: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:46
 msgid ""
 "loads the corresponding translation file (*.mo) changing the text strings to "
 "the system language."
 msgstr ""
+"lädt die entsprechende Übersetzungsdatei (*.mo) und ändert die Textzeichenfolgen in "
+"die Systemsprache."
 
 #: nuevaInfo/templates/nuevaInfo/infoTraducciones.html:49
 msgid "Steps to perform:"
