@@ -335,7 +335,7 @@ msgstr ""
 
 #: nuevaInfo/templates/nuevaInfo/infoEgc.html:37
 msgid "Evolution and Change Management"
-msgstr ""
+msgstr "Evolution und Change Management"
 
 #: nuevaInfo/templates/nuevaInfo/infoEgc.html:38
 msgid ""
@@ -343,50 +343,53 @@ msgid ""
 "year of the Computer Software Engineering degree. What it is about and its "
 "different sections within it will be detailed below."
 msgstr ""
+"EGC ist ein Fach der Universität Sevilla, das zum vierten Jahr des Studiengangs "
+"Computer Software Engineering gehört. Worum es geht und sein"
+"Die verschiedenen Abschnitte darin werden unten detailliert beschrieben."
 
 #: nuevaInfo/templates/nuevaInfo/infoEgc.html:42
 msgid "Theory topics"
-msgstr ""
+msgstr "Theoretische Themen:"
 
 #: nuevaInfo/templates/nuevaInfo/infoEgc.html:43
 msgid "It consists of different theory topics that are:"
-msgstr ""
+msgstr "Es besteht aus verschiedenen Theoriethemen, die sind:"
 
 #: nuevaInfo/templates/nuevaInfo/infoEgc.html:45
 msgid "Continuous integration"
-msgstr ""
+msgstr "Kontinuierliche Integration"
 
 #: nuevaInfo/templates/nuevaInfo/infoEgc.html:46
 msgid "Software testing"
-msgstr ""
+msgstr "Softwaretest"
 
 #: nuevaInfo/templates/nuevaInfo/infoEgc.html:47
 msgid "Presentation of the subject"
-msgstr ""
+msgstr "Vorstellung des Themas"
 
 #: nuevaInfo/templates/nuevaInfo/infoEgc.html:48
 msgid "Team management"
-msgstr ""
+msgstr "Team Management"
 
 #: nuevaInfo/templates/nuevaInfo/infoEgc.html:49
 msgid "Source code management"
-msgstr ""
+msgstr "Quellcodeverwaltung"
 
 #: nuevaInfo/templates/nuevaInfo/infoEgc.html:50
 msgid "Incidents and debugging"
-msgstr ""
+msgstr "Vorfälle und Debugging"
 
 #: nuevaInfo/templates/nuevaInfo/infoEgc.html:52
 msgid "Software configurability and software product lines"
-msgstr ""
+msgstr "Software-Konfigurierbarkeit und Software-Produktlinien"
 
 #: nuevaInfo/templates/nuevaInfo/infoEgc.html:53
 msgid "DevOps in a complete pipeline"
-msgstr ""
+msgstr "DevOps in einer vollständigen Pipeline"
 
 #: nuevaInfo/templates/nuevaInfo/infoEgc.html:54
 msgid "Innosoft and project management"
-msgstr ""
+msgstr "Innosoft und Projektmanagement"
 
 #: nuevaInfo/templates/nuevaInfo/infoEgc.html:59
 msgid "Subject practices:"
@@ -414,11 +417,11 @@ msgstr "Anwendungsbereitstellung: Virtuelle Maschinen"
 
 #: nuevaInfo/templates/nuevaInfo/infoEgc.html:71
 msgid "For more information on Decide:"
-msgstr "Weitere Informationen zu Decide"
+msgstr "Weitere Informationen zu Decide:"
 
 #: nuevaInfo/templates/nuevaInfo/infoEgc.html:73
 msgid "Journeys:"
-msgstr "Arbeitstagen:"
+msgstr "Jornadas:"
 
 #: nuevaInfo/templates/nuevaInfo/infoEgc.html:74
 msgid ""
