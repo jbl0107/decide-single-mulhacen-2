@@ -421,7 +421,7 @@ msgstr "Weitere Informationen zu Decide:"
 
 #: nuevaInfo/templates/nuevaInfo/infoEgc.html:73
 msgid "Journeys:"
-msgstr "Jornadas:"
+msgstr "Arbeitstagen:"
 
 #: nuevaInfo/templates/nuevaInfo/infoEgc.html:74
 msgid ""
