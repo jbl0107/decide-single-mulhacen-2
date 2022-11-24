@@ -6,6 +6,7 @@ from django.http import Http404
 import matplotlib
 import matplotlib.pyplot as plt
 import numpy as np
+import telegram
 
 from base import mods
 
@@ -15,10 +16,13 @@ class VisualizerView(TemplateView):
 
     def get_context_data(self, **kwargs):
 
-
+        bot_token = '5920930377:AAHGqZh6OSHtzefvGazRo8JbLwqbbqBTpsw'
+        chat_id = '-1005354241660'
+        bot = telegram.Bot(token=bot_token)
         context = super().get_context_data(**kwargs)
         vid = kwargs.get('voting_id', 0)
 
+        print(vid)
         try:
             r = mods.get('voting', params={'id': vid})
 
@@ -38,9 +42,10 @@ class VisualizerView(TemplateView):
             plt.bar(opci, votos)
             plt.savefig('grafico_de_barras.png')
 
-
-
-
+            with open('grafico_de_barras.png', 'rb') as photo_file:
+                            bot.sendPhoto(chat_id=chat_id,
+                                photo=photo_file,
+                                caption='Grafica de la votacion:')
 
         except:
             raise Http404

@@ -18,17 +18,21 @@ from django.contrib import admin
 from django.urls import path, include
 from rest_framework_swagger.views import get_swagger_view
 
+from django.conf.urls.i18n import i18n_patterns
 
 schema_view = get_swagger_view(title='Decide API')
 
 urlpatterns = [
 
     path('i18n/' , include('django.conf.urls.i18n')),
-    path('admin/', admin.site.urls),
     path('doc/', schema_view),
     path('gateway/', include('gateway.urls')),
-    path('nuevaInfo/', include('nuevaInfo.urls'))
+    path('nuevaInfo/', include('nuevaInfo.urls')),
 ]
+
+urlpatterns += i18n_patterns(
+    path('admin/', admin.site.urls),
+)
 
 for module in settings.MODULES:
     urlpatterns += [

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-22 00:23+0100\n"
+"POT-Creation-Date: 2022-11-24 09:28+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -569,15 +569,15 @@ msgstr ""
 "¡Ya tenemos disponible el horario de las jornadas! Animáos y asistid a "
 "todas, son muy interesantes"
 
-#: nuevaInfo/templates/nuevaInfo/infoJornadas.html:55
+#: nuevaInfo/templates/nuevaInfo/infoJornadas.html:56
 msgid "Poster:"
 msgstr "Cartel:"
 
-#: nuevaInfo/templates/nuevaInfo/infoJornadas.html:58
+#: nuevaInfo/templates/nuevaInfo/infoJornadas.html:59
 msgid "We also leave the promotional poster of the conference."
 msgstr "También dejamos el cartel de promoción de las jornadas. "
 
-#: nuevaInfo/templates/nuevaInfo/infoJornadas.html:64
+#: nuevaInfo/templates/nuevaInfo/infoJornadas.html:66
 msgid "In addition, you can follow Innosoft Days on social networks:"
 msgstr "Además, puedes seguir a Innosoft Days en redes sociales:"
 
