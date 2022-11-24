@@ -1,4 +1,11 @@
 ---
+- name: Create Message
+  become: yes
+  become_user: decide
+  shell: ~/venv/bin/django-admin compilemessages
+  args:
+    chdir: /home/decide/decide
+
 - name: Collect static
   become: yes
   become_user: decide
