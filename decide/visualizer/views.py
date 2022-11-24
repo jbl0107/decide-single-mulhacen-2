@@ -42,7 +42,7 @@ class VisualizerView(TemplateView):
             plt.bar(opci, votos)
             plt.savefig('grafico_de_barras.png')
 
-             with open('grafico_de_barras.png', 'rb') as photo_file:
+            with open('grafico_de_barras.png', 'rb') as photo_file:
                             bot.sendPhoto(chat_id=chat_id,
                                 photo=photo_file,
                                 caption='Grafica de la votacion:')
