@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-24 09:28+0100\n"
+"POT-Creation-Date: 2022-11-28 09:34+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -59,7 +59,7 @@ msgstr "Herzlichen Glückwunsch. Ihre Stimme wurde gesendet"
 
 #: nuevaInfo/templates/nuevaInfo/infoDecide.html:37
 msgid "Decide, an educational voting platform"
-msgstr ""
+msgstr "Entscheiden, eine pädagogische Abstimmungsplattform"
 
 #: nuevaInfo/templates/nuevaInfo/infoDecide.html:38
 msgid ""
@@ -67,10 +67,14 @@ msgid ""
 "The project is divided into subsystems, which will be decoupled from each "
 "other. Next, a series of aspects about decide will be discussed"
 msgstr ""
+"Decide ist ein Bildungsprojekt, das für das Studium von Wahlsystemen "
+"entwickelt wurde. Das Projekt ist in Teilsysteme aufgeteilt, die voneinander "
+"entkoppelt werden sonstiges. Als nächstes wird eine Reihe von Aspekten der "
+"Entscheidung diskutiert."
 
 #: nuevaInfo/templates/nuevaInfo/infoDecide.html:41
 msgid "The Gateway"
-msgstr ""
+msgstr "Das Tor"
 
 #: nuevaInfo/templates/nuevaInfo/infoDecide.html:42
 msgid ""
@@ -80,10 +84,15 @@ msgid ""
 "doesn't have to know what server it is on deployed each subsystem. The path "
 "consists of:"
 msgstr ""
+"Um einen bekannten Einstiegspunkt für alle Subsysteme bereitzustellen, "
+"existiert der sogenannte Gateway, das nichts anderes ist als eine verfügbare "
+"Route, die alle umleitetAnforderungen an das entsprechende Subsystem, sodass "
+"jeder Client, der die API verwendet, muss nicht wissen, auf welchem ​​Server "
+"es jedes Subsystem bereitgestellt hat. Der Pfad besteht aus:"
 
 #: nuevaInfo/templates/nuevaInfo/infoDecide.html:46
 msgid "Project configuration and execution"
-msgstr ""
+msgstr "Projekt konfiguration und -durchführung"
 
 #: nuevaInfo/templates/nuevaInfo/infoDecide.html:48
 msgid ""
@@ -93,10 +102,16 @@ msgid ""
 "will have to create our database with postgres. Next, we'll need to perform "
 "the first migration with the command"
 msgstr ""
+"Um das Projekt zu konfigurieren, können wir eine Datei local_settings.py "
+"erstellen, die auf die local_settings.example.py. Sobald dies erledigt ist, "
+"müssen Sie die Projekt abhängigkeiten, die in der Datei requirements.txt "
+"stehen. Danach werden wir müssen unsere Datenbank mit Postgres erstellen. "
+"Als nächstes müssen wir die erste Migration mit dem Befehl"
 
 #: nuevaInfo/templates/nuevaInfo/infoDecide.html:50
 msgid "Finally, we will execute the following command to run the server"
 msgstr ""
+"Schließlich führen wir den folgenden Befehl aus, um den Server auszuführen"
 
 #: nuevaInfo/templates/nuevaInfo/infoDecide.html:55
 msgid ""
@@ -104,6 +119,10 @@ msgid ""
 "containers, one for the database server, one for the django and another with "
 "an nginx web server to serve the static files and proxy django server."
 msgstr ""
+"Es gibt eine bestimmte Docker-Konfiguration, die ausgeführt werden kann. "
+"Dies ist Launch 3 Container, einer für den Datenbankserver, einer für Django "
+"und ein weiterer mit ein Nginx-Webserver zum Bereitstellen der statischen "
+"Dateien und des Proxy-Django-Servers."
 
 #: nuevaInfo/templates/nuevaInfo/infoDecide.html:61
 msgid ""
@@ -112,16 +131,22 @@ msgid ""
 "containers can be destroyed without fear of losing data. Volumes in question "
 "are"
 msgstr ""
+"Außerdem werden zwei Volumes erstellt, eines für die statischen und "
+"Mediendateien von das Projekt und ein weiteres für die Postgresql-Datenbank. "
+"Auf diese Weise wird das container können ohne Angst vor Datenverlust "
+"zerstört werden. In Frage kommende Volumes sind"
 
 #: nuevaInfo/templates/nuevaInfo/infoDecide.html:65
 msgid "Command to launch the django console"
-msgstr ""
+msgstr "Befehl zum Starten der Django-Konsole"
 
 #: nuevaInfo/templates/nuevaInfo/infoDecide.html:68
 msgid ""
 "You can edit the docker-settings.py file to modify the settings of the "
 "django project before creating the container images."
 msgstr ""
+"Sie können die Datei docker-settings.py bearbeiten, um die Einstellungen der "
+"django-Projekt vor dem Erstellen der Container-Images."
 
 #: nuevaInfo/templates/nuevaInfo/infoDecide.html:72
 msgid ""
@@ -131,10 +156,15 @@ msgid ""
 "first we have to find ourselves in the vagrant folder, and then we execute "
 "the command"
 msgstr ""
+"Es gibt eine vagabundierende Konfiguration, die eine virtuelle Maschine "
+"erstellt mit alles Erforderliche installiert und betriebsbereit. "
+"Konfiguration ist in vagrant/Vagrantfile und standardmäßig verwendet es "
+"Virtualbox. So erstellen Sie die virtuelle Maschine Zuerst müssen wir uns im "
+"Vagabundenordner finden, und dann exekutieren wir der Befehl"
 
 #: nuevaInfo/templates/nuevaInfo/infoDecide.html:74
 msgid "Once this is done, we can access from the url"
-msgstr ""
+msgstr "Sobald dies erledigt ist, können wir über die URL zugreifen"
 
 #: nuevaInfo/templates/nuevaInfo/infoDecide.html:79
 msgid ""
@@ -144,10 +174,16 @@ msgid ""
 "provisioning is designed to work with ubuntu/bionic64, to work with other "
 "distributions it may be necessary modify the packages.yml file."
 msgstr ""
+"Da die Konfiguration mit Vagrant mit Ansible bereitgestellt wird, können wir "
+"Letztere können unabhängig voneinander eine Installation von Entscheiden "
+"über einen oder mehrere Remote-Server mit einem einfachen Befehl. Wichtig -> "
+"Ansible Bereitstellung ist so konzipiert, dass es mit ubuntu/bionic64 "
+"funktioniert, um mit anderen zu arbeiten Distributionen kann es erforderlich "
+"sein, die Datei packages.yml zu ändern."
 
 #: nuevaInfo/templates/nuevaInfo/infoDecide.html:82
 msgid "Versioned"
-msgstr ""
+msgstr "Versioniert"
 
 #: nuevaInfo/templates/nuevaInfo/infoDecide.html:83
 msgid ""
@@ -155,10 +191,13 @@ msgid ""
 "for this versioning is through search parameters. We can change it to "
 "parameters in the URL or in the name of the HOST."
 msgstr ""
+"API versioning is done using the Django Rest Framework, and the form chosen "
+"for this versioning is through search parameters. We can change it to "
+"parameters in the URL or in the name of the HOST."
 
 #: nuevaInfo/templates/nuevaInfo/infoDecide.html:86
 msgid "Stress test with Locust"
-msgstr ""
+msgstr "Stresstest mit Heuschrecke"
 
 #: nuevaInfo/templates/nuevaInfo/infoDecide.html:87
 msgid ""
@@ -166,6 +205,9 @@ msgid ""
 "installed, we'll need to have a locustfile.py file where we have the "
 "configuration of what we are going to execute. Here we have"
 msgstr ""
+"Um Stresstests mit Locust durchzuführen, müssen wir es installiert haben. "
+"Einmal installiert, benötigen wir eine locustfile.py-Datei, in der wir die "
+"Konfiguration dessen, was wir ausführen werden. Hier haben wir"
 
 #: nuevaInfo/templates/nuevaInfo/infoDecide.html:89
 msgid ""
@@ -175,6 +217,11 @@ msgid ""
 "Once that's done, inside from the loadtest folder we try the following "
 "command"
 msgstr ""
+"betreten Sie den Viewer einer Abstimmung, um zu sehen, wie viele Anfragen "
+"Sie halten können. Um die Visualizer-Test müssen wir berücksichtigen, dass "
+"die Abstimmung 'x' (für Beispiel, die 1), also müssen wir es einrichten, "
+"damit es richtig funktioniert. Sobald dies erledigt ist, versuchen wir im "
+"Loadtest-Ordner Folgendes: Befehl"
 
 #: nuevaInfo/templates/nuevaInfo/infoDecide.html:92
 msgid ""
@@ -183,6 +230,10 @@ msgid ""
 "that they make requests at the same time, and how we want it to grow until "
 "get to that number."
 msgstr ""
+"Dadurch wird ein Server geöffnet, den wir im Browser sehen können, derselbe "
+"Befehl ist wird uns den Port mitteilen. Wenn er geöffnet wird, werden wir "
+"gefragt, wie viele Benutzer wir wollen dass sie gleichzeitig Anfragen "
+"stellen und wie wir wollen, dass es wächst, bis Geh zu dieser Nummer."
 
 #: nuevaInfo/templates/nuevaInfo/infoDecide.html:95
 msgid ""
@@ -196,14 +247,25 @@ msgid ""
 "python script gen_census.py created. For this script to work, we need to "
 "have installed request. After this, we execute the command"
 msgstr ""
+"Wir werden zuvor erstellte Benutzer verwenden und eine Reihe von Anfragen "
+"ausführen: login, getuser und store. Das wäre, was ein Benutzer tun würde, "
+"wenn Sie es sind abstimmen gehen, also werden wir mit diesem Beispiel "
+"überprüfen, wie viele abstimmen wir kann. Um den Voter-Test durchzuführen, "
+"müssen wir verschiedene Vorbereitungen treffen. Wir werden müssen 'x' "
+"abstimmen öffnen, und wir müssen eine Reihe von Benutzern im Zählung dieser "
+"Abstimmung, dafür können diese Benutzer, wenn wir den Test durchführen, "
+"authentifizieren und richtig abstimmen. Um diese Aufgabe zu erleichtern, "
+"haben wir die Python-Skript gen_census.py erstellt. Damit dieses Skript "
+"funktioniert, müssen wir Have Installed Request. Danach führen wir den "
+"Befehl aus"
 
 #: nuevaInfo/templates/nuevaInfo/infoDecide.html:97
 msgid "After this, we can start the voter stress test"
-msgstr ""
+msgstr "Danach können wir den Wählerstresstest starten"
 
 #: nuevaInfo/templates/nuevaInfo/infoETSII.html:40
 msgid "The ETS of Computer Engineering"
-msgstr ""
+msgstr "Das ETS der Technischen Informatik"
 
 #: nuevaInfo/templates/nuevaInfo/infoETSII.html:41
 msgid ""
@@ -213,6 +275,11 @@ msgid ""
 "Engineers. By then, this school had already finished its move to the new "
 "facilities on the Isla de la Cartuja and had vacated the White Building."
 msgstr ""
+"Am 3. Juli 2001 genehmigte der Regierungsrat der Junta de Andalucía die "
+"Gründung der Höheren Technischen Schule für Computertechnik, basierend auf "
+"im Gebäude der ehemaligen Höheren Fachschule für Industrie Ingenieure. Bis "
+"dahin hatte diese Schule ihren Umzug in das neue bereits abgeschlossen "
+"Einrichtungen auf der Isla de la Cartuja und hatte das Weiße Gebäude geräumt."
 
 #: nuevaInfo/templates/nuevaInfo/infoETSII.html:45
 msgid "The Engineering"
