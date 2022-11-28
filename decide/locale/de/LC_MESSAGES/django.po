@@ -191,9 +191,9 @@ msgid ""
 "for this versioning is through search parameters. We can change it to "
 "parameters in the URL or in the name of the HOST."
 msgstr ""
-"API versioning is done using the Django Rest Framework, and the form chosen "
-"for this versioning is through search parameters. We can change it to "
-"parameters in the URL or in the name of the HOST."
+"Die API-Versionierung erfolgt mit dem Django Rest Framework und dem gewählten Formular "
+"für diese Versionierung erfolgt über Suchparameter. Wir können sie ändern in "
+"parameter in der URL oder im Namen des HOST."
 
 #: nuevaInfo/templates/nuevaInfo/infoDecide.html:86
 msgid "Stress test with Locust"
