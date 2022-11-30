@@ -10,6 +10,10 @@ from django.contrib.auth.models import User
 from django.db import IntegrityError
 from django.shortcuts import get_object_or_404
 from django.core.exceptions import ObjectDoesNotExist
+from django.contrib.auth.forms import AuthenticationForm
+from django.contrib.auth import login, logout
+from base.backends import AuthBackend
+from django.shortcuts import render, get_object_or_404, redirect
 
 from .serializers import UserSerializer
 

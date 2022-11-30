@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-24 09:28+0100\n"
+"POT-Creation-Date: 2022-11-30 19:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,11 +18,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: booth/templates/booth/booth.html:21
+#: booth/templates/booth/booth.html:22
 msgid "logout"
 msgstr "Cerrar Sesión"
 
-#: booth/templates/booth/booth.html:41
+#: booth/templates/booth/booth.html:26
+msgid "Login with Google"
+msgstr "Inicia Sesión con Google"
+
+#: booth/templates/booth/booth.html:29
+msgid "Login with Twitter"
+msgstr "Inicia Sesión con Twitter"
+
+#: booth/templates/booth/booth.html:50
 #: nuevaInfo/templates/nuevaInfo/infoDecide.html:32
 #: nuevaInfo/templates/nuevaInfo/infoETSII.html:32
 #: nuevaInfo/templates/nuevaInfo/infoEgc.html:32
@@ -32,28 +40,28 @@ msgstr "Cerrar Sesión"
 msgid "Go"
 msgstr "Vamos!"
 
-#: booth/templates/booth/booth.html:55
+#: booth/templates/booth/booth.html:64
 msgid "Username"
 msgstr "Usuario"
 
-#: booth/templates/booth/booth.html:63
+#: booth/templates/booth/booth.html:72
 msgid "Password"
 msgstr "Contraseña"
 
-#: booth/templates/booth/booth.html:71
+#: booth/templates/booth/booth.html:80
 msgid "Login"
 msgstr "Inicia sesión"
 
-#: booth/templates/booth/booth.html:86
+#: booth/templates/booth/booth.html:95
 msgid "Vote"
 msgstr "Vota"
 
-#: booth/templates/booth/booth.html:182 booth/templates/booth/booth.html:192
-#: booth/templates/booth/booth.html:223
+#: booth/templates/booth/booth.html:191 booth/templates/booth/booth.html:201
+#: booth/templates/booth/booth.html:232
 msgid "Error: "
 msgstr "Error"
 
-#: booth/templates/booth/booth.html:220
+#: booth/templates/booth/booth.html:229
 msgid "Conglatulations. Your vote has been sent"
 msgstr "Enhorabuena. Tu voto ha sido enviado"
 
@@ -920,3 +928,8 @@ msgstr "Votos"
 #: visualizer/templates/visualizer/visualizer.html:60
 msgid "Let's translate this "
 msgstr "Vamos a traducir esto"
+
+#, fuzzy
+#~| msgid "Login"
+#~ msgid "login"
+#~ msgstr "Inicia sesión"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-28 09:34+0100\n"
+"POT-Creation-Date: 2022-11-30 19:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,11 +18,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: booth/templates/booth/booth.html:21
+#: booth/templates/booth/booth.html:22
 msgid "logout"
 msgstr "ausloggen"
 
-#: booth/templates/booth/booth.html:41
+#: booth/templates/booth/booth.html:26
+msgid "Login with Google"
+msgstr "Login mit Google"
+
+#: booth/templates/booth/booth.html:29
+msgid "Login with Twitter"
+msgstr "Login mit Twitter"
+
+#: booth/templates/booth/booth.html:50
 #: nuevaInfo/templates/nuevaInfo/infoDecide.html:32
 #: nuevaInfo/templates/nuevaInfo/infoETSII.html:32
 #: nuevaInfo/templates/nuevaInfo/infoEgc.html:32
@@ -32,28 +40,28 @@ msgstr "ausloggen"
 msgid "Go"
 msgstr "Gehen"
 
-#: booth/templates/booth/booth.html:55
+#: booth/templates/booth/booth.html:64
 msgid "Username"
 msgstr "Nutzername"
 
-#: booth/templates/booth/booth.html:63
+#: booth/templates/booth/booth.html:72
 msgid "Password"
 msgstr "Passwort"
 
-#: booth/templates/booth/booth.html:71
+#: booth/templates/booth/booth.html:80
 msgid "Login"
 msgstr "Anmeldung"
 
-#: booth/templates/booth/booth.html:86
+#: booth/templates/booth/booth.html:95
 msgid "Vote"
 msgstr "Abstimmung"
 
-#: booth/templates/booth/booth.html:182 booth/templates/booth/booth.html:192
-#: booth/templates/booth/booth.html:223
+#: booth/templates/booth/booth.html:191 booth/templates/booth/booth.html:201
+#: booth/templates/booth/booth.html:232
 msgid "Error: "
 msgstr "Fehler: "
 
-#: booth/templates/booth/booth.html:220
+#: booth/templates/booth/booth.html:229
 msgid "Conglatulations. Your vote has been sent"
 msgstr "Herzlichen Glückwunsch. Ihre Stimme wurde gesendet"
 
@@ -191,9 +199,9 @@ msgid ""
 "for this versioning is through search parameters. We can change it to "
 "parameters in the URL or in the name of the HOST."
 msgstr ""
-"Die API-Versionierung erfolgt mit dem Django Rest Framework und dem gewählten Formular "
-"für diese Versionierung erfolgt über Suchparameter. Wir können sie ändern in "
-"parameter in der URL oder im Namen des HOST."
+"Die API-Versionierung erfolgt mit dem Django Rest Framework und dem "
+"gewählten Formular für diese Versionierung erfolgt über Suchparameter. Wir "
+"können sie ändern in parameter in der URL oder im Namen des HOST."
 
 #: nuevaInfo/templates/nuevaInfo/infoDecide.html:86
 msgid "Stress test with Locust"
@@ -899,3 +907,8 @@ msgstr "Stimmen"
 #: visualizer/templates/visualizer/visualizer.html:60
 msgid "Let's translate this "
 msgstr "Lassen Sie uns das übersetzen "
+
+#, fuzzy
+#~| msgid "Login"
+#~ msgid "login"
+#~ msgstr "Anmeldung"

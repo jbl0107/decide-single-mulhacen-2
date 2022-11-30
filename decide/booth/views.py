@@ -1,6 +1,7 @@
 
 import json
 from django.views.generic import TemplateView
+from django.contrib.auth.decorators import login_required
 from django.shortcuts import render,HttpResponse
 from django.conf import settings
 from django.http import Http404
