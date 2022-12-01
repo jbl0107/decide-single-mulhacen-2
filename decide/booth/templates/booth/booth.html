@@ -18,18 +18,22 @@
         <b-navbar type="dark" variant="secondary">
             <b-navbar-brand tag="h1">Decide</b-navbar-brand>
                 {% if not user.is_authenticated %}
-                    <b-nav-item class="ml-auto">
+                    <b-nav-item href="/authentication/google-login?next={{request.path}}" class="ml-auto">
                         {% trans "Login with Google" %}
                     </b-nav-item>
                     <b-nav-item class="ml-auto">
                         {% trans "Login with Twitter" %}
                     </b-nav-item>
-                {% endif %}
-                <b-navbar-nav class="ml-auto" v-if="!signup">
-                    <b-nav-item href="#" v-on:click="decideLogout">
-                        {% trans "logout" %}
+                    <b-nav-item href="/authentication/login2/?next={{request.path}}" class="ml-auto">
+                        {% trans "Login" %}
                     </b-nav-item>
-                </b-navbar-nav>
+                {% else %}
+                    <b-navbar-nav class="ml-auto">
+                        <b-nav-item href="/authentication/logout/?next={{request.path}}">
+                            {% trans "logout" %}
+                        </b-nav-item>
+                    </b-navbar-nav>
+                {% endif %}
         </b-navbar>
 
         <form action="{% url 'set_language' %}" method='POST'>
@@ -59,29 +63,9 @@
         <div class="voting">
             <h1>[[ voting.id ]] - [[ voting.name ]]</h1>
 
-            <!-- Register -->
-            <b-form @submit="onSubmitLogin" v-if="signup">
-                <b-form-group label="{% trans "Username" %}" label-for="username">
-                    <b-form-input
-                        id="username"
-                        type="text"
-                        v-model="form.username"
-                        autocomplete="username"
-                        required />
-                </b-form-group>
-                <b-form-group label="{% trans "Password" %}" label-for="password">
-                    <b-form-input
-                        id="password"
-                        type="password"
-                        autocomplete="current-password"
-                        v-model="form.password"
-                        required />
-                </b-form-group>
-                <b-button type="submit" variant="primary">{% trans "Login" %}</b-button>
-            </b-form>
-
             <!-- Voting -->
-            <div v-if="!signup">
+            {% if user.is_authenticated %}
+            <div>
                 <h2>[[ voting.question.desc ]]</h2>
                 <b-form-group v-for="opt in voting.question.options" :key="opt.number">
                     <b-form-radio v-model="selected"
@@ -95,6 +79,7 @@
                     {% trans "Vote" %}
                 </b-button>
             </div>
+            {% endif %}
         </div>
     </div>
 {% endblock %}
@@ -190,6 +175,10 @@
                         .catch(error => {
                             this.showAlert("danger", '{% trans "Error: " %}' + error);
                         });
+                },
+                googleLogin(evt){
+                    evt.preventDefault()
+                    this.signup = false;
                 },
                 getUser(evt) {
                     var data = {token: this.token};
