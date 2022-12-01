@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-30 19:01+0000\n"
+"POT-Creation-Date: 2022-12-01 16:30+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,19 +18,32 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: booth/templates/booth/booth.html:22
-msgid "logout"
-msgstr "ausloggen"
+#: authentication/templates/login.html:16
+msgid "Log In"
+msgstr "Log In"
 
-#: booth/templates/booth/booth.html:26
+#: authentication/templates/register.html:16
+#: booth/templates/booth/booth.html:31
+msgid "Register"
+msgstr "Registrieren"
+
+#: booth/templates/booth/booth.html:22
 msgid "Login with Google"
 msgstr "Login mit Google"
 
-#: booth/templates/booth/booth.html:29
+#: booth/templates/booth/booth.html:25
 msgid "Login with Twitter"
 msgstr "Login mit Twitter"
 
-#: booth/templates/booth/booth.html:50
+#: booth/templates/booth/booth.html:28
+msgid "Login"
+msgstr "Anmeldung"
+
+#: booth/templates/booth/booth.html:36
+msgid "logout"
+msgstr "ausloggen"
+
+#: booth/templates/booth/booth.html:57
 #: nuevaInfo/templates/nuevaInfo/infoDecide.html:32
 #: nuevaInfo/templates/nuevaInfo/infoETSII.html:32
 #: nuevaInfo/templates/nuevaInfo/infoEgc.html:32
@@ -40,28 +53,16 @@ msgstr "Login mit Twitter"
 msgid "Go"
 msgstr "Gehen"
 
-#: booth/templates/booth/booth.html:64
-msgid "Username"
-msgstr "Nutzername"
-
-#: booth/templates/booth/booth.html:72
-msgid "Password"
-msgstr "Passwort"
-
-#: booth/templates/booth/booth.html:80
-msgid "Login"
-msgstr "Anmeldung"
-
-#: booth/templates/booth/booth.html:95
+#: booth/templates/booth/booth.html:82
 msgid "Vote"
 msgstr "Abstimmung"
 
-#: booth/templates/booth/booth.html:191 booth/templates/booth/booth.html:201
-#: booth/templates/booth/booth.html:232
+#: booth/templates/booth/booth.html:179 booth/templates/booth/booth.html:189
+#: booth/templates/booth/booth.html:220
 msgid "Error: "
 msgstr "Fehler: "
 
-#: booth/templates/booth/booth.html:229
+#: booth/templates/booth/booth.html:217
 msgid "Conglatulations. Your vote has been sent"
 msgstr "Herzlichen Glückwunsch. Ihre Stimme wurde gesendet"
 
@@ -907,6 +908,12 @@ msgstr "Stimmen"
 #: visualizer/templates/visualizer/visualizer.html:60
 msgid "Let's translate this "
 msgstr "Lassen Sie uns das übersetzen "
+
+#~ msgid "Username"
+#~ msgstr "Nutzername"
+
+#~ msgid "Password"
+#~ msgstr "Passwort"
 
 #, fuzzy
 #~| msgid "Login"

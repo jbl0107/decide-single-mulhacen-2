@@ -27,6 +27,9 @@
                     <b-nav-item href="/authentication/login2/?next={{request.path}}" class="ml-auto">
                         {% trans "Login" %}
                     </b-nav-item>
+                    <b-nav-item href="/authentication/register/?next={{request.path}}" class="ml-auto">
+                        {% trans "Register" %}
+                    </b-nav-item>
                 {% else %}
                     <b-navbar-nav class="ml-auto">
                         <b-nav-item href="/authentication/logout/?next={{request.path}}">

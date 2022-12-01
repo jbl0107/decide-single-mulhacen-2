@@ -10,7 +10,7 @@ from django.contrib.auth.models import User
 from django.db import IntegrityError
 from django.shortcuts import get_object_or_404
 from django.core.exceptions import ObjectDoesNotExist
-from django.contrib.auth.forms import AuthenticationForm
+from django.contrib.auth.forms import AuthenticationForm, UserCreationForm
 from django.contrib.auth import login, logout, authenticate
 from django.contrib.auth.hashers import make_password
 from base.backends import AuthBackend
@@ -133,3 +133,23 @@ def log_in(request):
 def log_out(request):
     logout(request)
     return redirect(request.GET.get('next', ''))
+
+def register(request):
+    if request.method == 'POST':
+        formulario = UserCreationForm(request.POST)
+        if formulario.is_valid:
+            try:
+                usuario = formulario.save()
+            except:
+                mess = messages.add_message(request, level=0, message='Información inválida')
+                return render(request, 'register.html', {'formulario': formulario, 'messages':mess})
+            login(request, usuario)
+            return redirect(request.GET.get('next', ''))
+        else:
+            mess = messages.add_message(request, level=0, message='Información inválida')
+            return render(request, 'register.html', {'formulario': formulario, 'messages':mess})
+    elif request.user.is_authenticated:
+        return redirect(request.GET.get('next', ''))
+    else:
+        formulario = UserCreationForm()
+    return render(request, 'register.html', {'formulario': formulario})
