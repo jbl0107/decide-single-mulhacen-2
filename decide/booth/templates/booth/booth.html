@@ -176,10 +176,6 @@
                             this.showAlert("danger", '{% trans "Error: " %}' + error);
                         });
                 },
-                googleLogin(evt){
-                    evt.preventDefault()
-                    this.signup = false;
-                },
                 getUser(evt) {
                     var data = {token: this.token};
                     this.postData("{% url "gateway" "authentication" "/getuser/" %}", data)
@@ -210,8 +206,8 @@
                     var data = {
                         vote: {a: v.alpha.toString(), b: v.beta.toString()},
                         voting: this.voting.id,
-                        voter: this.user.id,
-                        token: this.token
+                        voter: '{{user.id}}',
+                        token: '{{request.session.session_key}}'
                     }
                     this.postData("{% url "gateway" "store" "/" %}", data)
                         .then(data => {
