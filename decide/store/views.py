@@ -1,5 +1,6 @@
 from django.utils import timezone
 from django.utils.dateparse import parse_datetime
+from django.contrib.sessions.models import Session
 import django_filters.rest_framework
 from rest_framework import status
 from rest_framework.response import Response
@@ -47,10 +48,9 @@ class StoreView(generics.ListAPIView):
             return Response({}, status=status.HTTP_400_BAD_REQUEST)
 
         # validating voter
-        token = request.auth.key
-        voter = mods.post('authentication', entry_point='/getuser/', json={'token': token})
-        voter_id = voter.get('id', None)
-        if not voter_id or voter_id != uid:
+        token = request.data.get('token')
+        session = Session.objects.filter(session_key=token).first()
+        if not session:
             return Response({}, status=status.HTTP_401_UNAUTHORIZED)
 
         # the user is in the census
