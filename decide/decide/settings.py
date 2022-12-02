@@ -12,6 +12,10 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 
 import os
 
+
+GP_CLIENT_ID = '941490541837-j0bdqqb85omjadqon0fjgh0me5r2bgmi.apps.googleusercontent.com'
+GP_CLIENT_SECRET = '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'
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 

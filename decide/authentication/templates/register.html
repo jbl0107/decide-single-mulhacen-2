@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang='es'>
+    <head>
+        {% load i18n static%}
+        {% load i18n %}
+    </head>
+    <body>
+        {% if messages %}
+            <div class="alert alert-danger" role="alert">
+                {% for message in messages %}
+                    <p> {{message}} </p>
+                {% endfor %}
+            </div>
+        {% endif %}
+        <div class="">
+            <form method="POST" action=''>
+                {% csrf_token %}
+                <table>{{formulario}}</table>
+                <button type="submit" class='btn btn-primary'>{% trans "Register" %}</button>
+            </form>
+        </div>
+    </body>
+</html>

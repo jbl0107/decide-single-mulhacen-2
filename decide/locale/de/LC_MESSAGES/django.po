@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-28 09:34+0100\n"
+"POT-Creation-Date: 2022-12-01 16:30+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,11 +18,32 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: booth/templates/booth/booth.html:21
+#: authentication/templates/login.html:16
+msgid "Log In"
+msgstr "Log In"
+
+#: authentication/templates/register.html:16
+#: booth/templates/booth/booth.html:31
+msgid "Register"
+msgstr "Registrieren"
+
+#: booth/templates/booth/booth.html:22
+msgid "Login with Google"
+msgstr "Login mit Google"
+
+#: booth/templates/booth/booth.html:25
+msgid "Login with Twitter"
+msgstr "Login mit Twitter"
+
+#: booth/templates/booth/booth.html:28
+msgid "Login"
+msgstr "Anmeldung"
+
+#: booth/templates/booth/booth.html:36
 msgid "logout"
 msgstr "ausloggen"
 
-#: booth/templates/booth/booth.html:41
+#: booth/templates/booth/booth.html:57
 #: nuevaInfo/templates/nuevaInfo/infoDecide.html:32
 #: nuevaInfo/templates/nuevaInfo/infoETSII.html:32
 #: nuevaInfo/templates/nuevaInfo/infoEgc.html:32
@@ -32,28 +53,16 @@ msgstr "ausloggen"
 msgid "Go"
 msgstr "Gehen"
 
-#: booth/templates/booth/booth.html:55
-msgid "Username"
-msgstr "Nutzername"
-
-#: booth/templates/booth/booth.html:63
-msgid "Password"
-msgstr "Passwort"
-
-#: booth/templates/booth/booth.html:71
-msgid "Login"
-msgstr "Anmeldung"
-
-#: booth/templates/booth/booth.html:86
+#: booth/templates/booth/booth.html:82
 msgid "Vote"
 msgstr "Abstimmung"
 
-#: booth/templates/booth/booth.html:182 booth/templates/booth/booth.html:192
-#: booth/templates/booth/booth.html:223
+#: booth/templates/booth/booth.html:179 booth/templates/booth/booth.html:189
+#: booth/templates/booth/booth.html:220
 msgid "Error: "
 msgstr "Fehler: "
 
-#: booth/templates/booth/booth.html:220
+#: booth/templates/booth/booth.html:217
 msgid "Conglatulations. Your vote has been sent"
 msgstr "Herzlichen Glückwunsch. Ihre Stimme wurde gesendet"
 
@@ -191,9 +200,9 @@ msgid ""
 "for this versioning is through search parameters. We can change it to "
 "parameters in the URL or in the name of the HOST."
 msgstr ""
-"Die API-Versionierung erfolgt mit dem Django Rest Framework und dem gewählten Formular "
-"für diese Versionierung erfolgt über Suchparameter. Wir können sie ändern in "
-"parameter in der URL oder im Namen des HOST."
+"Die API-Versionierung erfolgt mit dem Django Rest Framework und dem "
+"gewählten Formular für diese Versionierung erfolgt über Suchparameter. Wir "
+"können sie ändern in parameter in der URL oder im Namen des HOST."
 
 #: nuevaInfo/templates/nuevaInfo/infoDecide.html:86
 msgid "Stress test with Locust"
@@ -899,3 +908,14 @@ msgstr "Stimmen"
 #: visualizer/templates/visualizer/visualizer.html:60
 msgid "Let's translate this "
 msgstr "Lassen Sie uns das übersetzen "
+
+#~ msgid "Username"
+#~ msgstr "Nutzername"
+
+#~ msgid "Password"
+#~ msgstr "Passwort"
+
+#, fuzzy
+#~| msgid "Login"
+#~ msgid "login"
+#~ msgstr "Anmeldung"
