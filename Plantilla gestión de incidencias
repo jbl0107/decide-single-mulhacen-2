@@ -1,12 +1,15 @@
 PLANTILLA DE GESTIÓN DE INCIDENCIAS:
 
 Para gestionar los cambios y errores en el código, creamos una issue en el tablero de GitHub y la asignamos a su respectivo responsable.
-En este tablero existen cuatro columnas, la primera la llamamos “Reminder” y nos sirve para no olvidarnos de realizar las issues definidas
-en esa columna como por ejemplo crear un acta de reunión cada vez que se lleve a cabo una reunión. La segunda columna es la de “To do”,
-donde se encuentran las issues aún por realizar y que no se han comenzado. La tercera columna en la columna “In progress”, donde podemos
-visualizar las issues que ya han sido empezadas y por lo tanto que se encuentran en progreso, como el propio nombre de la columna indica
-en inglés. Por último, nos encontramos con la columna llamada “Done”, en esta se encuentran las issues ya finalizadas de forma correcta
-y mergeadas a la rama correspondiente. También existen issues con descripción, si se considera necesario.
+Para asignar las issues, nos dividimos las que sean más complejas por parejas y otras más simples a cada uno individualmente. Se tiene
+en cuenta si alguien tiene preferencia por alguna en particular y si esto es así, se le asigna si no hay conflictos con otros integrantes
+del grupo. Si nadie tiene preferencia por ninguna issue, se hace la asignación de ellas de forma aleatoria.
+En este tablero de GitHub existen cuatro columnas, a la primera la llamamos “Reminder” y nos sirve para no olvidarnos de realizar las issues
+definidas en esa columna como por ejemplo crear un acta de reunión cada vez que se lleve a cabo una reunión. La segunda columna es la de
+“To do”, donde se encuentran las issues aún por realizar y que no se han comenzado. La tercera columna en la columna “In progress”, donde
+podemos visualizar las issues que ya han sido empezadas y por lo tanto que se encuentran en progreso, como el propio nombre de la columna
+indica en inglés. Por último, nos encontramos con la columna llamada “Done”, en esta se encuentran las issues ya finalizadas de forma 
+correcta y mergeadas a la rama correspondiente. También existen issues con descripción, si se considera necesario.
 
 Con respecto a las etiquetas de las issues y sus prioridades, nos encontramos con diferentes de ellas. En cuanto a las etiquetas (labels),
 utilizamos la de “code” (cuando se trata de una tarea relacionada con el código), “documentation” (cuando pertenece a parte de la documentación),
@@ -16,7 +19,10 @@ con prioridad alta, “medium priority” cuando se trata de una issue con prior
 con prioridad baja.
 
 Cuando se crean las Pull Request, se asignan a otra persona distinta a la que la crea, y esta persona debe revisar que todo esté bien y no surjan
-problemas introduciendo los cambios correspondientes en la rama y cuando sea así, aceptarla y por consiguiente, mergearla.
+problemas introduciendo los cambios correspondientes en la rama y cuando sea así, aceptarla y por consiguiente, mergearla. Cuando esta revisión y
+proceso se ha llevado a cabo de manera correcta sin errores en la rama mergeada y la issue ha sido completada de la forma indicada, entonces se
+cierra la issue y se mueve a la columna “Done” del tablero de GitHub, que indica que está terminada. Si por lo contrario, no se ha acabado con
+la tarea perteneciente a la issue, la issue seguirá permaneciendo en la columna “In progress” del tablero de GitHub.
 
 También disponemos de un proceso de gestión de cambios definido en el que se crea una rama con la propuesta de cambio en particular, descrita
 correctamente y además también creamos una issue en el tablero de GitHub con la correspondiente propuesta de cambio.
