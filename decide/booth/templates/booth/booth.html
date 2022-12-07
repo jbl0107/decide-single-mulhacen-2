@@ -18,7 +18,13 @@
         <b-navbar type="dark" variant="secondary">
             <b-navbar-brand tag="h1">Decide</b-navbar-brand>
                 {% if not user.is_authenticated %}
-                    <b-nav-item href="/authentication/google-login?next={{request.path}}" class="ml-auto">
+                    <b-nav-item-dropdown text="Login" right>
+                        <b-dropdown-item href="/authentication/login2/?next={{request.path}}" class="ml-auto">{% trans "Login" %}</b-dropdown-item>
+                        <b-dropdown-item href="/authentication/google-login?next={{request.path}}" class="ml-auto">{% trans "Login with Google" %}</b-dropdown-item>
+                        <b-dropdown-item class="ml-auto">{% trans "Login with Twitter" %}</b-dropdown-item>
+                    </b-nav-item-dropdown>
+
+                    <!-- <b-nav-item href="/authentication/google-login?next={{request.path}}" class="ml-auto">
                         {% trans "Login with Google" %}
                     </b-nav-item>
                     <b-nav-item class="ml-auto">
@@ -26,7 +32,7 @@
                     </b-nav-item>
                     <b-nav-item href="/authentication/login2/?next={{request.path}}" class="ml-auto">
                         {% trans "Login" %}
-                    </b-nav-item>
+                    </b-nav-item> -->
                     <b-nav-item href="/authentication/register/?next={{request.path}}" class="ml-auto">
                         {% trans "Register" %}
                     </b-nav-item>
