@@ -6,6 +6,16 @@ from django.conf import settings
 from django.http import Http404
 
 
+import matplotlib
+import matplotlib.pyplot as plt
+import numpy as np
+import telegram
+
+
+import aspose.words as  aw
+
+
+
 from base import mods
 
 
