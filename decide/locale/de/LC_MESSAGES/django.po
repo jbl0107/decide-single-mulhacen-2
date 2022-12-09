@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-01 16:30+0000\n"
+"POT-Creation-Date: 2022-12-07 17:57+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,32 +18,32 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: authentication/templates/login.html:16
+#: authentication/templates/login.html:19
 msgid "Log In"
 msgstr "Log In"
 
-#: authentication/templates/register.html:16
-#: booth/templates/booth/booth.html:31
+#: authentication/templates/register.html:19
+#: booth/templates/booth/booth.html:37
 msgid "Register"
 msgstr "Registrieren"
 
-#: booth/templates/booth/booth.html:22
-msgid "Login with Google"
-msgstr "Login mit Google"
-
-#: booth/templates/booth/booth.html:25
-msgid "Login with Twitter"
-msgstr "Login mit Twitter"
-
-#: booth/templates/booth/booth.html:28
+#: booth/templates/booth/booth.html:22 booth/templates/booth/booth.html:34
 msgid "Login"
 msgstr "Anmeldung"
 
-#: booth/templates/booth/booth.html:36
+#: booth/templates/booth/booth.html:23 booth/templates/booth/booth.html:28
+msgid "Login with Google"
+msgstr "Login mit Google"
+
+#: booth/templates/booth/booth.html:24 booth/templates/booth/booth.html:31
+msgid "Login with Twitter"
+msgstr "Login mit Twitter"
+
+#: booth/templates/booth/booth.html:42
 msgid "logout"
 msgstr "ausloggen"
 
-#: booth/templates/booth/booth.html:57
+#: booth/templates/booth/booth.html:63
 #: nuevaInfo/templates/nuevaInfo/infoDecide.html:32
 #: nuevaInfo/templates/nuevaInfo/infoETSII.html:32
 #: nuevaInfo/templates/nuevaInfo/infoEgc.html:32
@@ -53,16 +53,16 @@ msgstr "ausloggen"
 msgid "Go"
 msgstr "Gehen"
 
-#: booth/templates/booth/booth.html:82
+#: booth/templates/booth/booth.html:88
 msgid "Vote"
 msgstr "Abstimmung"
 
-#: booth/templates/booth/booth.html:179 booth/templates/booth/booth.html:189
-#: booth/templates/booth/booth.html:220
+#: booth/templates/booth/booth.html:185 booth/templates/booth/booth.html:195
+#: booth/templates/booth/booth.html:226
 msgid "Error: "
 msgstr "Fehler: "
 
-#: booth/templates/booth/booth.html:217
+#: booth/templates/booth/booth.html:223
 msgid "Conglatulations. Your vote has been sent"
 msgstr "Herzlichen Glückwunsch. Ihre Stimme wurde gesendet"
 
@@ -292,7 +292,7 @@ msgstr ""
 
 #: nuevaInfo/templates/nuevaInfo/infoETSII.html:45
 msgid "The Engineering"
-msgstr ""
+msgstr "Das Ingenieurwesen"
 
 #: nuevaInfo/templates/nuevaInfo/infoETSII.html:46
 msgid ""
@@ -302,6 +302,11 @@ msgid ""
 "Engineering in Management Information Technology and Technical Engineering "
 "in Systems Information Technology. "
 msgstr ""
+"Das Studienjahr 1996/97 war ein Wendepunkt in der Computergeschichte "
+"Studium an der Universität Sevilla. Der Hochschulrat hat zugestimmt "
+"die Schaffung von drei neuen Abschlüssen: Computer Engineering, Technical "
+"Ingenieurwesen in der Wirtschaftsinformatik und im Technischen Ingenieurwesen "
+"in Systeminformatik. "
 
 #: nuevaInfo/templates/nuevaInfo/infoETSII.html:47
 msgid ""
@@ -312,6 +317,13 @@ msgid ""
 "and tools with which to solve problems of interest to our society in a "
 "practical way and with reasonable costs. "
 msgstr ""
+"Die Namensänderung implizierte die öffentliche Anerkennung der Informatik trotz "
+"als Diplom geboren und von Anfang an als Diplom gezüchtet "
+"hatte einen ausgeprägten ingenieurwissenschaftlichen Charakter, der über die reine Wissenschaft hinausging und Anwendung fand "
+"das Wissen, dass es die Entwicklung von Techniken, Methoden generiert "
+"und Werkzeuge zur Lösung von Problemen, die für unsere Gesellschaft von Interesse sind, in a "
+"praktikabel und mit vertretbaren Kosten. "
+
 
 #: nuevaInfo/templates/nuevaInfo/infoETSII.html:48
 msgid ""
@@ -321,62 +333,67 @@ msgid ""
 "School of Industrial Engineers, which from then on began to be popularly "
 "known as the White Building. "
 msgstr ""
+"Die Namensänderung brachte auch eine deutliche Nachfragesteigerung mit sich "
+"Schüler, die das Gymnasium abschließen. Aus diesem Grund ist ein wichtiger Teil der "
+"Die Fächer wurden wieder im Gebäude der Höheren Technischen Hochschule unterrichtet "
+"School of Industrial Engineers, die von da an populär wurde "
+"bekannt als das Weiße Gebäude. "
 
 #: nuevaInfo/templates/nuevaInfo/infoETSII.html:51
 msgid "List of Departments"
-msgstr ""
+msgstr "Liste der Abteilungen"
 
 #: nuevaInfo/templates/nuevaInfo/infoETSII.html:52
 msgid "List of Departments that teach at the ETSII:"
-msgstr ""
+msgstr "Liste der Fachbereiche, die an der ETSII lehren: "
 
 #: nuevaInfo/templates/nuevaInfo/infoETSII.html:54
 msgid "Business Administration and Marketing"
-msgstr ""
+msgstr "Betriebswirtschaft und Marketing"
 
 #: nuevaInfo/templates/nuevaInfo/infoETSII.html:55
 msgid "Human Anatomy and Embryology"
-msgstr ""
+msgstr "Menschliche Anatomie und Embryologie"
 
 #: nuevaInfo/templates/nuevaInfo/infoETSII.html:56
 msgid "Architecture and Technology. of computers"
-msgstr ""
+msgstr "Architektur und Technik. von Computern"
 
 #: nuevaInfo/templates/nuevaInfo/infoETSII.html:57
 msgid " Cell biology"
-msgstr ""
+msgstr "Zellen-Biologie"
 
 #: nuevaInfo/templates/nuevaInfo/infoETSII.html:58
 msgid " Applied Mathematics I"
-msgstr ""
+msgstr "Angewandte Mathematik I"
 
 #: nuevaInfo/templates/nuevaInfo/infoETSII.html:59
 msgid "Electronic Technology"
-msgstr ""
+msgstr "Elektronische Technologie"
 
 #: nuevaInfo/templates/nuevaInfo/infoETSII.html:60
 msgid "Computer Languages ​​and Systems"
-msgstr ""
+msgstr "Computersprachen und Systeme"
 
 #: nuevaInfo/templates/nuevaInfo/infoETSII.html:61
 msgid "Systems Engineering and Automation"
-msgstr ""
+msgstr "Systemtechnik und Automatisierung"
 
 #: nuevaInfo/templates/nuevaInfo/infoETSII.html:62
 msgid "Industrial Organization and Business Management."
-msgstr ""
+msgstr "Industrielle Organisation und Unternehmensführung"
 
 #: nuevaInfo/templates/nuevaInfo/infoETSII.html:63
 msgid "Mechanics of Continuous Media, Theory of Structures"
-msgstr ""
+msgstr "Mechanik kontinuierlicher Medien, Strukturtheorie"
 
 #: nuevaInfo/templates/nuevaInfo/infoETSII.html:64
 msgid "and many more departments..."
-msgstr ""
+msgstr "und viele weitere Abteilungen..."
 
 #: nuevaInfo/templates/nuevaInfo/infoETSII.html:68
 msgid "Situation"
-msgstr ""
+msgstr "Lage"
 
 #: nuevaInfo/templates/nuevaInfo/infoETSII.html:69
 msgid ""
@@ -384,30 +401,33 @@ msgid ""
 "the Reina Mercedes Campus of the University of Seville and is easily "
 "accessible by public transport services."
 msgstr ""
+"Die Higher Technical School of Computer Engineering (ETSII) befindet sich auf "
+"der Reina Mercedes Campus der Universität Sevilla und ist leicht "
+"mit öffentlichen Verkehrsmitteln erreichbar. "
 
 #: nuevaInfo/templates/nuevaInfo/infoETSII.html:70
 msgid "Address"
-msgstr ""
+msgstr "Adresse"
 
 #: nuevaInfo/templates/nuevaInfo/infoETSII.html:71
 msgid "Higher Technical School of Computer Engineering University of Seville "
-msgstr ""
+msgstr "Höhere Technische Schule für Computertechnik Universität Sevilla"
 
 #: nuevaInfo/templates/nuevaInfo/infoETSII.html:72
 msgid "Avenida Reina Mercedes 41012 Sevilla "
-msgstr ""
+msgstr "Avenida Reina Mercedes 41012 Sevilla"
 
 #: nuevaInfo/templates/nuevaInfo/infoETSII.html:78
 msgid "About ETSII:"
-msgstr ""
+msgstr "Über ETSII:"
 
 #: nuevaInfo/templates/nuevaInfo/infoETSII.html:79
 msgid "For more information about ETSII:"
-msgstr ""
+msgstr "Weitere Informationen zu ETSII: "
 
 #: nuevaInfo/templates/nuevaInfo/infoETSII.html:80
 msgid "ETSII"
-msgstr ""
+msgstr "ETSII"
 
 #: nuevaInfo/templates/nuevaInfo/infoEgc.html:37
 msgid "Evolution and Change Management"
