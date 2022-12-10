@@ -153,3 +153,6 @@ def register(request):
     else:
         formulario = UserCreationForm()
     return render(request, 'register.html', {'formulario': formulario})
+
+def twitter_login(request):
+    return
