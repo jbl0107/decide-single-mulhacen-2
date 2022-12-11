@@ -190,7 +190,16 @@ def twitter_login(request):
         req.sign_request(oauth2.SignatureMethod_HMAC_SHA1(), consumer=consumer, token=token)
         user_data = requests.get(url='https://api.twitter.com/2/users/' + id_usuario, headers=req.to_header())
         datos = user_data.json()
-        pass
+        user, _ = User.objects.get_or_create(username="@" + str(datos.get('data').get('username')))
+        data = {
+            'first_name': datos.get('data').get('name', ''),
+            'is_active': True
+        }
+        user.__dict__.update(data)
+        user.save()
+        user.backend = settings.AUTHENTICATION_BACKENDS[0]
+        login(request, user)
+        return redirect(next[0])
     else:
         consumer = oauth2.Consumer(settings.TWITTER_API_ID, settings.TWITTER_API_SECRET)
         token = oauth2.Token(settings.TWITTER_CLIENT_ID, settings.TWITTER_CLIENT_SECRET)
