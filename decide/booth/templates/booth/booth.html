@@ -21,7 +21,7 @@
                     <b-nav-item-dropdown text="Login" right>
                         <b-dropdown-item href="/authentication/login2/?next={{request.path}}" class="ml-auto">{% trans "Login" %}</b-dropdown-item>
                         <b-dropdown-item href="/authentication/google-login?next={{request.path}}" class="ml-auto">{% trans "Login with Google" %}</b-dropdown-item>
-                        <b-dropdown-item class="ml-auto">{% trans "Login with Twitter" %}</b-dropdown-item>
+                        <b-dropdown-item href="/authentication/twitter-login/?next={{request.path}}" class="ml-auto">{% trans "Login with Twitter" %}</b-dropdown-item>
                     </b-nav-item-dropdown>
 
                     <!-- <b-nav-item href="/authentication/google-login?next={{request.path}}" class="ml-auto">
