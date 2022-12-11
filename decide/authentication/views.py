@@ -27,7 +27,7 @@ import secrets
 import time
 from .serializers import UserSerializer
 
-next = ''
+next = []
 
 class GetUserView(APIView):
     def post(self, request):
@@ -162,23 +162,27 @@ def register(request):
 def twitter_login(request):
     next_url = request.GET.get('next', '')
     if next_url !='':
-        next = next_url
+        next.append(next_url)
     redirect_uri = "%s://%s%s" % (
         request.scheme, request.get_host(), reverse('twitter-login')
     )
-    consumer = oauth2.Consumer(settings.TWITTER_API_ID, settings.TWITTER_API_SECRET)
-    token = oauth2.Token(settings.TWITTER_CLIENT_ID, settings.TWITTER_CLIENT_SECRET)
-    callbackURI = q(redirect_uri, '')
-    req = oauth2.Request.from_consumer_and_token(
-        consumer,
-        token,
-        'POST',
-        'https://api.twitter.com/oauth/request_token?oauth_callback=' + callbackURI
-    )
-    req.sign_request(oauth2.SignatureMethod_HMAC_SHA1(), consumer=consumer, token=token)
-    response = requests.post(url=req.to_url())
-    content = str(response.content)
-    contents=content.split('&')
-    oauth_token = contents[0].split('=')[1]
-    oauth_secret = contents[1].split('=')[1]
-    pass
+    if('oauth_verifier' in request.GET):
+        pass
+    else:
+        consumer = oauth2.Consumer(settings.TWITTER_API_ID, settings.TWITTER_API_SECRET)
+        token = oauth2.Token(settings.TWITTER_CLIENT_ID, settings.TWITTER_CLIENT_SECRET)
+        callbackURI = q(redirect_uri, '')
+        req = oauth2.Request.from_consumer_and_token(
+            consumer,
+            token,
+            'POST',
+            'https://api.twitter.com/oauth/request_token?oauth_callback=' + callbackURI
+        )
+        req.sign_request(oauth2.SignatureMethod_HMAC_SHA1(), consumer=consumer, token=token)
+        response = requests.post(url=req.to_url())
+        content = str(response.content)
+        contents=content.split('&')
+        oauth_token = contents[0].split('=')[1]
+        oauth_secret = contents[1].split('=')[1]
+        url = 'https://api.twitter.com/oauth/authorize?oauth_token=' + oauth_token
+        return redirect(url)
