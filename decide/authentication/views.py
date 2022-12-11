@@ -162,6 +162,7 @@ def register(request):
 def twitter_login(request):
     next_url = request.GET.get('next', '')
     if next_url !='':
+        next.clear()
         next.append(next_url)
     redirect_uri = "%s://%s%s" % (
         request.scheme, request.get_host(), reverse('twitter-login')
@@ -172,6 +173,23 @@ def twitter_login(request):
         base_url = 'https://api.twitter.com/oauth/access_token?oauth_verifier=%s&oauth_token=%s'
         url = base_url % (oauth_verifier, oauth_token)
         response = requests.post(url=url)
+        content = str(response.content)
+        contents=content.split('&')
+        oauth_token = contents[0].split('=')[1]
+        oauth_secret = contents[1].split('=')[1]
+        id_usuario = contents[2].split('=')[1]
+        screen_name = contents[3].split('=')[1].strip("'")
+        consumer = oauth2.Consumer(settings.TWITTER_API_ID, settings.TWITTER_API_SECRET)
+        token = oauth2.Token(oauth_token, oauth_secret)
+        req = oauth2.Request.from_consumer_and_token(
+            consumer,
+            token,
+            'GET',
+            'https://api.twitter.com/2/users/' + id_usuario
+        )
+        req.sign_request(oauth2.SignatureMethod_HMAC_SHA1(), consumer=consumer, token=token)
+        user_data = requests.get(url='https://api.twitter.com/2/users/' + id_usuario, headers=req.to_header())
+        datos = user_data.json()
         pass
     else:
         consumer = oauth2.Consumer(settings.TWITTER_API_ID, settings.TWITTER_API_SECRET)
