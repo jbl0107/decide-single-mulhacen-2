@@ -167,6 +167,11 @@ def twitter_login(request):
         request.scheme, request.get_host(), reverse('twitter-login')
     )
     if('oauth_verifier' in request.GET):
+        oauth_token = request.GET.get('oauth_token')
+        oauth_verifier = request.GET.get('oauth_verifier')
+        base_url = 'https://api.twitter.com/oauth/access_token?oauth_verifier=%s&oauth_token=%s'
+        url = base_url % (oauth_verifier, oauth_token)
+        response = requests.post(url=url)
         pass
     else:
         consumer = oauth2.Consumer(settings.TWITTER_API_ID, settings.TWITTER_API_SECRET)
