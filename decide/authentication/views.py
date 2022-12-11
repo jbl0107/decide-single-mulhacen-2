@@ -1,4 +1,5 @@
 from rest_framework.response import Response
+import requests
 from rest_framework.status import (
         HTTP_201_CREATED,
         HTTP_400_BAD_REQUEST,
@@ -20,9 +21,13 @@ from django.conf import settings
 from django.contrib import messages
 import requests
 from django.urls import reverse
-
+from urllib.parse import quote as q
+import oauth2
+import secrets
+import time
 from .serializers import UserSerializer
 
+next = ''
 
 class GetUserView(APIView):
     def post(self, request):
@@ -155,4 +160,25 @@ def register(request):
     return render(request, 'register.html', {'formulario': formulario})
 
 def twitter_login(request):
-    return
+    next_url = request.GET.get('next', '')
+    if next_url !='':
+        next = next_url
+    redirect_uri = "%s://%s%s" % (
+        request.scheme, request.get_host(), reverse('twitter-login')
+    )
+    consumer = oauth2.Consumer(settings.TWITTER_API_ID, settings.TWITTER_API_SECRET)
+    token = oauth2.Token(settings.TWITTER_CLIENT_ID, settings.TWITTER_CLIENT_SECRET)
+    callbackURI = q(redirect_uri, '')
+    req = oauth2.Request.from_consumer_and_token(
+        consumer,
+        token,
+        'POST',
+        'https://api.twitter.com/oauth/request_token?oauth_callback=' + callbackURI
+    )
+    req.sign_request(oauth2.SignatureMethod_HMAC_SHA1(), consumer=consumer, token=token)
+    response = requests.post(url=req.to_url())
+    content = str(response.content)
+    contents=content.split('&')
+    oauth_token = contents[0].split('=')[1]
+    oauth_secret = contents[1].split('=')[1]
+    pass

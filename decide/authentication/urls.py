@@ -12,5 +12,5 @@ urlpatterns = [
     path('getuser/', GetUserView.as_view()),
     path('register/', register),
     url(r'^google-login/$', view=google_login ,name="google-login"),
-    url(r'^twitter-login/$', view=twitter_login, name='twitter-login')
+    url(r'^twitter-login/$', view=twitter_login, name="twitter-login")
 ]
