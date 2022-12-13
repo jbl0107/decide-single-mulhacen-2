@@ -17,6 +17,13 @@
         <!-- Cambiar Navbar para llevar a las vistas de log in añadir include log in/register html-->
         <b-navbar type="dark" variant="secondary">
             <b-navbar-brand tag="h1">Decide</b-navbar-brand>
+              <b-nav-item-dropdown text="Info" right>
+                        <b-dropdown-item href="/nuevaInfo/masInfo/" class="ml-auto">Decide </b-dropdown-item>
+                        <b-dropdown-item href="/nuevaInfo/masInfoEgc/" class="ml-auto">EGC</b-dropdown-item>
+                        <b-dropdown-item href="/nuevaInfo/masInfoETSII/" class="ml-auto">ETSII</b-dropdown-item>
+                        <b-dropdown-item href="/nuevaInfo/masInfoJornadas/" class="ml-auto">{% trans "Journeys" %}</b-dropdown-item>
+                        <b-dropdown-item href="nuevaInfo/masInfoTraducciones/" class="ml-auto">{% trans "Traductions" %}</b-dropdown-item>
+               </b-nav-item-dropdown>
                 {% if not user.is_authenticated %}
                     <b-nav-item-dropdown text="Login" right>
                         <b-dropdown-item href="/authentication/login2/?next={{request.path}}" class="ml-auto">{% trans "Login" %}</b-dropdown-item>

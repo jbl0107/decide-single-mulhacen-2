@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-01 16:30+0000\n"
+"POT-Creation-Date: 2022-12-13 11:47+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,32 +18,41 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: authentication/templates/login.html:16
+#: authentication/templates/login.html:19
 msgid "Log In"
 msgstr "Inicia Sesión"
 
-#: authentication/templates/register.html:16
-#: booth/templates/booth/booth.html:31
+#: authentication/templates/register.html:19
+#: booth/templates/booth/booth.html:44
 msgid "Register"
 msgstr "Registrarse"
 
-#: booth/templates/booth/booth.html:22
-msgid "Login with Google"
-msgstr "Inicia Sesión con Google"
+#: booth/templates/booth/booth.html:24
+#: nuevaInfo/templates/nuevaInfo/infoEgc.html:76
+msgid "Journeys"
+msgstr "Jornadas"
 
 #: booth/templates/booth/booth.html:25
-msgid "Login with Twitter"
-msgstr "Inicia Sesión con Twitter"
+msgid "Traductions"
+msgstr "Traducciones"
 
-#: booth/templates/booth/booth.html:28
+#: booth/templates/booth/booth.html:29 booth/templates/booth/booth.html:41
 msgid "Login"
 msgstr "Inicia sesión"
 
-#: booth/templates/booth/booth.html:36
+#: booth/templates/booth/booth.html:30 booth/templates/booth/booth.html:35
+msgid "Login with Google"
+msgstr "Inicia Sesión con Google"
+
+#: booth/templates/booth/booth.html:31 booth/templates/booth/booth.html:38
+msgid "Login with Twitter"
+msgstr "Inicia Sesión con Twitter"
+
+#: booth/templates/booth/booth.html:49
 msgid "logout"
 msgstr "Cerrar Sesión"
 
-#: booth/templates/booth/booth.html:57
+#: booth/templates/booth/booth.html:70
 #: nuevaInfo/templates/nuevaInfo/infoDecide.html:32
 #: nuevaInfo/templates/nuevaInfo/infoETSII.html:32
 #: nuevaInfo/templates/nuevaInfo/infoEgc.html:32
@@ -53,16 +62,16 @@ msgstr "Cerrar Sesión"
 msgid "Go"
 msgstr "Vamos!"
 
-#: booth/templates/booth/booth.html:82
+#: booth/templates/booth/booth.html:95
 msgid "Vote"
 msgstr "Vota"
 
-#: booth/templates/booth/booth.html:179 booth/templates/booth/booth.html:189
-#: booth/templates/booth/booth.html:220
+#: booth/templates/booth/booth.html:192 booth/templates/booth/booth.html:202
+#: booth/templates/booth/booth.html:233
 msgid "Error: "
 msgstr "Error"
 
-#: booth/templates/booth/booth.html:217
+#: booth/templates/booth/booth.html:230
 msgid "Conglatulations. Your vote has been sent"
 msgstr "Enhorabuena. Tu voto ha sido enviado"
 
@@ -534,10 +543,6 @@ msgstr ""
 #: nuevaInfo/templates/nuevaInfo/infoEgc.html:75
 msgid "For more information about these journeys:"
 msgstr "Para más información sobre estas jornadas:"
-
-#: nuevaInfo/templates/nuevaInfo/infoEgc.html:76
-msgid "Journeys"
-msgstr "Jornadas"
 
 #: nuevaInfo/templates/nuevaInfo/infoJornadas.html:35
 msgid "Innosoft Days"
