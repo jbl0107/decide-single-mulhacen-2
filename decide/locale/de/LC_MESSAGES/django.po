@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-07 17:57+0100\n"
+"POT-Creation-Date: 2022-12-13 11:47+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,27 +23,36 @@ msgid "Log In"
 msgstr "Log In"
 
 #: authentication/templates/register.html:19
-#: booth/templates/booth/booth.html:37
+#: booth/templates/booth/booth.html:44
 msgid "Register"
 msgstr "Registrieren"
 
-#: booth/templates/booth/booth.html:22 booth/templates/booth/booth.html:34
+#: booth/templates/booth/booth.html:24
+#: nuevaInfo/templates/nuevaInfo/infoEgc.html:76
+msgid "Journeys"
+msgstr "Arbeitstagen"
+
+#: booth/templates/booth/booth.html:25
+msgid "Traductions"
+msgstr "Übersetzungen"
+
+#: booth/templates/booth/booth.html:29 booth/templates/booth/booth.html:41
 msgid "Login"
 msgstr "Anmeldung"
 
-#: booth/templates/booth/booth.html:23 booth/templates/booth/booth.html:28
+#: booth/templates/booth/booth.html:30 booth/templates/booth/booth.html:35
 msgid "Login with Google"
 msgstr "Login mit Google"
 
-#: booth/templates/booth/booth.html:24 booth/templates/booth/booth.html:31
+#: booth/templates/booth/booth.html:31 booth/templates/booth/booth.html:38
 msgid "Login with Twitter"
 msgstr "Login mit Twitter"
 
-#: booth/templates/booth/booth.html:42
+#: booth/templates/booth/booth.html:49
 msgid "logout"
 msgstr "ausloggen"
 
-#: booth/templates/booth/booth.html:63
+#: booth/templates/booth/booth.html:70
 #: nuevaInfo/templates/nuevaInfo/infoDecide.html:32
 #: nuevaInfo/templates/nuevaInfo/infoETSII.html:32
 #: nuevaInfo/templates/nuevaInfo/infoEgc.html:32
@@ -53,16 +62,16 @@ msgstr "ausloggen"
 msgid "Go"
 msgstr "Gehen"
 
-#: booth/templates/booth/booth.html:88
+#: booth/templates/booth/booth.html:95
 msgid "Vote"
 msgstr "Abstimmung"
 
-#: booth/templates/booth/booth.html:185 booth/templates/booth/booth.html:195
-#: booth/templates/booth/booth.html:226
+#: booth/templates/booth/booth.html:192 booth/templates/booth/booth.html:202
+#: booth/templates/booth/booth.html:233
 msgid "Error: "
 msgstr "Fehler: "
 
-#: booth/templates/booth/booth.html:223
+#: booth/templates/booth/booth.html:230
 msgid "Conglatulations. Your vote has been sent"
 msgstr "Herzlichen Glückwunsch. Ihre Stimme wurde gesendet"
 
@@ -302,11 +311,11 @@ msgid ""
 "Engineering in Management Information Technology and Technical Engineering "
 "in Systems Information Technology. "
 msgstr ""
-"Das Studienjahr 1996/97 war ein Wendepunkt in der Computergeschichte "
-"Studium an der Universität Sevilla. Der Hochschulrat hat zugestimmt "
-"die Schaffung von drei neuen Abschlüssen: Computer Engineering, Technical "
-"Ingenieurwesen in der Wirtschaftsinformatik und im Technischen Ingenieurwesen "
-"in Systeminformatik. "
+"Das Studienjahr 1996/97 war ein Wendepunkt in der Computergeschichte Studium "
+"an der Universität Sevilla. Der Hochschulrat hat zugestimmt die Schaffung "
+"von drei neuen Abschlüssen: Computer Engineering, Technical Ingenieurwesen "
+"in der Wirtschaftsinformatik und im Technischen Ingenieurwesen in "
+"Systeminformatik. "
 
 #: nuevaInfo/templates/nuevaInfo/infoETSII.html:47
 msgid ""
@@ -317,13 +326,13 @@ msgid ""
 "and tools with which to solve problems of interest to our society in a "
 "practical way and with reasonable costs. "
 msgstr ""
-"Die Namensänderung implizierte die öffentliche Anerkennung der Informatik trotz "
-"als Diplom geboren und von Anfang an als Diplom gezüchtet "
-"hatte einen ausgeprägten ingenieurwissenschaftlichen Charakter, der über die reine Wissenschaft hinausging und Anwendung fand "
-"das Wissen, dass es die Entwicklung von Techniken, Methoden generiert "
-"und Werkzeuge zur Lösung von Problemen, die für unsere Gesellschaft von Interesse sind, in a "
-"praktikabel und mit vertretbaren Kosten. "
-
+"Die Namensänderung implizierte die öffentliche Anerkennung der Informatik "
+"trotz als Diplom geboren und von Anfang an als Diplom gezüchtet hatte einen "
+"ausgeprägten ingenieurwissenschaftlichen Charakter, der über die reine "
+"Wissenschaft hinausging und Anwendung fand das Wissen, dass es die "
+"Entwicklung von Techniken, Methoden generiert und Werkzeuge zur Lösung von "
+"Problemen, die für unsere Gesellschaft von Interesse sind, in a praktikabel "
+"und mit vertretbaren Kosten. "
 
 #: nuevaInfo/templates/nuevaInfo/infoETSII.html:48
 msgid ""
@@ -334,10 +343,10 @@ msgid ""
 "known as the White Building. "
 msgstr ""
 "Die Namensänderung brachte auch eine deutliche Nachfragesteigerung mit sich "
-"Schüler, die das Gymnasium abschließen. Aus diesem Grund ist ein wichtiger Teil der "
-"Die Fächer wurden wieder im Gebäude der Höheren Technischen Hochschule unterrichtet "
-"School of Industrial Engineers, die von da an populär wurde "
-"bekannt als das Weiße Gebäude. "
+"Schüler, die das Gymnasium abschließen. Aus diesem Grund ist ein wichtiger "
+"Teil der Die Fächer wurden wieder im Gebäude der Höheren Technischen "
+"Hochschule unterrichtet School of Industrial Engineers, die von da an "
+"populär wurde bekannt als das Weiße Gebäude. "
 
 #: nuevaInfo/templates/nuevaInfo/infoETSII.html:51
 msgid "List of Departments"
@@ -401,9 +410,9 @@ msgid ""
 "the Reina Mercedes Campus of the University of Seville and is easily "
 "accessible by public transport services."
 msgstr ""
-"Die Higher Technical School of Computer Engineering (ETSII) befindet sich auf "
-"der Reina Mercedes Campus der Universität Sevilla und ist leicht "
-"mit öffentlichen Verkehrsmitteln erreichbar. "
+"Die Higher Technical School of Computer Engineering (ETSII) befindet sich "
+"auf der Reina Mercedes Campus der Universität Sevilla und ist leicht mit "
+"öffentlichen Verkehrsmitteln erreichbar. "
 
 #: nuevaInfo/templates/nuevaInfo/infoETSII.html:70
 msgid "Address"
@@ -531,10 +540,6 @@ msgstr ""
 #: nuevaInfo/templates/nuevaInfo/infoEgc.html:75
 msgid "For more information about these journeys:"
 msgstr "Weitere Informationen zu diesen Sitzungen:"
-
-#: nuevaInfo/templates/nuevaInfo/infoEgc.html:76
-msgid "Journeys"
-msgstr "Arbeitstagen"
 
 #: nuevaInfo/templates/nuevaInfo/infoJornadas.html:35
 msgid "Innosoft Days"
