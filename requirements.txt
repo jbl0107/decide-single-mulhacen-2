@@ -16,3 +16,5 @@ oauth2==1.9.0.post1
 telegram
 aspose.words
 locust
+django-bootstrap4
+django-crispy-forms
