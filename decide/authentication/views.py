@@ -126,7 +126,7 @@ def log_in(request):
                 login(request, user)
                 return redirect(request.GET.get('next', ''))
             else:
-                mess = messages.add_message(request, message='Credenciales no válidos', level=0)
+                mess = messages.error(request, message='Credenciales no válidos')
                 return redirect("/authentication/login2/?next=" + request.GET.get('next', '/'), {'formulario':formulario, 'messages': mess})
     elif request.user.is_authenticated:
         return redirect("/")
@@ -146,12 +146,12 @@ def register(request):
             try:
                 usuario = formulario.save()
             except:
-                mess = messages.add_message(request, level=0, message='Información inválida')
+                mess = messages.error(request, message='Información inválida')
                 return render(request, 'register.html', {'formulario': formulario, 'messages':mess})
             login(request, usuario)
             return redirect(request.GET.get('next', ''))
         else:
-            mess = messages.add_message(request, level=0, message='Información inválida')
+            mess = messages.error(request, message='Información inválida')
             return render(request, 'register.html', {'formulario': formulario, 'messages':mess})
     elif request.user.is_authenticated:
         return redirect(request.GET.get('next', ''))
