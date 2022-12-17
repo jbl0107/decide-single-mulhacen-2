@@ -27,20 +27,18 @@ class VisualizerView(TemplateView):
         chat_id = '1042938746'
         bot = telegram.Bot(token=bot_token)
         context = super().get_context_data(**kwargs)
-        vid = kwargs.get('voting_id', 0)
-        print(vid)
+        id = kwargs.get('voting_id', 0)
+    
         try:
-            r = mods.get('voting', params={'id': vid})
-            
-            V=json.dumps(r[0])
-            context['voting'] = json.dumps(r[0])
+            dicc = mods.get('voting', params={'id': id})
+            context['voting'] = json.dumps(i[0])
             opciones=[]
             votos=[]
-            for v in r[0]["postproc"]:
-
-                opciones.append(v["option"]) 
-                votos.append(v["votes"]) 
-
+            for i in dicc[0]["postproc"]:
+                
+                opciones.append(i["option"]) 
+                votos.append(i["votes"]) 
+            
             fig, ax = plt.subplots()
             ax.set_ylabel('Votos')
             plt.barh(opciones, votos)
