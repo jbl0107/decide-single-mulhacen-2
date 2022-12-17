@@ -11,8 +11,6 @@ import numpy as np
 import telegram
 
 
-import aspose.words as  aw
-
 
 
 from base import mods

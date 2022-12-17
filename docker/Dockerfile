@@ -3,6 +3,7 @@ from python:3.8-alpine
 RUN apk add --no-cache git postgresql-dev gcc libc-dev
 RUN apk add --no-cache gcc g++ make libffi-dev python3-dev build-base
 RUN apk add gettext
+RUN pip install --upgrade pip
 
 RUN pip install gunicorn
 RUN pip install psycopg2
