@@ -36,7 +36,7 @@ class TranslationCaseDecide(StaticLiveServerTestCase):
 
         self.base.tearDown()
 
-    def test_english_translation(self):
+    def test_english_translation_infoDecide(self):
 
         self.driver.set_window_size(1920,1080)
         options = webdriver.ChromeOptions()
@@ -53,5 +53,25 @@ class TranslationCaseDecide(StaticLiveServerTestCase):
         username_label = WebDriverWait(self.driver, timeout=10).until(lambda d: d.find_element(by=By.ID, value="titulo"))
         self.assertEqual(username_label.text, "The Gateway")
     
+
+
+    def test_spanish_translation_infoDecide(self):
+        self.driver.set_window_size(1920,1080)
+        options = webdriver.ChromeOptions()
+        options.headless = True
+        driver = webdriver.Chrome(options=options)
+        self.driver.get("http://localhost:8000/nuevaInfo/masInfo/")
+        
+        language_selector = WebDriverWait(self.driver, timeout=10).until(lambda d: d.find_element(by=By.NAME, value="language"))
+        language_selector.click()
+        selected_language = WebDriverWait(self.driver, timeout=10).until(lambda d: d.find_element(by=By.CSS_SELECTOR, value="select > option:nth-child(2)"))
+        selected_language.click()
+        change_language_button = WebDriverWait(self.driver, timeout=10).until(lambda d: d.find_element(by=By.ID, value="boton"))
+        change_language_button.click()
+        username_label = WebDriverWait(self.driver, timeout=10).until(lambda d: d.find_element(by=By.ID, value="titulo"))
+        self.assertEqual(username_label.text, "El Gateway")
+
+    
+
 
 
