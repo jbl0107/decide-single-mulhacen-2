@@ -8,6 +8,7 @@ from selenium.webdriver.support.color import Color
 from base import mods
 from base.tests import BaseTestCase
 from django.contrib.auth.models import User
+
 from django.contrib.staticfiles.testing import StaticLiveServerTestCase
 
 from rest_framework.authtoken.models import Token
