@@ -53,7 +53,9 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'rest_framework_swagger',
     'gateway',
-    'nuevaInfo'
+    'nuevaInfo',
+    'bootstrap4',
+    'crispy_forms'
 ]
 
 REST_FRAMEWORK = {
