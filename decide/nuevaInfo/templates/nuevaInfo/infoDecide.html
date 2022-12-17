@@ -29,7 +29,7 @@
           </select>
 
           </div>
-          <input type="submit" value="{% trans "Go" %}">
+          <input type="submit" id= "boton" value="{% trans "Go" %}">
      </form>
 
 
@@ -38,7 +38,7 @@
           <h5 class="centrar">{% trans "Decide is an educational project, designed for the study of voting systems. The project is divided into subsystems, which will be decoupled from each other. Next, a series of aspects about decide will be discussed" %}</h5>
 
      <br>
-     <h4>{% trans "The Gateway" %}</h4>
+     <h4 id="titulo">{% trans "The Gateway" %}</h4>
      <p>{% trans "To provide a known entry point for all subsystems exists the so-called gateway that is nothing more than an available route that will redirect all requests to the corresponding subsystem, such that any client using the API doesn't have to know what server it is on deployed each subsystem. The path consists of:" %}</p>
           <p class="cursiva">http://DOMINIO/gateway/SUBSISTEMA/RUTA/EN/EL/SUBSISTEMA</p>
      
