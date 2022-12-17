@@ -27,12 +27,11 @@ class VisualizerView(TemplateView):
         chat_id = '1042938746'
         bot = telegram.Bot(token=bot_token)
         context = super().get_context_data(**kwargs)
-        vid = kwargs.get('voting_id', 0)
-        print(vid)
+        id = kwargs.get('voting_id', 0)
+        
         try:
-            r = mods.get('voting', params={'id': vid})
+            r = mods.get('voting', params={'id': id})
             
-            V=json.dumps(r[0])
             context['voting'] = json.dumps(r[0])
             opciones=[]
             votos=[]
