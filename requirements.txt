@@ -18,3 +18,4 @@ locust
 django-bootstrap4
 django-crispy-forms
 python-telegram-bot
+webdriver_manager
