@@ -38,8 +38,9 @@ jobs:
       run: |
         cd decide
         python manage.py migrate
-    - name: Run Server
-        cd decide 
+     - name: Run Server 
+      run: |
+        cd decide
         python manage.py runserver localhost:8080
     - name: Run tests
       run: |
