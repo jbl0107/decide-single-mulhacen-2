@@ -1,9 +1,6 @@
 name: Python application
 
-on: 
-  push:
-    branches:
-      - master
+on: [push]
 
 jobs:
   build:
@@ -41,6 +38,7 @@ jobs:
       run: |
         cd decide
         python manage.py migrate
+        python manage.py runserver
     - name: Run tests
       run: |
         cd decide
