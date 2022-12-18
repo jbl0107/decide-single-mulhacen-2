@@ -36,7 +36,7 @@ jobs:
         pip install -r requirements.txt
         pip install codacy-coverage
         sudo apt-get install chromium-browser chromium-chromedriver
-        screen -d ./manage.py runserver
+        screen -d -m ./manage.py runserver
         cp decide/local_settings.gactions.py decide/local_settings.py
     - name: Run migrations 
       run: |
