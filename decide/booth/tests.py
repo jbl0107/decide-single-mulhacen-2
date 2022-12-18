@@ -26,78 +26,78 @@ class BoothTestCase(BaseTestCase):
 
 
 
-# class TraducTestCase(StaticLiveServerTestCase):
+class TraducTestCase(StaticLiveServerTestCase):
 
-#     def setUp(self):
-#         #Load base test functionality for decide
-#         self.base = BaseTestCase()
-#         self.base.setUp()
+    def setUp(self):
+        #Load base test functionality for decide
+        self.base = BaseTestCase()
+        self.base.setUp()
 
-#         options = webdriver.ChromeOptions()
-#         options.headless = True
-#         self.driver = webdriver.Chrome(options=options)
+        options = webdriver.ChromeOptions()
+        options.headless = True
+        self.driver = webdriver.Chrome(options=options)
 
-#         super().setUp() 
+        super().setUp() 
         
-#     def tearDown(self):           
-#         super().tearDown()
-#         self.driver.quit()
+    def tearDown(self):           
+        super().tearDown()
+        self.driver.quit()
 
-#         self.base.tearDown()
+        self.base.tearDown()
     
-#     def test_en(self):
+    def test_en(self):
 
-#         self.driver.set_window_size(1920,1080)
-#         options = webdriver.ChromeOptions()
-#         options.headless = True
-#         self.driver = webdriver.Chrome(options=options)
+        self.driver.set_window_size(1920,1080)
+        options = webdriver.ChromeOptions()
+        options.headless = True
+        self.driver = webdriver.Chrome(options=options)
 
-#         self.driver.get('http://localhost:8080/booth/4/')
+        self.driver.get('http://localhost:8080/booth/' + str(1) or str(2) or str(3) or str(4) or str(5) or str(6) or str(7) or str(8) or str(9) or str(10))
         
-#         language_selector = WebDriverWait(self.driver, timeout=10).until(lambda d: d.find_element(by=By.NAME, value="language"))
-#         language_selector.click()
-#         selected_language = WebDriverWait(self.driver, timeout=10).until(lambda d: d.find_element(by=By.CSS_SELECTOR, value="select > option:nth-child(1)"))
-#         selected_language.click()
-#         change_language_button = WebDriverWait(self.driver, timeout=10).until(lambda d: d.find_element(by=By.ID, value="boton-submit"))
-#         change_language_button.click()
-#         label = WebDriverWait(self.driver, timeout=10).until(lambda d: d.find_element(by=By.ID, value="botonVotar"))
-#         self.assertEqual(label.text, "Vote")
+        language_selector = WebDriverWait(self.driver, timeout=10).until(lambda d: d.find_element(by=By.NAME, value="language"))
+        language_selector.click()
+        selected_language = WebDriverWait(self.driver, timeout=10).until(lambda d: d.find_element(by=By.CSS_SELECTOR, value="select > option:nth-child(1)"))
+        selected_language.click()
+        change_language_button = WebDriverWait(self.driver, timeout=10).until(lambda d: d.find_element(by=By.ID, value="boton-submit"))
+        change_language_button.click()
+        label = WebDriverWait(self.driver, timeout=10).until(lambda d: d.find_element(by=By.ID, value="botonVotar"))
+        self.assertEqual(label.text, "Vote")
 
-#     def test_es(self):
+    def test_es(self):
 
-#         self.driver.set_window_size(1920,1080)
-#         options = webdriver.ChromeOptions()
-#         options.headless = True
-#         self.driver = webdriver.Chrome(options=options)
+        self.driver.set_window_size(1920,1080)
+        options = webdriver.ChromeOptions()
+        options.headless = True
+        self.driver = webdriver.Chrome(options=options)
 
-#         self.driver.get('http://localhost:8080/booth/4/')
+        self.driver.get('http://localhost:8080/booth/' + str(1) or str(2) or str(3) or str(4) or str(5) or str(6) or str(7) or str(8) or str(9) or str(10))
         
-#         language_selector = WebDriverWait(self.driver, timeout=10).until(lambda d: d.find_element(by=By.NAME, value="language"))
-#         language_selector.click()
-#         selected_language = WebDriverWait(self.driver, timeout=10).until(lambda d: d.find_element(by=By.CSS_SELECTOR, value="select > option:nth-child(2)"))
-#         selected_language.click()
-#         change_language_button = WebDriverWait(self.driver, timeout=10).until(lambda d: d.find_element(by=By.ID, value="boton-submit"))
-#         change_language_button.click()
-#         label = WebDriverWait(self.driver, timeout=10).until(lambda d: d.find_element(by=By.ID, value="botonVotar"))
-#         self.assertEqual(label.text, "Vota")
+        language_selector = WebDriverWait(self.driver, timeout=10).until(lambda d: d.find_element(by=By.NAME, value="language"))
+        language_selector.click()
+        selected_language = WebDriverWait(self.driver, timeout=10).until(lambda d: d.find_element(by=By.CSS_SELECTOR, value="select > option:nth-child(2)"))
+        selected_language.click()
+        change_language_button = WebDriverWait(self.driver, timeout=10).until(lambda d: d.find_element(by=By.ID, value="boton-submit"))
+        change_language_button.click()
+        label = WebDriverWait(self.driver, timeout=10).until(lambda d: d.find_element(by=By.ID, value="botonVotar"))
+        self.assertEqual(label.text, "Vota")
 
-#     def test_de(self):
+    def test_de(self):
 
-#         self.driver.set_window_size(1920,1080)
-#         options = webdriver.ChromeOptions()
-#         options.headless = True
-#         self.driver = webdriver.Chrome(options=options)
+        self.driver.set_window_size(1920,1080)
+        options = webdriver.ChromeOptions()
+        options.headless = True
+        self.driver = webdriver.Chrome(options=options)
 
-#         self.driver.get('http://localhost:8080/booth/4/')
+        self.driver.get('http://localhost:8080/booth/' + str(1) or str(2) or str(3) or str(4) or str(5) or str(6) or str(7) or str(8) or str(9) or str(10))
         
-#         language_selector = WebDriverWait(self.driver, timeout=10).until(lambda d: d.find_element(by=By.NAME, value="language"))
-#         language_selector.click()
-#         selected_language = WebDriverWait(self.driver, timeout=10).until(lambda d: d.find_element(by=By.CSS_SELECTOR, value="select > option:nth-child(3)"))
-#         selected_language.click()
-#         change_language_button = WebDriverWait(self.driver, timeout=10).until(lambda d: d.find_element(by=By.ID, value="boton-submit"))
-#         change_language_button.click()
-#         label = WebDriverWait(self.driver, timeout=10).until(lambda d: d.find_element(by=By.ID, value="botonVotar"))
-#         self.assertEqual(label.text, "Abstimmung")
+        language_selector = WebDriverWait(self.driver, timeout=10).until(lambda d: d.find_element(by=By.NAME, value="language"))
+        language_selector.click()
+        selected_language = WebDriverWait(self.driver, timeout=10).until(lambda d: d.find_element(by=By.CSS_SELECTOR, value="select > option:nth-child(3)"))
+        selected_language.click()
+        change_language_button = WebDriverWait(self.driver, timeout=10).until(lambda d: d.find_element(by=By.ID, value="boton-submit"))
+        change_language_button.click()
+        label = WebDriverWait(self.driver, timeout=10).until(lambda d: d.find_element(by=By.ID, value="botonVotar"))
+        self.assertEqual(label.text, "Abstimmung")
         
 
     
