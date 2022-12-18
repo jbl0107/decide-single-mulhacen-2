@@ -67,7 +67,7 @@
                 </select>
 
             </div>
-            <input type="submit" value="{% trans "Go" %}">
+            <input id="boton-submit" type="submit" value="{% trans "Go" %}">
         </form>
 
 
@@ -91,7 +91,7 @@
                         [[ opt.option ]]
                     </b-form-radio>
                 </b-form-group>
-                <b-button type="button" variant="primary" v-on:click="decideSend">
+                <b-button type="button" id="botonVotar" variant="primary" v-on:click="decideSend">
                     {% trans "Vote" %}
                 </b-button>
             </div>

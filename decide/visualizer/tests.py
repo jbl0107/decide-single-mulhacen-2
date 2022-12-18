@@ -35,6 +35,9 @@ class VisualizerTestCase(BaseTestCase):
         response = self.client.put('/visualizer/'+str(-1), follow=True)
         self.assertEqual(response.status_code, 404)
 
+    def test_visualizer_voting_id_inexistente(self):
+        response = self.client.put('/visualizer/'+str(999), follow=True)
+        self.assertEqual(response.status_code, 404)
 
 
 class TranslationCase(StaticLiveServerTestCase):
