@@ -20,15 +20,13 @@ from rest_framework.test import APIClient, APITestCase
 class VisualizerTestCase(BaseTestCase):
     
     def test_funcionamiento_pagina_visualizer(self):
-        # options = webdriver.FirefoxOptions()
-        # options.headless = True
-        # driver = webdriver.Firefox(options=options)
-        # driver.get("http://localhost:8080/visualizer/1/")
 
         options = webdriver.ChromeOptions()
         options.headless = True
         driver = webdriver.Chrome(options=options)
-        driver.get("http://localhost:8080/visualizer/1/")
+        driver.get("http://localhost:8080/visualizer/" + str(1) or str(2) or str(3) or str(4) or 
+                                                                str(5) or str(6) or str(7) or str(8)
+                                                                or str(8) or str(9) or str(10))
 
         assert driver.find_element(By.CSS_SELECTOR, ".navbar-brand").text == "Decide"
 
@@ -67,7 +65,9 @@ class TranslationCase(StaticLiveServerTestCase):
         options = webdriver.ChromeOptions()
         options.headless = True
         driver = webdriver.Chrome(options=options)
-        self.driver.get("http://localhost:8080/visualizer/1/")
+        self.driver.get("http://localhost:8080/visualizer/" + str(1) or str(2) or str(3) or str(4) or 
+                                                                str(5) or str(6) or str(7) or str(8)
+                                                                or str(8) or str(9) or str(10))
         
         language_selector = WebDriverWait(self.driver, timeout=10).until(lambda d: d.find_element(by=By.NAME, value="language"))
         language_selector.click()
@@ -85,7 +85,9 @@ class TranslationCase(StaticLiveServerTestCase):
         options = webdriver.ChromeOptions()
         options.headless = True
         driver = webdriver.Chrome(options=options)
-        self.driver.get("http://localhost:8080/visualizer/1/")
+        self.driver.get("http://localhost:8080/visualizer/" + str(1) or str(2) or str(3) or str(4) or 
+                                                                str(5) or str(6) or str(7) or str(8)
+                                                                or str(8) or str(9) or str(10))
         
         language_selector = WebDriverWait(self.driver, timeout=10).until(lambda d: d.find_element(by=By.NAME, value="language"))
         language_selector.click()
@@ -102,7 +104,9 @@ class TranslationCase(StaticLiveServerTestCase):
         options = webdriver.ChromeOptions()
         options.headless = True
         driver = webdriver.Chrome(options=options)
-        self.driver.get("http://localhost:8080/visualizer/1/")
+        self.driver.get("http://localhost:8080/visualizer/" + str(1) or str(2) or str(3) or str(4) or 
+                                                                str(5) or  str(6) or str(7) or str(8)
+                                                                or str(8) or str(9) or str(10))
         
         language_selector = WebDriverWait(self.driver, timeout=10).until(lambda d: d.find_element(by=By.NAME, value="language"))
         language_selector.click()
