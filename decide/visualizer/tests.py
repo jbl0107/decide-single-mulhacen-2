@@ -62,8 +62,8 @@ class TranslationCase(StaticLiveServerTestCase):
         options = webdriver.ChromeOptions()
         options.headless = True
         driver = webdriver.Chrome(options=options)
-        self.driver.get("http://localhost:8080/visualizer/" + str(1) or + str(2) or str(3) or str(4) or 
-                                                                str(5) or + str(6) or str(7) or str(8)
+        self.driver.get("http://localhost:8080/visualizer/" + str(1) or str(2) or str(3) or str(4) or 
+                                                                str(5) or str(6) or str(7) or str(8)
                                                                 or str(8) or str(9) or str(10))
         
         language_selector = WebDriverWait(self.driver, timeout=10).until(lambda d: d.find_element(by=By.NAME, value="language"))
@@ -82,8 +82,8 @@ class TranslationCase(StaticLiveServerTestCase):
         options = webdriver.ChromeOptions()
         options.headless = True
         driver = webdriver.Chrome(options=options)
-        self.driver.get("http://localhost:8080/visualizer/" + str(1) or + str(2) or str(3) or str(4) or 
-                                                                str(5) or + str(6) or str(7) or str(8)
+        self.driver.get("http://localhost:8080/visualizer/" + str(1) or str(2) or str(3) or str(4) or 
+                                                                str(5) or str(6) or str(7) or str(8)
                                                                 or str(8) or str(9) or str(10))
         
         language_selector = WebDriverWait(self.driver, timeout=10).until(lambda d: d.find_element(by=By.NAME, value="language"))
@@ -101,8 +101,8 @@ class TranslationCase(StaticLiveServerTestCase):
         options = webdriver.ChromeOptions()
         options.headless = True
         driver = webdriver.Chrome(options=options)
-        self.driver.get("http://localhost:8080/visualizer/" + str(1) or + str(2) or str(3) or str(4) or 
-                                                                str(5) or + str(6) or str(7) or str(8)
+        self.driver.get("http://localhost:8080/visualizer/" + str(1) or str(2) or str(3) or str(4) or 
+                                                                str(5) or  str(6) or str(7) or str(8)
                                                                 or str(8) or str(9) or str(10))
         
         language_selector = WebDriverWait(self.driver, timeout=10).until(lambda d: d.find_element(by=By.NAME, value="language"))
