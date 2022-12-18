@@ -65,66 +65,38 @@ class AuthTestCase(APITestCase):
         token = response.json()
         self.assertTrue(token.get('token'))
 
-        response = self.client.post('/authentication/logout/', token, format='json')
-        self.assertEqual(response.status_code, 200)
+        response = self.client.get('/authentication/logout/?next=/admin/')
+        self.assertRedirects(response, '/admin/', status_code=302, target_status_code=302, fetch_redirect_response=True)
 
         response = self.client.post('/authentication/getuser/', token, format='json')
-        self.assertEqual(response.status_code, 404)
+        self.assertEqual(response.status_code, 200)
 
     def test_logout(self):
+        # data = {'username': 'voter1', 'password': '123'}
+        # response = self.client.post('/authentication/login/', data, format='json')
+        # self.assertEqual(response.status_code, 200)
+        # self.assertEqual(Token.objects.filter(user__username='voter1').count(), 1)
+
+        # token = response.json()
+        # self.assertTrue(token.get('token'))
+
+        # response = self.client.post('/authentication/logout/', token, format='json')
+        # self.assertEqual(response.status_code, 200)
+
+        # self.assertEqual(Token.objects.filter(user__username='voter1').count(), 0)
         data = {'username': 'voter1', 'password': '123'}
         response = self.client.post('/authentication/login/', data, format='json')
         self.assertEqual(response.status_code, 200)
-        self.assertEqual(Token.objects.filter(user__username='voter1').count(), 1)
-
-        token = response.json()
-        self.assertTrue(token.get('token'))
-
-        response = self.client.post('/authentication/logout/', token, format='json')
-        self.assertEqual(response.status_code, 200)
-
-        self.assertEqual(Token.objects.filter(user__username='voter1').count(), 0)
-
-    def test_register_bad_permissions(self):
-        data = {'username': 'voter1', 'password': '123'}
-        response = self.client.post('/authentication/login/', data, format='json')
-        self.assertEqual(response.status_code, 200)
-        token = response.json()
-
-        token.update({'username': 'user1'})
-        response = self.client.post('/authentication/register/', token, format='json')
-        self.assertEqual(response.status_code, 401)
-
-    def test_register_bad_request(self):
-        data = {'username': 'admin', 'password': 'admin'}
-        response = self.client.post('/authentication/login/', data, format='json')
-        self.assertEqual(response.status_code, 200)
-        token = response.json()
-
-        token.update({'username': 'user1'})
-        response = self.client.post('/authentication/register/', token, format='json')
-        self.assertEqual(response.status_code, 400)
+        response = self.client.get('/authentication/logout/?next=/admin/')
+        self.assertRedirects(response, '/admin/', status_code=302, target_status_code=302, fetch_redirect_response=True)
 
     def test_register_user_already_exist(self):
-        data = {'username': 'admin', 'password': 'admin'}
-        response = self.client.post('/authentication/login/', data, format='json')
+        data = {'username': 'admin', 'password1': 'admin', 'password2': 'admin'}
+        response = self.client.post('/authentication/register/', data=data)
         self.assertEqual(response.status_code, 200)
-        token = response.json()
-
-        token.update(data)
-        response = self.client.post('/authentication/register/', token, format='json')
-        self.assertEqual(response.status_code, 400)
+        self.assertTemplateUsed(response, 'register.html')
 
     def test_register(self):
-        data = {'username': 'admin', 'password': 'admin'}
-        response = self.client.post('/authentication/login/', data, format='json')
-        self.assertEqual(response.status_code, 200)
-        token = response.json()
-
-        token.update({'username': 'user1', 'password': 'pwd1'})
-        response = self.client.post('/authentication/register/', token, format='json')
-        self.assertEqual(response.status_code, 201)
-        self.assertEqual(
-            sorted(list(response.json().keys())),
-            ['token', 'user_pk']
-        )
+        data = {'username': 'Vill-V', 'password1': 'Helix5@%&', 'password2': 'Helix5@%&'}
+        response = self.client.post('/authentication/register/?next=/admin/', data=data)
+        self.assertRedirects(response, '/admin/', status_code=302, target_status_code=302, fetch_redirect_response=True)

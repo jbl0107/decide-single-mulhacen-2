@@ -12,6 +12,15 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 
 import os
 
+
+GP_CLIENT_ID = '941490541837-j0bdqqb85omjadqon0fjgh0me5r2bgmi.apps.googleusercontent.com'
+GP_CLIENT_SECRET = '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'
+
+TWITTER_API_ID = 'XFzRuUfLwRXfBUmhc9AlQ4SBI'
+TWITTER_API_SECRET = 'UyP7n43rTwk1nFaCDsSqLedzNSbfFv3jf5GfVIfHKoZfqf46x5'
+TWITTER_CLIENT_ID = '1601512049875603456-FbmKSE4wTNr4zY48nOadJmiyuy3Beh'
+TWITTER_CLIENT_SECRET = '0r4rcZXs0PwCkn1ruKdNIDgRpiN9gsVWCbMjfiWYwfm6M'
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -44,7 +53,9 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'rest_framework_swagger',
     'gateway',
-    'nuevaInfo'
+    'nuevaInfo',
+    'bootstrap4',
+    'crispy_forms'
 ]
 
 REST_FRAMEWORK = {

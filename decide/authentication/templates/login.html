@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang='es'>
+    <head>
+        <meta charset='utf-8'>
+        <style type="text/css">
+            .abs-center {
+                padding-top: 100px;
+                display: flex;
+                justify-content: center;
+                min-height: 100vh;
+              }
+              
+            .form {
+                width: 450px;
+            }
+        </style>
+        {% load i18n static%}
+        {% load i18n %}
+        {% load bootstrap4 %}
+        {% load crispy_forms_tags %}
+        {% bootstrap_css %}
+    </head>
+    <body>
+        {% for message in messages %}
+            <div class="alert alert-danger">
+                <a class="close" href="#" data-dismiss="alert">×</a>
+                {{ message }}
+            </div>
+        {% endfor %}
+        <div class="abs-center">
+            <form method="POST" action=''>
+                {% csrf_token %}
+                <table>{{formulario|crispy}}</table>
+                <button type="submit" class='btn btn-primary'>{% trans "Log In" %}</button>
+            </form>
+        </div>
+    </body>
+</html>

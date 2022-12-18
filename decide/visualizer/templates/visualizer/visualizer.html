@@ -30,7 +30,7 @@
                     {% endfor %}
                 </select>
             </div>
-            <input type="submit" value="{% trans "Go" %}">
+            <input type="submit" id="boton-submit" value="{% trans "Go" %}">
         </form>
 
         <div class="voting container">
@@ -39,7 +39,7 @@
             <h2 v-if="!voting.start_date">{% trans 'Voting not started' %}</h2>
             <h2 v-else-if="!voting.end_date">{% trans 'Voting in progress' %}</h2>
             <div v-else>
-                <h2 class="heading">{% trans 'Results:' %}</h2>
+                <h2 class="heading" id="confirm">{% trans 'Results:' %}</h2>
 
                 <table class="table table-bordered table-striped">
                     <thead>
