@@ -1,6 +1,9 @@
 name: Python application
 
-on: [push]
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   build:
@@ -41,7 +44,7 @@ jobs:
      - name: Run Server 
       run: |
         cd decide
-        python manage.py runserver localhost:8080
+        python manage.py runserver
     - name: Run tests
       run: |
         cd decide
